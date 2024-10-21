@@ -2,22 +2,22 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T16:04:49.865Z
+date: 2024-10-21T16:07:16.382Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
 ---
 
 # Kiosk Models
-- Indoor
+## Indoor
   - Model: DVD-IN
   - Part Number: Indoor_Kiosk
   - Has variants with outdoor screen for use in bright entryways
-- Indoor (Blue Variant)
+## Indoor (Blue Variant)
   - Model: `unknown`
   - Part Number: `unknown`
   - Made for Walmart per agreement with Redbox.
-- Outdoor
+## Outdoor
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk
   - Heating/Cooling unit prone to fire, remove before use
