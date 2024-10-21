@@ -2,7 +2,7 @@
 title: Before You Contribute
 description: 
 published: true
-date: 2024-10-21T16:47:13.034Z
+date: 2024-10-21T17:54:35.167Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T11:50:29.402Z
@@ -16,6 +16,8 @@ The navigation panel on the side of the website is controlled by redbox.wiki adm
 
 # Files
 Do not upload any files you do not have the rights to. This includes patched DLLs from Redbox dumps or your own box. All files uploaded to the wiki must be licensable by you.
+
+Other files can be uploaded via a PR to [unredbox/Wiki-Files](https://github.com/unredbox/Wiki-Files).
 
 # New Pages
 Before adding a new page, ensure that an existing page doesn't already cover the topic you're looking to work on. If there's overlap, see if it's more appropriate to add to an existing page rather than creating a new one. We should aim for the least number of pages we can while avoiding massive, lengthy pages of documentation.
