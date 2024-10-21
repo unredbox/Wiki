@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T18:14:26.813Z
+date: 2024-10-21T19:45:31.540Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -22,7 +22,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Part Number: Outdoor_Kiosk
   - Heating/Cooling unit prone to fire, remove before use
   	- IceQube IQ2200VS and control panel
-  - Stego CR027 Heater
+    - Stego CR027 Heater
 
 # Computers
 
