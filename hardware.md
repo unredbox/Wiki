@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T13:48:20.610Z
+date: 2024-10-21T14:04:13.036Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -24,18 +24,21 @@ dateCreated: 2024-10-21T03:34:51.578Z
 
 # Computers
 
+## Dell
+- Optiplex 390 (2011)
+  - Unknown CPU (2nd gen Intel)
+  - Unknown RAM
+  - 500GB HDD
+- Optiplex XE2 (2013)
+  - Unknown CPU (4th gen Intel)
+  - Unknown RAM
+  - 500GB HDD
+
 ## Lenovo
-- ThinkCentre M91p USFF
+- ThinkCentre M91p USFF (2011)
   - Intel Pentium G630
   - 2GB DDR3
   - 250GB HDD
-
-## Dell
-- Optiplex 390
-  - Unknown CPU
-  - Unknown RAM
-  - 500GB HDD
-- Optiplex XE2
-  - Unknown CPU
-  - Unknown RAM
-  - 500GB HDD
+  
+## Premio
+unknown, pending info
