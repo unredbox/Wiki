@@ -1,8 +1,8 @@
 ---
-title: Kiosk Hardware
+title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T10:38:55.985Z
+date: 2024-10-21T11:32:54.216Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -22,7 +22,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Part Number: `unknown`
   - Heating/Cooling unit prone to fire, remove before use
 
-# PCs
+# Computers
 
 ## Lenovo
 - ThinkCentre M91p USFF
