@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T17:08:30.551Z
+date: 2024-10-21T17:14:55.166Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -22,6 +22,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Part Number: Outdoor_Kiosk
   - Heating/Cooling unit prone to fire, remove before use
   	- IceQube IQ2200VS and control panel
+  - Stego CR027 Heater
 
 # Computers
 
@@ -53,11 +54,18 @@ dateCreated: 2024-10-21T03:34:51.578Z
    
  # Components
  ## Touch Screen
- - Kristel Displays (from outdoor unit)
+ - Kristel Displays (from outdoor kiosk)
     - Product # 259420
     - Model LCD15-042A
+ - Kristel Displays (from Walmart kiosk) 15" Outdoor TS
+    - Product # RDBX00923
+    - Model LCD15-027C
 ## Carousel
+ - Vekta PK Series Steppers
+ - Arcus Proteu USB Stepper Controller
 ## Credit Card Reader
+## Modems
+- Cradlepoint IBR650LPE Netcloud
 ## Boards
 - PCB #DVD-26-000-04
    - SER. Mater 7/25/06
