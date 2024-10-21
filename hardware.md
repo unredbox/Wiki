@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T17:03:14.811Z
+date: 2024-10-21T17:08:30.551Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -62,6 +62,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
 - PCB #DVD-26-000-04
    - SER. Mater 7/25/06
 
-![pcb_dvd-26-000-04_snachodog.jpg](/pcb_dvd-26-000-04_snachodog.jpg)
+![PCB #DVD-26-000-04 Board](/pcb_dvd-26-000-04_snachodog.jpg "PCB #DVD-26-000-04 Board")
    
 ## Lock
+![Locked Lock from within a kiosk](/locked_lock.jpg "Locked lock from within a kiosk")
