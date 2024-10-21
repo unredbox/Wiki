@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T17:45:02.516Z
+date: 2024-10-21T18:08:44.441Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -79,7 +79,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
 - Cradlepoint IBR650LPE Netcloud
 ## Boards
 - PCB #DVD-26-000-04
-   - SER. Mater 7/25/06
+   - SER. Master 7/25/06
 
 ![PCB #DVD-26-000-04 Board](/pcb_dvd-26-000-04_snachodog.jpg "PCB #DVD-26-000-04 Board")
    
