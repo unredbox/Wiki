@@ -2,10 +2,31 @@
 title: Kiosk Engine
 description: 
 published: true
-date: 2024-10-21T13:47:00.712Z
+date: 2024-10-21T14:01:18.138Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T11:42:08.286Z
 -->
 
-<p>todo: information</p>
+<p>Kiosk Engine is the custom application designed by Redbox for use on the kiosks by both employees and customers. By default, Kiosk Engine boots into a rental menu&nbsp;after the device initializes.</p>
+<p>The rental menu&nbsp;features both a day and night mode. During the day, the rental screen will use white backgrounds to enhance contrast in sunlight. In evening hours, the menu&nbsp;will use black backgrounds to avoid eye strain from bright display panels.</p>
+<figure class="image image_resized" style="width:32.47%;"><img src="/kioskengine/rentalhome.png">
+  <figcaption>Newest version of the rental screen homepage in Daytime mode</figcaption>
+</figure>
+<h1>OfflineMode</h1>
+<p>This rental menu allows users to rent, buy, return, or pickup reserved movies. When the device is in OfflineMode, the kiosk will allow users to only rent 3 movies at a time. Some movies may be restricted from rental or purchase while in OfflineMode, though the reason for this is not fully understood. The card used to complete transactions in OfflineMode can be used multiple times as the kiosk does not make any attempt to limit this.</p>
+<p>All kiosks are in OfflineMode as Redbox's services no longer exist.</p>
+<h1>Accessing Service Menus</h1>
+<p>It's possible to access multiple service menus via Kiosk Engine.</p>
+<h2>Field Maintenance via Rental Menu</h2>
+<p>On the homepage, press the ? or Help button. Once on the help page, tap/click the Redbox logo. “Please Wait” will appear briefly before being replaced with a login screen.</p>
+<p>Without patching DLLs or emulating the authentication servers, you can go no further past this point. If authentication does succeed, you will enter the <a href="/kioskengine/field-maintenance">Field Maintenance Application</a>.</p>
+<h2>Redbox Desktop via Keyboard</h2>
+<p>From anywhere (assuming the application is responding and kiosk is initialized), you can use the key combo <code>CTRL + ALT + ENTER</code> to access a Redbox Control Panel Login panel. Kiosks in OfflineMode allow use of any credentials to login.&nbsp;</p>
+<p>If login succeeds, you will be sent to the <a href="/kioskengine/redbox-desktop">Redbox Desktop</a>.</p>
+<h2>“Select Resource Bundle” Menu via Keyboard</h2>
+<p>There is a way to open a menu that allows selecting “Resource Bundles” without the use of a discrete chain of keyboard combinations or UI interactions. The way to open this is unknown as of now, though it should be easy to figure out.</p>
+<figure class="image image_resized" style="width:35.78%;"><img src="/kioskengine/sel-resource-bundle.png">
+  <figcaption>Example of the menu - only screenshot available</figcaption>
+</figure>
+<p>&nbsp;</p>
