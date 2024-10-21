@@ -2,7 +2,7 @@
 title: Field Maintenance
 description: 
 published: true
-date: 2024-10-21T13:28:12.022Z
+date: 2024-10-21T17:03:56.782Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T11:12:53.076Z
@@ -71,4 +71,18 @@ dateCreated: 2024-10-21T11:12:53.076Z
   <li>Holidays make parking lots crazy! &nbsp;Take extra care when driving and walking.</li>
   <li>Pay attention to walking surfaces in wet, rainy and snowy weather to avoid a fall.</li>
   <li>Healthy eating helps you work better. &nbsp;Pack some healthy snacks for your breaks.</li>
+</ol>
+<h1>Modifying Kiosk to Allow Field Maintenance</h1>
+<p>The field maintenance screen sits behind a authentication screen that, unlike the Redbox Desktop, verifies credentials with redbox servers (which are no longer online). To get around this, @viper33802/@loki patched the DLL that has todo with the authentication. The steps are as follows:</p>
+<ol>
+  <li>Download the patched DLL <a href="/redbox.rental.services.patched.dll">here</a>&nbsp;</li>
+  <li>Place this file in “C:\Program Files\Redbox\REDS\Kiosk Engine\bin”</li>
+  <li>Make a copy of your original DLL (ie, add “.backup” to the end of the filename)</li>
+  <li>Remove the “.patched” from the file name. It should now read “Redbox.Rental.Services.dll”</li>
+  <li>Open the registry by hitting Win+R and typing “regedit”. Then click run.</li>
+  <li>Navigate to the right directory using the left pane “HKEY_LOCAL_MACHINE\SOFTWARE\Redbox\REDS\KioskEngine\Store” making sure to click the store directory</li>
+  <li>In the right pane, locate a variable called “StandAlone” (if one does not exist, create one by right clicking and making a new string variable) and setting the value to “true"</li>
+  <li>Reboot your machine</li>
+  <li>Using the previously mentioned instructions to access the <a href="/kioskengine/field-maintenance">Field Management login page </a>, type in any value for the username and password and click login</li>
+  <li>SUCCESS! You should now be logged into the Field Maintenance Menu</li>
 </ol>
