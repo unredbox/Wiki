@@ -1,14 +1,14 @@
 ---
-title: Kiosk Hardware
+title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T13:48:05.969Z
+date: 2024-10-21T13:48:20.610Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
 ---
 
-# Kiosks
+# Kiosk Models
 - Indoor
   - Model: DVD-IN
   - Part Number: Indoor_Kiosk
