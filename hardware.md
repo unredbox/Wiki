@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T19:45:31.540Z
+date: 2024-10-21T20:24:44.942Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -27,6 +27,10 @@ dateCreated: 2024-10-21T03:34:51.578Z
 # Computers
 
 ## Dell
+- Optiplex 390 (2010)
+  - Unknown CPU (Intel Core 2 Duo)
+  - Unknown RAM
+  - Unknown HDD
 - Optiplex 390 (2011)
   - Unknown CPU (2nd gen Intel)
   - Unknown RAM
