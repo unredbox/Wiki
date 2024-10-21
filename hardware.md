@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T14:04:13.036Z
+date: 2024-10-21T14:04:33.632Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -41,4 +41,4 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - 250GB HDD
   
 ## Premio
-unknown, pending info
+unknown, pending info. seems to be hardware in newer units
