@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T16:02:58.042Z
+date: 2024-10-21T16:04:49.865Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -55,3 +55,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
  - Kristel Displays (from outdoor unit)
     - Product # 259420
     - Model LCD15-042A
+## Carousel
+## Credit Card Reader
+## Boards
+## Lock
