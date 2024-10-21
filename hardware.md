@@ -2,15 +2,13 @@
 title: Kiosk Hardware
 description: 
 published: true
-date: 2024-10-21T10:38:35.416Z
+date: 2024-10-21T10:38:55.985Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
 ---
 
-# Hardware
-
-## Kiosks
+# Kiosks
 - Indoor
   - Model: DVD-IN
   - Part Number: Indoor_Kiosk
@@ -24,15 +22,15 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Part Number: `unknown`
   - Heating/Cooling unit prone to fire, remove before use
 
-## PCs
+# PCs
 
-### Lenovo
+## Lenovo
 - ThinkCentre M91p USFF
   - Intel Pentium G630
   - 2GB DDR3
   - 250GB HDD
 
-### Dell
+## Dell
 - Optiplex 390
   - Unknown CPU
   - Unknown RAM
