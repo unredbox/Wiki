@@ -2,10 +2,28 @@
 title: Cleanup Recommendations
 description: 
 published: true
-date: 2024-10-21T14:26:49.749Z
+date: 2024-10-21T14:50:08.193Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:25:51.187Z
 -->
 
-<p>As the new owner of an abandoned Redbox kiosk</p>
+<p>As the new owner of an abandoned Redbox kiosk, you've got a motorized, multi hundred pound, steel box waiting to become a security risk in front of you. There are multiple things worth tweaking in your unit before you leave it to sit powered on for an extended period of time.</p>
+<h1>Remove the Cellular Modem</h1>
+<p>Every kiosk contains a cellular modem. This modem likely still has a data plan, meaning that any units with power are still connected to the internet. Removing this before powering the unit on has no consequences and should be done to ensure you don't expose the kiosk directly to the internet, especially if you're doing this in the future when these Windows 7 Embedded installs are extremely outdated.</p>
+<h1>Disable or Uninstall Kaseya</h1>
+<p>Kaseya was software Redbox used to help manage their kiosks remotely. This software only can be connected to via <code>accessredbox.net</code> servers. This domain is still registered at this time, though the eventual owner of this domain in the future could repurpose it into a malicious Command and Control server for any remaining kiosks connected to the internet. You should disable the Kaseya services in Service Management or otherwise uninstall it.</p>
+<h1>Disable or Uninstall RealVNC</h1>
+<p>RealVNC is installed on many Redbox kiosks, specifically RealVNC 4. This is a very old version of RealVNC and should be uninstalled or removed. You can disable it in Service Management or uninstall it fully.</p>
+<h1>Remove old .log files</h1>
+<p>It's recommended for all owners to purge old .log files as they could contain some limited personal information of individuals who previously rented from a kiosk. If your kiosk has been down for several months when you power it on, the KioskEngine will automatically purge the old logs for you.</p>
+<ul>
+  <li><code>C:\Program Files\Redbox\KioskLogs\ErrorLogs</code></li>
+  <li><code>C:\Program Files\Redbox\KioskShell\logs</code></li>
+  <li><code>C:\Program Files\Redbox\REDS\DeviceService\logs</code></li>
+  <li><code>C:\Program Files\Redbox\REDS\Kiosk Engine\logs</code></li>
+  <li><code>C:\Program Files\Redbox\REDS\Update Manager\logs</code></li>
+  <li><code>C:\ProgramData\Redbox\KioskClient\Logs</code></li>
+  <li><code>C:\ProgramData\Redbox\UpdateClient\Logs</code></li>
+</ul>
+<p>&nbsp;</p>
