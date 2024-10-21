@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T17:19:23.503Z
+date: 2024-10-21T17:45:02.516Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -57,9 +57,18 @@ dateCreated: 2024-10-21T03:34:51.578Z
  - Kristel Displays (from outdoor kiosk)
     - Product # 259420
     - Model LCD15-042A
+    - LCD Panel Model: UNKNOWN
+    - Max Resolution: UNKNOWN
  - Kristel Displays (from Walmart kiosk) 15" Outdoor TS
     - Product # RDBX00923
     - Model LCD15-027C
+    - LCD Panel Model: UNKNOWN
+    - Max Resolution: UNKNOWN
+ - Kristel Displays (from indoor kiosk)
+    - Product # RDBX01570
+    - Model LCD15-026D
+    - LCD Panel Model: UNKNOWN
+    - Max Resolution: 1024x768 @ 75Hz
 ## Carousel
  - Vekta PK Series Steppers
  - Arcus Proteu USB Stepper Controller
