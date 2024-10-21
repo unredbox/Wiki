@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T16:07:42.096Z
+date: 2024-10-21T16:19:43.874Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -21,7 +21,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk
   - Heating/Cooling unit prone to fire, remove before use
-  	- IceQube IQ2200VS and controller
+  	- IceQube IQ2200VS and control panel
 
 # Computers
 
@@ -46,6 +46,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
    - PN: RDBX01186-01 Rev B
    - MoBo: MSI H61M-P32/W8
    - 500GB HDD WD5000BPKX
+   - 4GB RAM
    - Intel i3 3220 @ 3.30GHz
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
@@ -58,4 +59,6 @@ dateCreated: 2024-10-21T03:34:51.578Z
 ## Carousel
 ## Credit Card Reader
 ## Boards
+- PCB #DVD-26-000-04
+   - SER. Mater 7/25/06
 ## Lock
