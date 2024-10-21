@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T14:04:33.632Z
+date: 2024-10-21T16:02:58.042Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -18,9 +18,10 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Part Number: `unknown`
   - Made for Walmart per agreement with Redbox.
 - Outdoor
-  - Model: `unknown`
-  - Part Number: `unknown`
+  - Model: DVD-OT
+  - Part Number: Outdoor_Kiosk
   - Heating/Cooling unit prone to fire, remove before use
+  	- IceQube IQ2200VS and controller
 
 # Computers
 
@@ -41,4 +42,16 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - 250GB HDD
   
 ## Premio
-unknown, pending info. seems to be hardware in newer units
+- M2H6V1
+   - PN: RDBX01186-01 Rev B
+   - MoBo: MSI H61M-P32/W8
+   - 500GB HDD WD5000BPKX
+   - Intel i3 3220 @ 3.30GHz
+   - Windows 7 Embedded SP1
+   - BIOS Version: E7788IZ1 V10.25B8
+   
+ # Components
+ ## Touch Screen
+ - Kristel Displays (from outdoor unit)
+    - Product # 259420
+    - Model LCD15-042A
