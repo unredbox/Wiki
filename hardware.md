@@ -1,8 +1,8 @@
 ---
-title: Hardware Overview
+title: Hardware
 description: 
 published: true
-date: 2024-10-21T11:32:54.216Z
+date: 2024-10-21T13:47:15.515Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
