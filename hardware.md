@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T17:14:55.166Z
+date: 2024-10-21T17:19:23.503Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -64,6 +64,8 @@ dateCreated: 2024-10-21T03:34:51.578Z
  - Vekta PK Series Steppers
  - Arcus Proteu USB Stepper Controller
 ## Credit Card Reader
+ - Ingenico iUC285
+ ![ingenico_iuc285.png](/ingenico_iuc285.png)
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
 ## Boards
