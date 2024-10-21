@@ -2,7 +2,7 @@
 title: Before You Contribute
 description: 
 published: true
-date: 2024-10-21T11:59:26.710Z
+date: 2024-10-21T16:47:13.034Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T11:50:29.402Z
@@ -13,6 +13,9 @@ All contributions are licensed under the [Creative Commons Attribution Share Ali
 
 # Site Navigation
 The navigation panel on the side of the website is controlled by redbox.wiki admins. If you'd like a page to appear in the navigation, please contact codeHusky/Loki on Discord.
+
+# Files
+Do not upload any files you do not have the rights to. This includes patched DLLs from Redbox dumps or your own box. All files uploaded to the wiki must be licensable by you.
 
 # New Pages
 Before adding a new page, ensure that an existing page doesn't already cover the topic you're looking to work on. If there's overlap, see if it's more appropriate to add to an existing page rather than creating a new one. We should aim for the least number of pages we can while avoiding massive, lengthy pages of documentation.
