@@ -2,7 +2,7 @@
 title: Kiosk Hardware
 description: 
 published: true
-date: 2024-10-21T03:44:07.169Z
+date: 2024-10-21T10:38:35.416Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -11,14 +11,33 @@ dateCreated: 2024-10-21T03:34:51.578Z
 # Hardware
 
 ## Kiosks
-- Indoors
-- Indoors (Walmart)
-	- Some Walmart kiosks are colored blue due to previous agreements with Redbox.
+- Indoor
+  - Model: DVD-IN
+  - Part Number: Indoor_Kiosk
+  - Has variants with outdoor screen for use in bright entryways
+- Indoor (Blue Variant)
+  - Model: `unknown`
+  - Part Number: `unknown`
+  - Made for Walmart per agreement with Redbox.
+- Outdoor
+  - Model: `unknown`
+  - Part Number: `unknown`
+  - Heating/Cooling unit prone to fire, remove before use
 
 ## PCs
 
-**Storage**: All PCs from my (nepeat@) observation seem to use 500GB HDDs.
+### Lenovo
+- ThinkCentre M91p USFF
+  - Intel Pentium G630
+  - 2GB DDR3
+  - 250GB HDD
 
 ### Dell
 - Optiplex 390
+  - Unknown CPU
+  - Unknown RAM
+  - 500GB HDD
 - Optiplex XE2
+  - Unknown CPU
+  - Unknown RAM
+  - 500GB HDD
