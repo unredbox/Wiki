@@ -1,6 +1,6 @@
 # UnRedbox Wiki
 
-Welcome to the **UnRedbox Wiki** repository. This project is focused on hosting and documenting information extracted from a **Redbox Kiosk** computer, based on a Windows 7 PC file structure. Our goal is to explore and understand the software and configuration of the kiosk system, while also preserving and sharing our findings.
+Welcome to the **UnRedbox Wiki** repository. This project is focused on hosting and documenting information extracted from a **Redbox Kiosks**. Our goal is to explore and understand the software and configuration of the kiosk system, while also preserving and sharing our findings.
 
 ## Project Overview
 
