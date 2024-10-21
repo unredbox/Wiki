@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T18:08:44.441Z
+date: 2024-10-21T18:14:26.813Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -14,8 +14,8 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Part Number: Indoor_Kiosk
   - Has variants with outdoor screen for use in bright entryways
 ## Indoor (Blue Variant)
-  - Model: `unknown`
-  - Part Number: `unknown`
+  - Model: DVD-IN
+  - Part Number: Indoor_KioskWB
   - Made for Walmart per agreement with Redbox.
 ## Outdoor
   - Model: DVD-OT
