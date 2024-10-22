@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-22T16:45:44.913Z
+date: 2024-10-22T16:49:26.131Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -24,9 +24,11 @@ dateCreated: 2024-10-21T03:34:51.578Z
 ## Outdoor
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk
-  - Heating/Cooling unit prone to fire, remove before use
+  - Heating/Cooling unit
   	- IceQube IQ2200VS and control panel
+      - Known to cause fires, should be removed before use
     - Stego CR027 Heater
+      - Plenty reliable according to employees
 
 # Computers
 
