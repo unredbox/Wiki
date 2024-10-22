@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-22T05:14:52.934Z
+date: 2024-10-22T05:18:44.333Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -85,6 +85,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
  ![ingenico_iuc285.png](/ingenico_iuc285.png)
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
+- Creadlepoint IBR200
 ## Boards
 - PCB #DVD-26-000-04
    - SER. Master 7/25/06
