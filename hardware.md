@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-22T05:20:13.931Z
+date: 2024-10-22T16:45:27.439Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -17,6 +17,10 @@ dateCreated: 2024-10-21T03:34:51.578Z
   - Model: DVD-IN
   - Part Number: Indoor_KioskWB
   - Made for Walmart per agreement with Redbox.
+## Indoor (17" Screen)
+  - Model: DVD-IN
+  - Part Number: Indoor_Kiosk17
+  - Manufactured in 2011+ (unconfirmed) with a 17" screen
 ## Outdoor
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk
