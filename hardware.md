@@ -2,11 +2,13 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-22T16:49:26.131Z
+date: 2024-10-22T18:45:31.907Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
 ---
+
+This page is extremely WIP. If you have a kiosk or know of additional hardware variants, please contribute.
 
 # Kiosk Models
 ## Indoor
