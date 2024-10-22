@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-22T05:18:44.333Z
+date: 2024-10-22T05:20:13.931Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -86,6 +86,9 @@ dateCreated: 2024-10-21T03:34:51.578Z
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
 - Creadlepoint IBR200
+## Power Distribution Unit
+- APC Line-R 1200VA Automatic Voltage Regulator
+
 ## Boards
 - PCB #DVD-26-000-04
    - SER. Master 7/25/06
