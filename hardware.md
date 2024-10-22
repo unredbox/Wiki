@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-22T16:45:27.439Z
+date: 2024-10-22T16:45:44.913Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -66,7 +66,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
    
  # Components
  ## Touch Screen
- - Kristel Displays (from outdoor kiosk)
+ - Kristel Displays (from outdoor kiosk) 15"
     - Product # 259420
     - Model LCD15-042A
     - LCD Panel Model: UNKNOWN
@@ -76,7 +76,7 @@ dateCreated: 2024-10-21T03:34:51.578Z
     - Model LCD15-027C
     - LCD Panel Model: UNKNOWN
     - Max Resolution: UNKNOWN
- - Kristel Displays (from indoor kiosk)
+ - Kristel Displays (from indoor kiosk) 15"
     - Product # RDBX01570
     - Model LCD15-026D
     - LCD Panel Model: UNKNOWN
