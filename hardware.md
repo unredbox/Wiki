@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-21T20:25:06.098Z
+date: 2024-10-22T05:14:52.934Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -43,6 +43,10 @@ dateCreated: 2024-10-21T03:34:51.578Z
 ## Lenovo
 - ThinkCentre M91p USFF (2011)
   - Intel Pentium G630
+  - 2GB DDR3
+  - 250GB HDD
+- ThinkCentre M58p USFF (2010)
+  - Intel Pentium E5400
   - 2GB DDR3
   - 250GB HDD
   
