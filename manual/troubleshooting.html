@@ -2,10 +2,73 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2024-10-21T14:16:14.709Z
+date: 2024-10-23T21:16:01.326Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
 -->
 
-<p>todo</p>
+<h1>Kiosk Error Screens</h1>
+<p>The basic error screens on a Redbox have different color backgrounds, indicating the problem at a basic level. Credits to @Mordanthanus in the Discord for posting this info.</p>
+<ul>
+  <li><u>Black with white text</u> – Kiosk is booting or updating. Black screens automatically clear themselves when completed, usually 5-15 minutes. Watchdog must be turned on in RBD. ·&nbsp;</li>
+  <li><u>Orange with white text</u> – Kiosk is conducting a partial or full maintenance sync and will reboot to customer screen when complete. ·&nbsp;</li>
+  <li><u>Green with white text</u> – The kiosk engine reports a database access error and places kiosk into maintenance mode. SOFTFILE<i>0x errors. ·&nbsp;</i></li>
+  <li><i><u>Red with white text</u></i> – Machine error alert. Generally requires human intervention but may fix itself during an overnight reboot.</li>
+</ul>
+<h1>Kiosk Error Codes</h1>
+<p>These error codes show on screen in maintenance mode.&nbsp;</p>
+<p><code><strong>= 0073CDRR =</strong></code></p>
+<p>- MS will always dispatch these due to an EMV error.</p>
+<p><code><strong>= 0099CDRR =</strong></code></p>
+<p>- Indication that the EMV has failed or been tampered with. Plan on bringing on with you. Alert Irruptions are not field repairable.</p>
+<p><code><strong>= 0072CDRR =</strong></code></p>
+<p>- EMV disconnected. If a remote reboot doesn’t fix it, a visit is needed.</p>
+<p><code><strong>= 0096KRNL =</strong></code></p>
+<p>- Kiosk Engine has put up the maintenance view directly</p>
+<p><code><strong>= 005PMXA =</strong></code></p>
+<p>- Put away max attempts exceeded</p>
+<p><code><strong>= 0128VNDR =</strong></code></p>
+<p>- Vend door error</p>
+<p><code><strong>= INITSYNC =</strong></code></p>
+<p>- Initial Sync is currently running</p>
+<p><code><strong>= 001ISTG =</strong></code></p>
+<p>- ItemStuckInGripper returned by HAL during vend or return</p>
+<p><code><strong>= 002OBDT =</strong></code></p>
+<p>- ObstructionDetected returned by HAL during vend or return</p>
+<p><code><strong>= 003CCFA =</strong></code></p>
+<p>- CameraCaptureFailure returned by HAL during vend or return</p>
+<p><code><strong>= 004MACH =</strong></code></p>
+<p>- MachineError returned by HAL during vend</p>
+<p><code><strong>= 006MVFA =</strong></code></p>
+<p>- MoveFailure returned by HAL during vend</p>
+<p><code><strong>= 0032RSVB =</strong></code></p>
+<p>- Reservation pickup could not find the reserved barcodes in stock</p>
+<p><code><strong>= RPCSSM =</strong></code></p>
+<p>- Session closed to show maintenance during a return</p>
+<p><code><strong>= 0048PPBE =</strong></code></p>
+<p>- Preposition Picker Basket Empty during checkout</p>
+<p><code><strong>= 0064SCBE =</strong></code></p>
+<p>- Shopping Cart Basket Empty during vend</p>
+<p><code><strong>= HALSVCNR =</strong></code></p>
+<p>- HAL Services are not running.</p>
+<p><code><strong>= HALSTS-043 =</strong></code></p>
+<p>- One of the following conditions are read:&nbsp;</p>
+<p>1) Vend Door Open&nbsp;</p>
+<p>2) Gripper Obstructed (Fingers not retracted, Track not Closed, Sensors 1 or 6 on)&nbsp;</p>
+<p>3) Motion Controller Communication error (unable to communicate to Arcus/Proteus)&nbsp;</p>
+<p>4) Door sensors aren’t properly closed, or someone opened the kiosk while picker or drum were moving.</p>
+<p><code><strong>= SOFTFILE_01 =</strong></code></p>
+<p>- The kiosk engine reports a database access error and places kiosk into maintenance mode.* Try restarting the kiosk engine, if error persists, send to Level 2 for possible software support escalation.</p>
+<p><code><strong>= SOFTFILE_02 =</strong></code></p>
+<p>- The kiosk engine reports a database access error and places kiosk into maintenance mode.* SOFTFILE_02 errors should be sent directly to Software support by Level 1</p>
+<p><code><strong>= SOFTFILE_03 =</strong></code></p>
+<p>- The kiosk engine reports a database access error and places kiosk into maintenance mode. Send to level 2 for possible software support escalation.</p>
+<p><code><strong>= 0073CDRR =</strong></code></p>
+<p>- MS will always dispatch these due to an EMV error.</p>
+<p><code><strong>= 0099CDRR =</strong></code></p>
+<p>- Indication that the EMV has failed or been tampered with. Plan on bringing on with you. Alert Irruptions are not field repairable.</p>
+<p><code><strong>= CCF&nbsp;</strong></code></p>
+<p>- Camera Capture Failure.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
