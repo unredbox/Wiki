@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-22T18:45:31.907Z
+date: 2024-10-23T16:31:00.598Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -102,6 +102,12 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
    - SER. Master 7/25/06
 
 ![PCB #DVD-26-000-04 Board](/pcb_dvd-26-000-04_snachodog.jpg "PCB #DVD-26-000-04 Board")
-   
+- Dan Leiwe disc dispenser controller
+
+![dan_leiwe_board_motor_position.jpg](/hardware/dan_leiwe_board_motor_position.jpg)
+
+-  AUX I/O Controller
+   - PCB #DVD-25-000-04 7/25/06
+![aux-io-controller-board.jpg](/hardware/aux-io-controller-board.jpg)
 ## Lock
 ![Locked Lock from within a kiosk](/locked_lock.jpg "Locked lock from within a kiosk")
