@@ -2,7 +2,7 @@
 title: Terminology Glossary
 description: 
 published: true
-date: 2024-10-21T11:08:59.217Z
+date: 2024-10-23T10:13:21.189Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T10:57:55.491Z
@@ -16,3 +16,9 @@ Hardware Abstraction Layer. In essence, a system used to interact with all of th
 
 # KFC
 Kiosk Function Check
+
+# QLM
+Unsure what this acronym means, but it appears to refer to the original method of loading/unloading Redbox kiosks back when the company was young. A door near the floor of the unit was used to load/unload discs from the unit.
+
+# Thins
+Discs that are scheduled to be removed from the kiosk. Think of it in terms of "thinning the herd"
