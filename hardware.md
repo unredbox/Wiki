@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-23T16:31:25.944Z
+date: 2024-10-27T00:58:36.800Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -94,6 +94,8 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
 - Creadlepoint IBR200
+
+To access the admin interface connect to the modem, head to 192.168.0.1 and when prompted for your password use the default password on the back of the modem. You may need to do a factory reset by pushing in the recessed reset button on the ethernet-port-side of the modem to deprovision the modem and make it accessible with the default credentials.
 ## Power Distribution Unit
 - APC Line-R 1200VA Automatic Voltage Regulator
 
