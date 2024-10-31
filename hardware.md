@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-27T22:55:36.664Z
+date: 2024-10-31T15:32:35.894Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -67,6 +67,13 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
    - Intel i3 3220 @ 3.30GHz
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
+- M2H11OV1
+   - PN: 259474-03 Rev C
+   - MoBo: MSI
+   - 500GB WD500LPLX
+   - unknown RAM
+   - unknown processor
+   - unknown BIOS
    
  # Components
  ## Touch Screen
