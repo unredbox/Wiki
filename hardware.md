@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-31T15:45:57.291Z
+date: 2024-10-31T16:16:39.808Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -57,8 +57,9 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
   - Intel Pentium E5400
   - 2GB DDR3
   - 250GB HDD
-  
+
 ## Premio
+
 - M2H6V1
    - PN: RDBX01186-01 Rev B
    - MoBo: MSI H61M-P32/W8
@@ -67,6 +68,7 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
    - Intel i3 3220 @ 3.30GHz
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
+   - Power button located above on the I/O panel, it's a black discreet button.
 - M2H11OV1
    - PN: 259474-03 Rev C
    - MoBo: MSI H110M-PRO-VHL
