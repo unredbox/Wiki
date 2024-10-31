@@ -2,13 +2,13 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2024-10-23T21:23:12.434Z
+date: 2024-10-31T16:24:32.684Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
 -->
 
-<h1>Kiosk Error Screens</h1>
+<h2>Kiosk Error Screens</h2>
 <p>The basic error screens on a Redbox have different color backgrounds, indicating the problem at a basic level. Credits to @mordanthanus in the Discord for posting this info.</p>
 <ul>
   <li><u>Black with white text</u> – Kiosk is booting or updating. Black screens automatically clear themselves when completed, usually 5-15 minutes. Watchdog must be turned on in RBD. ·</li>
@@ -21,7 +21,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <figure class="image image_resized" style="width:28.21%;"><img src="/orange-error.jpg"></figure>
 <figure class="image image_resized" style="width:22.69%;"><img src="/green-error.jpg"></figure>
 <figure class="image image_resized" style="width:32.4%;"><img src="/black-error.jpg"></figure>
-<h1>Kiosk Error Codes</h1>
+<h2>Kiosk Error Codes</h2>
 <p>These error codes show on screen in maintenance mode. Credits to @mordanthanus in the Discord for posting this info.</p>
 <p><code><strong>= 0073CDRR =</strong></code></p>
 <p>- MS will always dispatch these due to an EMV error.</p>
@@ -75,5 +75,9 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>- Indication that the EMV has failed or been tampered with. Plan on bringing on with you. Alert Irruptions are not field repairable.</p>
 <p><code><strong>= CCF&nbsp;</strong></code></p>
 <p>- Camera Capture Failure.</p>
-<p>&nbsp;</p>
+<h2>Powering On a Redbox Kiosk Computer After a BIOS Reset</h2>
+<p>Redbox kiosk computers are configured to automatically power on when connected to a power source (autoboot). However, if the BIOS is reset—whether from a manual reset or due to a CMOS battery failure—this autoboot setting will revert to its default state and become disabled. After this, the computer will require a manual power-on each time until the autoboot setting is re-enabled in the BIOS.</p>
+<h4>Locating the Power Button on Premio Computers</h4>
+<p>On Premio computers, the power button is discreet and may not be immediately visible. It is located on the back of the unit, near the I/O panel. Look for a small button close to the I/O LEDs (typically used to indicate network or drive activity). Pressing this button will power on the computer, allowing access to the BIOS to re-enable the autoboot setting if needed.</p>
+<p>Note: Once the autoboot on power setting is re-enabled in the BIOS, the computer should resume automatic boot-up on power connection, as originally configured.</p>
 <p>&nbsp;</p>
