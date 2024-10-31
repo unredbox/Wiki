@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-31T15:32:35.894Z
+date: 2024-10-31T15:45:57.291Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -69,11 +69,12 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
    - BIOS Version: E7788IZ1 V10.25B8
 - M2H11OV1
    - PN: 259474-03 Rev C
-   - MoBo: MSI
+   - MoBo: MSI H110M-PRO-VHL
    - 500GB WD500LPLX
    - unknown RAM
    - unknown processor
    - unknown BIOS
+   - has HDMI & USB 3 ports
    
  # Components
  ## Touch Screen
