@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-08T15:32:24.177Z
+date: 2024-11-08T17:39:20.829Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -75,16 +75,16 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
    - Intel i3 3220 @ 3.30GHz
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
-   - Power button located above on the I/O panel, it's a black discreet button.
 - M2H11OV1
    - PN: 259474-03 Rev C
    - MoBo: MSI H110M-PRO-VHL
    - 500GB WD500LPLX
-   - unknown RAM
-   - unknown processor
+   - 4GB RAM
+   - Intel i3 6100 @ 3.70GHz
    - unknown BIOS
-   - has HDMI & USB 3 ports
+   - 1x HDMI & 2x USB 3 ports
    
+Both units have a power button located above on the I/O panel, it's a black discreet button.
  # Components
  ## Touch Screen
  - Kristel Displays (from outdoor kiosk) 15"
