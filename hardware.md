@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-08T18:03:55.826Z
+date: 2024-11-08T20:56:20.038Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -102,12 +102,20 @@ Both units have a power button located above on the I/O panel, it's a black disc
     - Model LCD15-026D
     - LCD Panel Model: UNKNOWN
     - Max Resolution: 1024x768 @ 75Hz
+   
 ## Carousel
- - Vekta PK Series Steppers
- - Arcus Proteu USB Stepper Controller
+ - Vexta PK Series Steppers (5-Phase Driver)
+    - Product # RKD514H-A-A11 / RKD514H-A-A6
+    - Model RKD514L-A / RKD514H-A
+    - Sticker # 091200M8ZX / 091200M8ZW
+    ![vexta-5-phase-driver.jpg](/hardware/vexta-5-phase-driver.jpg)
+   
+ - Arcus Proteus USB Stepper Controller
+
 ## Credit Card Reader
  - Ingenico iUC285
  ![ingenico_iuc285.png](/ingenico_iuc285.png)
+
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
 ![img_1393.jpg](/img_1393.jpg)
