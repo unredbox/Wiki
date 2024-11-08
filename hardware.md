@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-08T17:39:20.829Z
+date: 2024-11-08T17:48:33.599Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -115,6 +115,7 @@ Both units have a power button located above on the I/O panel, it's a black disc
 To access the admin interface connect to the modem, head to 192.168.0.1 and when prompted for your password use the default password on the back of the modem. You may need to do a factory reset by pushing in the recessed reset button on the ethernet-port-side of the modem to deprovision the modem and make it accessible with the default credentials.
 
 If you're having issues getting into the unit after a factory reset, try removing the SIM during the reset process. You can put the SIM back in once it's unprovisioned.
+
 ## Power Distribution Unit
 - APC Line-R 1200VA Automatic Voltage Regulator
 
@@ -127,8 +128,15 @@ If you're having issues getting into the unit after a factory reset, try removin
 
 ![dan_leiwe_board_motor_position.jpg](/hardware/dan_leiwe_board_motor_position.jpg)
 
--  AUX I/O Controller
+- AUX I/O Controller
    - PCB #DVD-25-000-04 7/25/06
 ![aux-io-controller-board.jpg](/hardware/aux-io-controller-board.jpg)
+
+- Arcus Proteus XES (Carousel/Gripper Z-Axis)
+  - Serial #202-SOL-112211-0987
+  - PCB "PROTEUS USB2EX Rev. D6"
+
+![proteus2ex-board-rev-d6-bare.jpg](/hardware/proteus2ex-board-rev-d6-bare.jpg)
+
 ## Lock
 ![Locked Lock from within a kiosk](/locked_lock.jpg "Locked lock from within a kiosk")
