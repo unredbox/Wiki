@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-08T14:52:55.332Z
+date: 2024-11-08T15:32:24.177Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -31,6 +31,13 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
       - Known to cause fires, should be removed before use
     - Stego CR027 Heater
       - Plenty reliable according to employees
+## Outdoor (17" Screen)
+  - Model: DVD-OT
+  - Part Number: Outdoor_Kiosk17
+  - Heating/Cooling unit
+  	- IceQube IQ2200VS and control panel
+      - Known to cause fires, should be removed before use
+    - Stego CR027 Heater
 
 # Computers
 
