@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-08T20:56:20.038Z
+date: 2024-11-08T21:09:17.949Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -38,6 +38,9 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
   	- IceQube IQ2200VS and control panel
       - Known to cause fires, should be removed before use
     - Stego CR027 Heater
+    
+# Paint
+The paint officially used by Redboz to refurbish kiosks is "B66R11038 DTM Acrylic Gloss Color Safety Red" which can generally be found most places that stock paint. It's recommended to remove any rust via sanding and paint over it with "B66A50 DTM Bonding Primer" before using the red paint.
 
 # Computers
 
