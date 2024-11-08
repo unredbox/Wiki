@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-10-31T16:16:39.808Z
+date: 2024-11-08T14:52:55.332Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -83,7 +83,7 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
  - Kristel Displays (from outdoor kiosk) 15"
     - Product # 259420
     - Model LCD15-042A
-    - LCD Panel Model: UNKNOWN
+    - LCD Panel Model: Sharp LQ150X1LG91
     - Max Resolution: UNKNOWN
  - Kristel Displays (from Walmart kiosk) 15" Outdoor TS
     - Product # RDBX00923
