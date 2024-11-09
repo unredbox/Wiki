@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-08T21:09:17.949Z
+date: 2024-11-09T05:00:30.730Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -40,7 +40,7 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
     - Stego CR027 Heater
     
 # Paint
-The paint officially used by Redboz to refurbish kiosks is "B66R11038 DTM Acrylic Gloss Color Safety Red" which can generally be found most places that stock paint. It's recommended to remove any rust via sanding and paint over it with "B66A50 DTM Bonding Primer" before using the red paint.
+The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acrylic Gloss Color Safety Red" which can generally be found most places that stock paint. It's recommended to remove any rust via sanding and paint over it with "B66A50 DTM Bonding Primer" before using the red paint.
 
 # Computers
 
@@ -107,11 +107,14 @@ Both units have a power button located above on the I/O panel, it's a black disc
     - Max Resolution: 1024x768 @ 75Hz
    
 ## Carousel
- - Vexta PK Series Steppers (5-Phase Driver)
+ - Vexta 5-Phase Driver
     - Product # RKD514H-A-A11 / RKD514H-A-A6
     - Model RKD514L-A / RKD514H-A
     - Sticker # 091200M8ZX / 091200M8ZW
     ![vexta-5-phase-driver.jpg](/hardware/vexta-5-phase-driver.jpg)
+   
+ - Vexta PK Series Steppers
+ 		![vexta-PK564AW-A94-label.jpg](/hardware/vexta-PK564AW-A94-label.jpg)
    
  - Arcus Proteus USB Stepper Controller
 
