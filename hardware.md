@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-09T05:00:30.730Z
+date: 2024-11-09T05:01:15.175Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -115,6 +115,7 @@ Both units have a power button located above on the I/O panel, it's a black disc
    
  - Vexta PK Series Steppers
  		![vexta-PK564AW-A94-label.jpg](/hardware/vexta-PK564AW-A94-label.jpg)
+    ![vexta-pl596aw1-ai7-stepping-motor-horizontal.jpg](/hardware/vexta-pl596aw1-ai7-stepping-motor-horizontal.jpg)
    
  - Arcus Proteus USB Stepper Controller
 
