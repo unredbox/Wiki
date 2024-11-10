@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2024-11-10T18:39:00.316Z
+date: 2024-11-10T18:39:19.791Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -11,11 +11,10 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <h2>Kiosk Error Screens</h2>
 <p>The basic error screens on a Redbox have different color backgrounds, indicating the problem at a basic level. Credits to @mordanthanus in the Discord for posting this info.</p>
 <ul>
-  <li><u>Black with white text</u> – Kiosk is booting or updating. Black screens automatically clear themselves when completed, usually 5-15 minutes. Watchdog must be turned on for this screen to disappear. Watchdog can be turned on or off through the Redbox Desktop.&nbsp;</li>
+  <li><u>Black with white text</u> – Kiosk is booting or updating. Black screens automatically clear themselves when completed, usually 5-15 minutes. Watchdog must be turned on for this screen to disappear. Watchdog can be turned on or off through the Redbox Desktop.</li>
   <li><u>Red with white text</u> – Machine error alert. Check error codes further down on the page. Generally requires human intervention but may fix itself during an overnight reboot.</li>
   <li><u>Orange with white text</u> – Kiosk is conducting a partial or full maintenance sync and will reboot to customer screen when complete.</li>
   <li><u>Green with white text</u> – The kiosk engine reports a database access error and places kiosk into maintenance mode. SOFTFILE<i>0x errors.&nbsp;</i></li>
-  
 </ul>
 <p>Below are pictures of the error screens. Credits to @.jandajanda for these pics also posted in the Discord</p>
 <figure class="image image_resized" style="width:32.4%;"><img src="/black-error.jpg"></figure>
@@ -63,7 +62,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>1) The Door is open and the two door sensors (switches) are not pressed in. &nbsp;</p>
 <p>2) Gripper Obstructed (Fingers not retracted, Track not Closed, Sensors 1 or 6 on)&nbsp;</p>
 <p>3) Motion Controller Communication error (unable to communicate to Arcus/Proteus)&nbsp;</p>
-<p></p>
+<p>4) Door sensors aren’t properly closed, or someone opened the kiosk while picker or drum were moving.</p>
 <p><code><strong>= SOFTFILE_01 =</strong></code></p>
 <p>- The kiosk engine reports a database access error and places kiosk into maintenance mode.* Try restarting the kiosk engine, if error persists, send to Level 2 for possible software support escalation.</p>
 <p><code><strong>= SOFTFILE_02 =</strong></code></p>
