@@ -2,21 +2,20 @@
 title: Field Maintenance
 description: 
 published: true
-date: 2024-11-10T07:49:10.638Z
+date: 2024-11-10T07:50:59.731Z
 tags: 
 editor: code
 dateCreated: 2024-10-21T11:12:53.076Z
 -->
 
 <p>The Field Maintenance Application contains various tools to assist field techs in servicing kiosks.&nbsp;</p>
-<p>The field maintenance application provides a safety tip unique to each week of the year. Every safety tip is hard coded into the Kiosk Engine and will display the same thing on every kiosk.</p>
 <figure class="image image_resized" style="width:44.97%;"><img src="/kioskengine/fmscreen.png">
   <figcaption>An example of the Field Maintenance Application</figcaption>
 </figure>
 <h1>Modifying Kiosk to Allow Field Maintenance</h1>
 <p>The field maintenance screen sits behind a authentication screen that, unlike the Redbox Desktop, verifies credentials with redbox servers (which are no longer online). To get around this, @viper33802/@loki patched the DLL that has todo with the authentication. The steps are as follows:</p>
 <ol>
-  <li>Download the patched DLL from the discord (use the search feature to find the PATCHED dll)</li>
+  <li>Download the patched DLL or .bundle from the discord (patched fm.bundle with instructions linked here https://discord.com/channels/1292310422749319209/1294293050553667594/1301168009989062756)</li>
   <li>Place this file in “C:\Program Files\Redbox\REDS\Kiosk Engine\bin”</li>
   <li>Make a copy of your original DLL (ie, add “.backup” to the end of the filename)</li>
   <li>Remove the “.patched” from the file name. It should now read “Redbox.Rental.Services.dll”</li>
@@ -31,6 +30,7 @@ dateCreated: 2024-10-21T11:12:53.076Z
 <figure class="image image_resized image-style-align-right" style="width:38.04%;"><img src="/kioskengine/fmscreen-tip.png">
   <figcaption>An example of a Safety Tip being displayed</figcaption>
 </figure>
+<p>The field maintenance application provides a safety tip unique to each week of the year. Every safety tip is hard coded into the Kiosk Engine and will display the same thing on every kiosk.</p>
 <p>These are shown when the FMA is opened, based on the current week number. These have been copied verbatim from the Redbox kiosk software. Some contain typos which remain here as-is for accuracy and historical purposes.</p>
 <ol>
   <li>Stay dry in cold weather. It prevents hypothermia.</li>
