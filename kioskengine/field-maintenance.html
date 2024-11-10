@@ -2,7 +2,7 @@
 title: Field Maintenance
 description: 
 published: true
-date: 2024-11-10T18:32:29.756Z
+date: 2024-11-10T18:33:26.830Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T11:12:53.076Z
@@ -13,9 +13,9 @@ dateCreated: 2024-10-21T11:12:53.076Z
   <figcaption>An example of the Field Maintenance Application after a login</figcaption>
 </figure>
 <h1>Modifying Kiosk to Allow Field Maintenance</h1>
-<p>The field maintenance screen sits behind a authentication screen that, unlike the Redbox Desktop, verifies credentials with redbox servers (which are no longer online). To get around this, @viper33802/@loki patched the DLL that has todo with the authentication. The steps are as follows:</p>
+<p>The field maintenance screen sits behind a authentication screen that, unlike the Redbox Desktop, verifies credentials with redbox servers (which are no longer online). To get around this, there are patched DLLs that skip the authentication step. The steps are as follows:</p>
 <ol>
-  <li>(<a href="https://discord.com/channels/1292310422749319209/1294293050553667594/1297504758348648479">Download the patched DLL (Discord message link)</a>)</li>
+  <li>Download the patched DLL from the Redbox discord. There will be a revised version of this soon that doesn't require downloading a full DLL.</li>
   <li>Place this file in “C:\Program Files\Redbox\REDS\Kiosk Engine\bin”</li>
   <li>Make a copy of your original DLL (ie, add “.backup” to the end of the filename)</li>
   <li>Remove the “.patched” from the file name. It should now read “Redbox.Rental.Services.dll”</li>
