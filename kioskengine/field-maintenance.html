@@ -2,7 +2,7 @@
 title: Field Maintenance
 description: 
 published: true
-date: 2024-11-10T08:25:00.407Z
+date: 2024-11-10T08:25:37.781Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T11:12:53.076Z
@@ -15,8 +15,7 @@ dateCreated: 2024-10-21T11:12:53.076Z
 <h1>Modifying Kiosk to Allow Field Maintenance</h1>
 <p>The field maintenance screen sits behind a authentication screen that, unlike the Redbox Desktop, verifies credentials with redbox servers (which are no longer online). To get around this, @viper33802/@loki patched the DLL that has todo with the authentication. The steps are as follows:</p>
 <ol>
-  <li>(<a href="https://discord.com/channels/1292310422749319209/1294293050553667594/1297504758348648479">Download the patched DLL (Discord message link)</a>)
-  </li>
+  <li>(<a href="https://discord.com/channels/1292310422749319209/1294293050553667594/1297504758348648479">Download the patched DLL (Discord message link)</a>)</li>
   <li>Place this file in “C:\Program Files\Redbox\REDS\Kiosk Engine\bin”</li>
   <li>Make a copy of your original DLL (ie, add “.backup” to the end of the filename)</li>
   <li>Remove the “.patched” from the file name. It should now read “Redbox.Rental.Services.dll”</li>
@@ -27,6 +26,8 @@ dateCreated: 2024-10-21T11:12:53.076Z
   <li>Using the previously mentioned instructions to access the <a href="https://redbox.wiki/en/kioskengine">Field Management login page </a>, type in any value for the username and password and click login</li>
   <li>SUCCESS! You should now be logged into the Field Maintenance Menu</li>
 </ol>
+<p>&nbsp;</p>
+<p>There is an alternative patched fm.bundles linked <a href="https://discord.com/channels/1292310422749319209/1294293050553667594/1301168009989062756">https://discord.com/channels/1292310422749319209/1294293050553667594/1301168009989062756</a></p>
 <h1>Safety Tips</h1>
 <figure class="image image_resized image-style-align-right" style="width:38.04%;"><img src="/kioskengine/fmscreen-tip.png">
   <figcaption>An example of a Safety Tip being displayed</figcaption>
