@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-10T19:33:42.052Z
+date: 2024-11-14T03:48:20.244Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -102,7 +102,8 @@ Both units have a power button located above on the I/O panel, it's a black disc
     - Product # 259420
     - Model LCD15-042A
     - LCD Panel Model: Sharp LQ150X1LG91
-    - Max Resolution: UNKNOWN
+    - Max Resolution: 1024x768 @ 75Hz
+    - OSD/Display controls can be accessed from four buttons on the back of the display 
  - Kristel Displays (from Walmart kiosk) 15" Outdoor TS
     - Product # RDBX00923
     - Model LCD15-027C
