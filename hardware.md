@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-14T03:51:48.482Z
+date: 2024-11-19T15:33:11.768Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -134,8 +134,9 @@ Both units have a power button located above on the I/O panel, it's a black disc
 
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
-![img_1393.jpg](/img_1393.jpg)
-![img_1394.jpg](/img_1394.jpg)
+![cradlepoint_ibr650lpe_label_img_1393.jpg](/cradlepoint_ibr650lpe_label_img_1393.jpg)
+![cradlepoint_ibr650lpe_side_view_img_1394.jpg](/cradlepoint_ibr650lpe_side_view_img_1394.jpg)
+
 - Cradlepoint IBR200
 
 To access the admin interface connect to the modem, head to 192.168.0.1 and when prompted for your password use the default password on the back of the modem. You may need to do a factory reset by pushing in the recessed reset button on the ethernet-port-side of the modem to deprovision the modem and make it accessible with the default credentials.
