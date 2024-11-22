@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-22T17:03:51.108Z
+date: 2024-11-22T17:06:39.214Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -52,8 +52,8 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 - Optiplex 390 (2011)
   - MoBo: DELL PB0520
   - 250GB HDD Seagate Barracuda ST520DM000
-  - Unknown CPU (2nd gen Intel)
   - 1x 2GB Nanya DDR3-1333
+  - Unknown CPU (2nd gen Intel)
 - Optiplex XE2 (2013)
   - 500GB Seagate HDD
   - 4GB DDR3
