@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-22T17:06:39.214Z
+date: 2024-11-24T20:42:06.495Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -139,7 +139,7 @@ Both units have a power button located above on the I/O panel, it's a black disc
 
 ## Credit Card Reader
  - Ingenico iUC285
- ![ingenico_iuc285.png](/ingenico_iuc285.png)
+![ingenico_iuc285_hd.jpg](/ingenico_iuc285_hd.jpg)
 
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
