@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-26T18:47:50.058Z
+date: 2024-11-26T18:48:10.288Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -195,4 +195,4 @@ Some items have been weighed, while others are estimates:
 - Internal space heater is 1 lb, 15.2 oz (weighed by iiPython)
 - Shaft collars are 1 lb, 2.1 oz each (weighed by iiPython)
 - Monitor cooling is 3 lbs, 11 oz (weighed by iiPython)
-- Carousel top crossbeam is 5 lbs, 1.1 oz (weighted by iiPython)
+- Carousel top crossbeam is 5 lbs, 1.1 oz (weighed by iiPython)
