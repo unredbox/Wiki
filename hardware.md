@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-24T20:42:06.495Z
+date: 2024-11-26T03:58:36.222Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -125,6 +125,7 @@ Both units have a power button located above on the I/O panel, it's a black disc
     - Max Resolution: 1024x768 @ 75Hz
    
 ## Carousel
+The carousel is estimated to weight around 100lbs, and contains a solid steel central rod.
  - Vexta 5-Phase Driver
     - Product # RKD514H-A-A11 / RKD514H-A-A6
     - Model RKD514L-A / RKD514H-A
@@ -176,3 +177,13 @@ If you're having issues getting into the unit after a factory reset, try removin
 
 ## Lock
 ![Locked Lock from within a kiosk](/locked_lock.jpg "Locked lock from within a kiosk")
+
+
+## Weights
+Some items have been weighed, while others are estimates:
+- Bare kiosk shell and door is ~300 lbs (weighed by Kas)
+- Carousel, containing a central solid steel rod and plastic platters (decks), weighs ~100 lbs
+- Unloaded kiosk weighs ~600 lbs (weighed by Kas)
+- Loaded kiosk weighs ~800 lbs
+- AC unit weighs ~40 lbs
+- Picker Assembly weighs ~30 lbs
