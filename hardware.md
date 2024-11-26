@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-26T18:48:10.288Z
+date: 2024-11-26T18:50:48.052Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -181,9 +181,9 @@ If you're having issues getting into the unit after a factory reset, try removin
 
 ## Weights
 Some items have been weighed, while others are estimates:
-- Bare kiosk shell and door is ~300 lbs (weighed by Kas)
+- Bare kiosk shell and door is ~300 lbs (weighed by kas)
 - Carousel, containing a central solid steel rod and plastic platters (decks), weighs ~100 lbs
-- Unloaded kiosk weighs ~600 lbs (weighed by Kas)
+- Unloaded kiosk weighs ~600 lbs (weighed by kas)
 - Loaded kiosk weighs ~800 lbs
 - AC unit is 56 lbs (weighed by iiPython)
 - Picker Assembly weighs ~30 lbs
@@ -196,3 +196,6 @@ Some items have been weighed, while others are estimates:
 - Shaft collars are 1 lb, 2.1 oz each (weighed by iiPython)
 - Monitor cooling is 3 lbs, 11 oz (weighed by iiPython)
 - Carousel top crossbeam is 5 lbs, 1.1 oz (weighed by iiPython)
+- A single Redbox disk and case weights 2 oz (weighed by kas)
+    - A single empty Redbox case weighs 1.5 oz
+    - A fully loaded kiosk worth of disks (600) would weigh ~80 lbs
