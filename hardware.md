@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-26T05:08:10.141Z
+date: 2024-11-26T18:47:50.058Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -185,5 +185,14 @@ Some items have been weighed, while others are estimates:
 - Carousel, containing a central solid steel rod and plastic platters (decks), weighs ~100 lbs
 - Unloaded kiosk weighs ~600 lbs (weighed by Kas)
 - Loaded kiosk weighs ~800 lbs
-- AC unit weighs ~40 lbs
+- AC unit is 56 lbs (weighed by iiPython)
 - Picker Assembly weighs ~30 lbs
+- Air exchanger is ~32 lbs (weighed by iiPython)
+- Screen is 11.6 lbs (weighed by iiPython)
+- Carousel motor is 8.8 lbs (weighed by iiPython)
+- Carousel shaft is 17.5 lbs (weighed by iiPython)
+- Linear rail is 15.5 lbs (weighed by iiPython)
+- Internal space heater is 1 lb, 15.2 oz (weighed by iiPython)
+- Shaft collars are 1 lb, 2.1 oz each (weighed by iiPython)
+- Monitor cooling is 3 lbs, 11 oz (weighed by iiPython)
+- Carousel top crossbeam is 5 lbs, 1.1 oz (weighted by iiPython)
