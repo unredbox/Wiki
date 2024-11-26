@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-26T18:50:48.052Z
+date: 2024-11-26T19:17:13.589Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -79,7 +79,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Intel i3 3220 @ 3.30GHz
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
-- M2H11OV1
+- M2H110V1
    - PN: 259474-03 Rev C
    - MoBo: MSI H110M-PRO-VHL
    - 500GB WD500LPLX
