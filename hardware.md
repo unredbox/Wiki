@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-26T19:17:13.589Z
+date: 2024-11-27T04:17:36.213Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -125,7 +125,7 @@ Both units have a power button located above on the I/O panel, it's a black disc
     - Max Resolution: 1024x768 @ 75Hz
    
 ## Carousel
-The carousel consists of a central solid steel rod with 8 plastic platters (decks), each deck consists of 6 "sections" (the area between posts) where each section holds 15 disks, for a total of 90 disks per deck. A VMZ equipped kiosk can store a total of 720 disks (but usually only contains around 600 to keep the VMZ empty and to reserve space for returns).
+The carousel consists of a central solid steel rod with 8 plastic platters (decks), each deck consists of 6 quadrants (the area between posts) where each quadrant holds 15 disks, for a total of 90 disks per deck. A VMZ equipped kiosk can store a total of 720 disks (but usually only contains around 600 to keep the VMZ empty and to reserve space for returns).
  - Vexta 5-Phase Driver
     - Product # RKD514H-A-A11 / RKD514H-A-A6
     - Model RKD514L-A / RKD514H-A
