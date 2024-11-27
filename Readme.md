@@ -1,10 +1,10 @@
-# UnRedbox Wiki
+# unredbox Wiki
 
-Welcome to the **UnRedbox Wiki** repository. This project is focused on hosting and documenting information extracted from a **Redbox Kiosks**. Our goal is to explore and understand the software and configuration of the kiosk system, while also preserving and sharing our findings.
+Welcome to the **unredbox Wiki** repository. This project is focused on hosting and documenting information extracted from a **Redbox Kiosks**. Our goal is to explore and understand the software and configuration of the kiosk system, while also preserving and sharing our findings.
 
 ## Project Overview
 
-The UnRedbox project aims to demystify the inner workings of the Redbox kiosks. This repository serves as a central wiki for:
+The UnRedbox project aims to demystify the inner workings of the Redbox kiosks. This repository serves as a central wiki for (but not strictly limited to):
 
 - **Hardware documentation**: Gathering information about the various hardware implementations.
 - **System configuration**: Understanding the settings and behavior of the system.
