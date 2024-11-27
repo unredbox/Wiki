@@ -4,7 +4,7 @@ Welcome to the **unredbox Wiki** repository. This project is focused on hosting 
 
 ## Project Overview
 
-The UnRedbox project aims to demystify the inner workings of the Redbox kiosks. This repository serves as a central wiki for (but not strictly limited to):
+This wiki aims to demystify the inner workings of the Redbox kiosks. This repository serves as a central wiki for (but not strictly limited to):
 
 - **Hardware documentation**: Gathering information about the various hardware implementations.
 - **System configuration**: Understanding the settings and behavior of the system.
