@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-27T04:17:36.213Z
+date: 2024-11-28T03:05:31.096Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -130,22 +130,22 @@ The carousel consists of a central solid steel rod with 8 plastic platters (deck
     - Product # RKD514H-A-A11 / RKD514H-A-A6
     - Model RKD514L-A / RKD514H-A
     - Sticker # 091200M8ZX / 091200M8ZW
-    ![vexta-5-phase-driver.jpg](/hardware/vexta-5-phase-driver.jpg)
+		<figure class="image image_resized" style="width:40%;"><img src="/hardware/vexta-5-phase-driver.jpg"></figure>
    
  - Vexta PK Series Steppers
- 		![vexta-pk564aw-a94-label.jpg](/hardware/vexta-pk564aw-a94-label.jpg)
-    ![vexta-pl596aw1-ai7-stepping-motor-horizontal.jpg](/hardware/vexta-pl596aw1-ai7-stepping-motor-horizontal.jpg)
+	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/hardware/vexta-pk564aw-a94-label.jpg"></figure>
+	<figure class="image image_resized" style="width:29.93%; display: inline-block;"><img src="/hardware/vexta-pl596aw1-ai7-stepping-motor-horizontal.jpg"></figure>
    
  - Arcus Proteus USB Stepper Controller
 
 ## Credit Card Reader
  - Ingenico iUC285
-![ingenico_iuc285_hd.jpg](/ingenico_iuc285_hd.jpg)
+	<figure class="image image_resized" style="width:40%;"><img src="/ingenico_iuc285_hd.jpg"></figure>
 
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
-![cradlepoint_ibr650lpe_label_img_1393.jpg](/cradlepoint_ibr650lpe_label_img_1393.jpg)
-![cradlepoint_ibr650lpe_side_view_img_1394.jpg](/cradlepoint_ibr650lpe_side_view_img_1394.jpg)
+	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cradlepoint_ibr650lpe_label_img_1393.jpg"></figure>
+	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cradlepoint_ibr650lpe_side_view_img_1394.jpg"></figure>
 
 - Cradlepoint IBR200
 
@@ -159,24 +159,24 @@ If you're having issues getting into the unit after a factory reset, try removin
 ## Boards
 - PCB #DVD-26-000-04
    - SER. Master 7/25/06
+		<figure class="image image_resized" style="width:50%;"><img src="/pcb_dvd-26-000-04_snachodog.jpg" alt="PCB #DVD-26-000-04 Board"></figure>
 
-![PCB #DVD-26-000-04 Board](/pcb_dvd-26-000-04_snachodog.jpg "PCB #DVD-26-000-04 Board")
 - Dan Leiwe disc dispenser controller
-
-![dan_leiwe_board_motor_position.jpg](/hardware/dan_leiwe_board_motor_position.jpg)
+	<figure class="image image_resized" style="width:50%;"><img src="/hardware/dan_leiwe_board_motor_position.jpg"></figure>
 
 - AUX I/O Controller
    - PCB #DVD-25-000-04 7/25/06
-![aux-io-controller-board.jpg](/hardware/aux-io-controller-board.jpg)
+   
+		<figure class="image image_resized" style="width:50%;"><img src="/hardware/aux-io-controller-board.jpg"></figure>
 
 - Arcus Proteus XES (Carousel/Gripper Z-Axis)
   - Serial #202-SOL-112211-0987
   - PCB "PROTEUS USB2EX Rev. D6"
 
-![proteus2ex-board-rev-d6-bare.jpg](/hardware/proteus2ex-board-rev-d6-bare.jpg)
+	<figure class="image image_resized" style="width:50%;"><img src="/hardware/proteus2ex-board-rev-d6-bare.jpg"></figure>
 
 ## Lock
-![Locked Lock from within a kiosk](/locked_lock.jpg "Locked lock from within a kiosk")
+<figure class="image image_resized" style="width:70%;"><img src="/locked_lock.jpg" alt="Locked Lock from within a kiosk"></figure>
 
 
 ## Weights
