@@ -2,7 +2,7 @@
 title: Kiosk Engine
 description: 
 published: true
-date: 2024-11-18T03:59:10.992Z
+date: 2024-12-01T23:31:43.805Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T11:42:08.286Z
@@ -20,16 +20,16 @@ dateCreated: 2024-10-21T11:42:08.286Z
 <p>It's possible to access multiple service menus via Kiosk Engine.</p>
 <h2>Field Maintenance via Rental Menu</h2>
 <p>On the homepage, press the ? or Help button. Once on the help page, tap/click the Redbox logo. “Please Wait” will appear briefly before being replaced with a login screen.</p>
-<p>Without <a href="https://redbox.wiki/en/kioskengine/field-maintenance">patching DLLs</a> or emulating the authentication servers, you can go no further past this point. If authentication does succeed, you will enter the <a href="/kioskengine/field-maintenance">Field Maintenance Application</a>.</p>
+<p>Without <a href="https://redbox.wiki/en/kioskengine/field-maintenance">patching DLLs</a> or emulating the authentication servers, you cannot go any further past this point. If authentication does succeed, you will enter the <a href="/kioskengine/field-maintenance">Field Maintenance Application</a>.</p>
 <h2>Redbox Desktop via Keyboard</h2>
-<p>From anywhere (assuming the application is responding and kiosk is initialized), you can use the key combo <code>CTRL + ALT + ENTER</code> to access a Redbox Control Panel Login panel. Kiosks in OfflineMode allow use of any credentials to login.&nbsp;</p>
-<p>If login succeeds, you will be sent to the <a href="/kioskengine/redbox-desktop">Redbox Desktop</a>.</p>
+<p>From anywhere (assuming the application is responding and the kiosk is initialized), you can use the key combo <code>CTRL + ALT + ENTER</code> to access a Redbox Control Panel Login panel. Kiosks in OfflineMode allow the use of any credentials to log in.&nbsp;</p>
+<p>If the login succeeds, you will be sent to the <a href="/kioskengine/redbox-desktop">Redbox Desktop</a>.</p>
 <h2>“Select Resource Bundle” Menu via Keyboard</h2>
 <p>There is a way to open a menu that allows selecting “Resource Bundles” without the use of a discrete chain of keyboard combinations or UI interactions. You can access this menu by pressing the <code>`</code> key on a keyboard.</p>
 <figure class="image image_resized" style="width:48.03%;"><img src="/kioskengine/select-resource-bundle.png"></figure>
 <p>&nbsp;</p>
 <h1>Autobooting to the default Windows desktop environment</h1>
-<p>If you want to prevent the autoboot of kiosk engine and would rather boot to a standard Windows desktop environment, you need to edit the <code>Shell</code>registry key located at <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon</code></p>
+<p>If you want to prevent the autoboot of Kiosk Engine and would rather boot to a standard Windows desktop environment, you need to edit the <code>Shell</code>registry key located at <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon</code></p>
 <p>You want to change the value of this key to <code>C:\Windows\explorer.exe</code></p>
 <p>After you change the value, reboot the machine and the Windows desktop environment will show by default.&nbsp;</p>
 <p>To switch back to the default kiosk engine autoboot, change the value to <code>C:\Program Files\Redbox\KioskShell\KioskShell.exe</code></p>
