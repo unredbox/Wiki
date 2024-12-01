@@ -2,32 +2,32 @@
 title: Field Maintenance
 description: 
 published: true
-date: 2024-11-16T03:09:02.271Z
+date: 2024-12-01T23:38:03.684Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T11:12:53.076Z
 -->
 
-<p>The Field Maintenance Application contains various tools for servicing kiosks. One of the main purposes of accessing this menu is to perform an inventory sync after restocking the kiosk. Another important utility is the HAL Tester which can be used to debug parts of the kiosk such as the carousel and gripper.&nbsp;</p>
+<p>The Field Maintenance Application contains various tools for servicing kiosks. One of the main purposes of accessing this menu is to perform an inventory sync after restocking the kiosk. Another important utility is the HAL Tester which can be used to debug parts of the kiosk such as the carousel and gripper.</p>
 <figure class="image image_resized" style="width:44.97%;"><img src="/kioskengine/fmscreen.png">
   <figcaption>An example of the Field Maintenance Application after a login</figcaption>
 </figure>
 <h1>Modifying Kiosk to Allow Field Maintenance</h1>
-<p>The field maintenance screen sits behind a authentication screen that, unlike the Redbox Desktop, verifies credentials with Redbox servers (which are no longer online). To get around this, there are patched DLLs that skip the authentication step. The steps are as follows:</p>
+<p>The field maintenance screen sits behind an authentication screen that, unlike the Redbox Desktop, verifies credentials with Redbox servers (which are no longer online). To get around this, there are patched DLLs that skip the authentication step. The steps are as follows:</p>
 <ol>
-  <li>Download the patched DLL from the Redbox discord. There will be a revised version of this soon that doesn't require downloading a full DLL.</li>
+  <li>Download the patched DLL from the Redbox Discord server. There will be a revised version of this soon that doesn't require downloading a full DLL.</li>
   <li>Place this file in “C:\Program Files\Redbox\REDS\Kiosk Engine\bin”</li>
   <li>Make a copy of your original DLL (ie, add “.backup” to the end of the filename)</li>
   <li>Remove the “.patched” from the file name. It should now read “Redbox.Rental.Services.dll”</li>
   <li>Open the registry by hitting Win+R and typing “regedit”. Then click run.</li>
-  <li>Navigate to the right directory using the left pane “HKEY_LOCAL_MACHINE\SOFTWARE\Redbox\REDS\KioskEngine\Store” making sure to click the store directory</li>
-  <li>In the right pane, locate a variable called “StandAlone” (if one does not exist, create one by right clicking and making a new string variable) and setting the value to “true"</li>
+  <li>Navigate to the right directory using the left pane “HKEY_LOCAL_MACHINE\SOFTWARE\Redbox\REDS\KioskEngine\Store”, making sure to click the store directory</li>
+  <li>In the right pane, locate a variable called “StandAlone” (if one does not exist, create one by right-clicking and making a new string variable) and setting the value to “true"</li>
   <li>Reboot your machine</li>
   <li>Using the previously mentioned instructions to access the <a href="https://redbox.wiki/en/kioskengine">Field Management login page </a>, type in any value for the username and password and click login</li>
   <li>SUCCESS! You should now be logged into the Field Maintenance Menu</li>
 </ol>
 <p>&nbsp;</p>
-<p>There is an alternative bypass which uses a patched fm.bundle file to bypass the login screen entirely, which can also be found on the Discord.</p>
+<p>There is an alternative bypass that uses a patched fm.bundle file to bypass the login screen entirely, which can also be found on the Discord.</p>
 <h1>Safety Tips</h1>
 <figure class="image image_resized image-style-align-right" style="width:38.04%;"><img src="/kioskengine/fmscreen-tip.png">
   <figcaption>An example of a Safety Tip being displayed</figcaption>
