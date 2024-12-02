@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-02T18:11:30.471Z
+date: 2024-12-02T19:45:26.493Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -101,6 +101,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - 500GB WD5000LPSX
    - 4GB DDR4 2400Mhz RAM
    - Intel i3 9100 @ 3.60 GHz
+   - Windows 10 IoT Enterprise LTSC x64
    - AMI 1.Q3, 1/22/2020
    - 1x HDMI, 2x USB 3.0
    
