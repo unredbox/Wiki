@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-11-28T03:05:31.096Z
+date: 2024-12-02T01:27:25.662Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -198,4 +198,4 @@ Some items have been weighed, while others are estimates:
 - Carousel top crossbeam is 5 lbs, 1.1 oz (weighed by iiPython)
 - A single Redbox disk and case weights 2 oz (weighed by kas)
     - A single empty Redbox case weighs 1.5 oz
-    - A fully loaded kiosk worth of disks (600) would weigh ~80 lbs
+    - A fully loaded kiosk worth of disks (600) would weigh ~90 lbs
