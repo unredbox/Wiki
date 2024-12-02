@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-02T01:27:25.662Z
+date: 2024-12-02T18:11:30.471Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -97,11 +97,12 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - 1x HDMI, 2x USB 3.0
 - M2H310V1
    - PN: RDBX01679-01 Rev. A
-   - Mobo: ?? H310 Motherboard
-   - Unknown HDD
-   - Unknown RAM
-   - Unknown CPU
-   - Unknown BIOS
+   - Mobo: MSI H310M PRO-VLH PLUS
+   - 500GB WD5000LPSX
+   - 4GB DDR4 2400Mhz RAM
+   - Intel i3 9100 @ 3.60 GHz
+   - AMI 1.Q3, 1/22/2020
+   - 1x HDMI, 2x USB 3.0
    
    
 Both units have a power button located above on the I/O panel, it's a black discreet button.
