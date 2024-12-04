@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-04T01:40:06.832Z
+date: 2024-12-04T01:41:07.720Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -150,8 +150,8 @@ The carousel consists of a central solid steel rod with 8 plastic platters (deck
 	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cradlepoint_ibr650lpe_side_view_img_1394.jpg"></figure>
 
 - Cradlepoint IBR200
-	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cradlepoint_IBR200_bottom.png"></figure>
-	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cradlepoint_IBR200_front.png"></figure>
+	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cradlepoint_ibr200_bottom.png"></figure>
+	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cradlepoint_ibr200_front.png"></figure>
   
 To access the admin interface connect to the modem, head to 192.168.0.1 and when prompted for your password use the default password on the back of the modem. You may need to do a factory reset by pushing in the recessed reset button on the ethernet-port-side of the modem to deprovision the modem and make it accessible with the default credentials.
 
