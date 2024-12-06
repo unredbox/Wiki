@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2024-12-06T14:43:50.838Z
+date: 2024-12-06T14:46:57.021Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -81,5 +81,8 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>On Premio computers, the power button is discreet and may not be immediately visible. It is located on the back of the unit, near the I/O panel. Look for a small button close to the I/O LEDs (typically used to indicate network or drive activity). Pressing this button will power on the computer, allowing access to the BIOS to re-enable the autoboot setting if needed.</p>
 <p>Note: Once the autoboot on power setting is re-enabled in the BIOS, the computer should resume automatic boot-up on power connection, as originally configured.</p>
 <p>&nbsp;</p>
-<h2>Kiosk not showing titles despite having titles in the database</h2>
-<p>If the start screen is blank (no carousel with titles), and the Rental screen is not showing any titles except for replacement cases despite all title data being intact, you will need to change the kiosk date and time into the past. The reason for this issue is currently unknown, but it may be caused from clearing the CMOS.</p>
+<h2>Kiosk not showing titles despite having inventory</h2>
+<p>If the start screen is blank (no carousel with titles), and the Rental screen is not showing any titles except for replacement cases despite having inventory data, you will need to change the kiosk date and time into the past. The reason for this issue is currently unknown, but it may be caused from clearing the CMOS.</p>
+<p>&nbsp;</p>
+<h2>Kiosk not showing titles</h2>
+<p>If the start screen is blank (no carousel with titles), and no titles are shown on the Rental screen, you may have “Closed” your kiosk, this clears the inventory in the kiosk and results in no products being in stock. An inventory sync should resolve this.</p>
