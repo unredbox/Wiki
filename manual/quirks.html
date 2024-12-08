@@ -2,7 +2,7 @@
 title: Known Quirks / Bugs
 description: 
 published: true
-date: 2024-12-03T19:10:08.069Z
+date: 2024-12-08T03:10:37.074Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:42.966Z
@@ -24,7 +24,8 @@ dateCreated: 2024-10-21T14:16:42.966Z
 <p>Most, if not all, cellular modems come with Verizon 4G LTE plans. Over time, these SIM cards may become inactive or have already stopped working, rendering the cellular modem unusable. To restore functionality, you will need to replace the inactive SIM card with either an active one or a SIM card compatible with Verizon.</p>
 <p>You have the following options:</p>
 <ol>
-  <li>Disconnect the Ethernet cable—usually the black one—from the back of the computer, and connect your own Ethernet cable directly to the router or switch.</li>
-  <li>Install a PCIe wireless network card and connect to your home Wi-Fi.</li>
+  <li>Disconnect the Ethernet cable—usually the black one—from the back of the computer, and connect your own Ethernet cable directly to your home router or switch (you could also purchase a WiFi extender with Ethernet capabilities and plug it directly into the LAN port).</li>
+  <li>Install a PCIe wireless network card for your computer and connect to your local Wi-Fi network.</li>
   <li>Replace the old SIM card with another Verizon SIM card, or use a prepaid plan compatible with Verizon. (If choosing a prepaid plan, you will need the IMEI information from the cellular modem and a SIM kit.)</li>
 </ol>
+<p>However, you may not want to expose your computer to the internet as it may cause complications in the future when software is no longer supported (or in case of being required to upgrade Windows 7). But, if you're planning on enabling SMB or installing your own VNC Server to access your kiosk over the internet, you'll have to connect it. To prevent any complications, you can setup Firewall Rules to expose certain ports for the computer, and restrict other hostnames (or, you can reject requests made from LAN -&gt; WAN to keep it available local-only).<br>&nbsp;</p>
