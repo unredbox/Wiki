@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2024-12-08T01:59:51.328Z
+date: 2024-12-08T02:22:46.591Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -75,6 +75,15 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>- Indication that the EMV has failed or been tampered with. Plan on bringing on with you. Alert Irruptions are not field repairable.</p>
 <p><code><strong>= CCF&nbsp;</strong></code></p>
 <p>- Camera Capture Failure.</p>
+<h2>Locked Out of Redbox Account</h2>
+<p>It's common for some people to get locked out of the Administrator account on their Windows 7 OS (usually named <code>Rbuser</code>). This usually occurs when you enter incorrect credentials, but can happen for a variety of other reasons. To log back into your kiosk, you'll need to reset the password first. Unfortunately, this fix isn't simple and will require some technical knowledge.</p>
+<p>In order to reset your password, you'll need to have a USB Drive and access to BIOS on your kiosk. If you boot into BIOS and are greeted with a password screen, you'll need to reset your CMOS first. You can do this by removing your computer from the Redbox kiosk, opening the side panel, and removing the CMOS battery (then putting it back in after 5 seconds). The CMOS battery is a CR2032 located on the motherboard. Although it isn't required, it's highly recommended that you replace the battery before further usage to prevent issues further on. <strong>Before you do <u>anything</u>, make sure that your computer is completely unplugged. A potential electrical shock is not worth the risk.</strong></p>
+<p>Once you've reset your CMOS and plugged in your machine, it's time to create a bootable USB stick. To do this, visit <a href="https://pogostick.net/~pnh/ntpasswd/">this page</a> and follow the instructions to download the latest release and create a bootable USB. This can be done using a CD or floppy disk as well, but you'll need to boot from it on the Redbox computer. When you insert your bootable USB, power on your computer and enter BIOS (depending on your computer, this can usually be done by holding down the F1/F2/F12/DEL key). Select your USB stick to boot with it, and follow the instructions on the screen to reset your password (the default selections are usually the correct ones, but <strong>always read before you click</strong>).</p>
+<p>Finally, remove your USB stick and boot your computer as normal. You should be able to enter without issues, and your kiosk is restored. Congratulations!</p>
+<h2>Changing your Administrator Password</h2>
+<p>If you've experienced being locked out of your Redbox account, it might be a good idea to update your administrator password. This process is straightforward, and it'll prevent these issues from happening again. To do this, open Command Prompt and run the following command to update the password:</p>
+<p><code>net user Rbuser &lt;enter your password here&gt;</code></p>
+<p>If you see a success message appear on-screen, you've done this step correctly! Next, you'll need to update the password on the system so it automatically boots without password entry. This step is highly recommend, and skipping it will result in future complications. If you'd like to continue, open your File Explorer and navigate to <code>C:\Program Files\Redbox\REDS\Installers\KioskAdmin.zip</code> and unzip this file. Then, launch the <code>Autologon.exe</code> and replace the credentials with the new password that was set. After you do this, restart your machine to confirm that the changes were made, and that's it.</p>
 <h2>Powering On a Redbox Kiosk Computer After a BIOS Reset</h2>
 <p>Redbox kiosk computers are configured to automatically power on when connected to a power source (autoboot). However, if the BIOS is reset—whether from a manual reset or due to a CMOS battery failure—this autoboot setting will revert to its default state and become disabled. After this, the computer will require a manual power-on each time until the autoboot setting is re-enabled in the BIOS.</p>
 <h2>Locating the Power Button on Premio Computers</h2>
