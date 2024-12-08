@@ -2,7 +2,7 @@
 title: Useful Applications
 description: 
 published: true
-date: 2024-12-08T20:06:39.029Z
+date: 2024-12-08T20:06:55.031Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-08T12:59:34.669Z
@@ -48,5 +48,5 @@ To do this, you'll need access to your router's administrator panel. This tutori
 > Destination address: **any** (default)  
 > Destination port: **any** (default)  
 > Action: **reject**  
->   
-> Click the **Save & apply** button below, and wait for the changes to propagate. Your kiosk should now have internet access restricted to only communicate devices in your local network.
+
+Click the **Save & apply** button below, and wait for the changes to propagate. Your kiosk should now have internet access restricted to only communicate devices in your local network.
