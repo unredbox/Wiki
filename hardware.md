@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-09T03:06:47.637Z
+date: 2024-12-09T03:14:34.977Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -96,6 +96,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Intel i3 6100 @ 3.70GHz
    - unknown BIOS
    - 1x HDMI, 2x USB 3.0
+   <figure class="image image_resized" style="width:40%;"><img src="/rear-io-m2h110v1-csm.jpg"></figure>
 - M2H310V1
    - PN: RDBX01679-01 Rev. A
    - Mobo: MSI H310M PRO-VLH PLUS
