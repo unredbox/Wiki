@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-09T04:01:34.190Z
+date: 2024-12-09T04:06:13.288Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -80,8 +80,6 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
    - IO expansion board 3RAM3014000 REV:1.0
-   - Picture of IO Panel -
-  <figure class="image image_resized" style="width:40%;"><img src="/hardware/rear-io-m2h6v1.jpg"></figure>
 - M2H110V1
    - PN: 259474-03 Rev C
    - MoBo: MSI H110M-PRO-VHL
@@ -98,8 +96,6 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Intel i3 6100 @ 3.70GHz
    - unknown BIOS
    - 1x HDMI, 2x USB 3.0
-   - Picture of IO Panel -
-   <figure class="image image_resized" style="width:40%;"><img src="/rear-io-m2h110v1-csm.jpg"></figure>
 - M2H310V1
    - PN: RDBX01679-01 Rev. A
    - Mobo: MSI H310M PRO-VLH PLUS
@@ -109,9 +105,6 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Windows 10 Enterprise LTSC x64
    - AMI 1.Q3, 1/22/2020
    - 1x HDMI, 2x USB 3.0
-   - Picture of IO Panel -
-   <figure class="image image_resized" style="width:40%;"><img src="/hardware/rear-io-m2h310v1.jpg"></figure>
-   
 All Redbox Premios have a power button located above on the I/O panel, it's a black discreet button.
  # Components
  ## Touch Screen
