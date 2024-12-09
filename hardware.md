@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-09T16:48:11.088Z
+date: 2024-12-09T19:30:07.773Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -72,6 +72,9 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 ## Premio
 
 - M2H6V1
+
+![20241207_221751.jpg](/20241207_221751.jpg)
+
    - PN: RDBX01186-01 Rev B
    - MoBo: MSI H61M-P32/W8
    - 500GB HDD WD5000BPKX
@@ -80,6 +83,9 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
    - IO expansion board 3RAM3014000 REV:1.0
+   ![20241207_181720.jpg](/20241207_181720.jpg)
+   
+   
 - M2H110V1
    - PN: 259474-03 Rev C
    - MoBo: MSI H110M-PRO-VHL
@@ -127,6 +133,10 @@ All Redbox Premios have a power button located above on the I/O panel, it's a bl
    
 ## Carousel
 The carousel consists of a central solid steel rod with 8 plastic platters (decks), each deck consists of 6 quadrants (the area between posts) where each quadrant holds 15 disks, for a total of 90 disks per deck. A VMZ equipped kiosk can store a total of 720 disks (but usually only contains around 600 to keep the VMZ empty and to reserve space for returns).
+
+<figure class="image image_resized" style="width:40%;"><img src="/20241209_093046.jpg"></figure>
+
+
  - Vexta 5-Phase Driver
     - Product # RKD514H-A-A11 / RKD514H-A-A6
     - Model RKD514L-A / RKD514H-A
@@ -137,8 +147,22 @@ The carousel consists of a central solid steel rod with 8 plastic platters (deck
 	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/hardware/vexta-pk564aw-a94-label.jpg"></figure>
 	<figure class="image image_resized" style="width:29.93%; display: inline-block;"><img src="/hardware/vexta-pl596aw1-ai7-stepping-motor-horizontal.jpg"></figure>
    
- 
+ ## Picker/Y-axis
+The picker (or Y-axis) consists of a vertically mounted metal extrusion, with a rail mounted in the center. At the top and bottom of the section are ball bearing belt rollers, that allow the belt to rotate, but stay fixed in place horizontally. This belt is then looped through the frame of the picker.
 
+![screenshot_20241209_093520_gallery.jpg](/screenshot_20241209_093520_gallery.jpg)
+
+## Barcode scanner
+The barcode scanner is mounted to the inside of the picker carriage's frame, facing outwards to the disk. It is connected to the internal PC via USB, and is used to determine the disk that is being returned or rented.
+- Code USB reader model CR1011_04
+    - S/N: 20884820
+    - Revision: 04.4
+    <figure class="image image_resized" style="width:40%;"><img src="/20241206_235637.jpg"></figure>
+    
+  
+    <figure class="image image_resized" style="width:40%;"><img src="/20241206_235617.jpg"></figure>
+
+    
 ## Credit Card Reader
  - Ingenico iUC285
 	<figure class="image image_resized" style="width:40%;"><img src="/ingenico_iuc285_hd.jpg"></figure>
