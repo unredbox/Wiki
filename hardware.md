@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-09T03:14:34.977Z
+date: 2024-12-09T03:30:07.122Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -96,7 +96,6 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Intel i3 6100 @ 3.70GHz
    - unknown BIOS
    - 1x HDMI, 2x USB 3.0
-   <figure class="image image_resized" style="width:40%;"><img src="/rear-io-m2h110v1-csm.jpg"></figure>
 - M2H310V1
    - PN: RDBX01679-01 Rev. A
    - Mobo: MSI H310M PRO-VLH PLUS
@@ -106,7 +105,6 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Windows 10 Enterprise LTSC x64
    - AMI 1.Q3, 1/22/2020
    - 1x HDMI, 2x USB 3.0!
-   <figure class="image image_resized" style="width:40%;"><img src="/hardware/rear-io-m2h310v1.jpg"></figure>
    
 Both units have a power button located above on the I/O panel, it's a black discreet button.
  # Components
