@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-09T19:30:07.773Z
+date: 2024-12-09T19:31:29.325Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -134,6 +134,7 @@ All Redbox Premios have a power button located above on the I/O panel, it's a bl
 ## Carousel
 The carousel consists of a central solid steel rod with 8 plastic platters (decks), each deck consists of 6 quadrants (the area between posts) where each quadrant holds 15 disks, for a total of 90 disks per deck. A VMZ equipped kiosk can store a total of 720 disks (but usually only contains around 600 to keep the VMZ empty and to reserve space for returns).
 
+Carousel in a VMZ kiosk:
 <figure class="image image_resized" style="width:40%;"><img src="/20241209_093046.jpg"></figure>
 
 
