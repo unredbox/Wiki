@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-09T04:06:13.288Z
+date: 2024-12-09T16:48:11.088Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -137,7 +137,7 @@ The carousel consists of a central solid steel rod with 8 plastic platters (deck
 	<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/hardware/vexta-pk564aw-a94-label.jpg"></figure>
 	<figure class="image image_resized" style="width:29.93%; display: inline-block;"><img src="/hardware/vexta-pl596aw1-ai7-stepping-motor-horizontal.jpg"></figure>
    
- - Arcus Proteus USB Stepper Controller
+ 
 
 ## Credit Card Reader
  - Ingenico iUC285
@@ -173,6 +173,7 @@ If you're having issues getting into the unit after a factory reset, try removin
 		<figure class="image image_resized" style="width:50%;"><img src="/hardware/aux-io-controller-board.jpg"></figure>
 
 - Arcus Proteus XES (Carousel/Gripper Z-Axis)
+  - Mounted to top of carousel cross-beam, connects to Vexta drivers via USB
   - Serial #202-SOL-112211-0987
   - PCB "PROTEUS USB2EX Rev. D6"
 
