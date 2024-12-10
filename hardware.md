@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-09T19:31:29.325Z
+date: 2024-12-10T03:39:16.558Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -72,7 +72,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 ## Premio
 
 - M2H6V1
-
+<figure class="image image_resized" style="width:40%;"><img src="/20241207_221751.jpg"></figure>
 ![20241207_221751.jpg](/20241207_221751.jpg)
 
    - PN: RDBX01186-01 Rev B
@@ -83,7 +83,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Windows 7 Embedded SP1
    - BIOS Version: E7788IZ1 V10.25B8
    - IO expansion board 3RAM3014000 REV:1.0
-   ![20241207_181720.jpg](/20241207_181720.jpg)
+   <figure class="image image_resized" style="width:40%;"><img src="/20241207_181720.jpg"></figure>
    
    
 - M2H110V1
@@ -150,8 +150,8 @@ Carousel in a VMZ kiosk:
    
  ## Picker/Y-axis
 The picker (or Y-axis) consists of a vertically mounted metal extrusion, with a rail mounted in the center. At the top and bottom of the section are ball bearing belt rollers, that allow the belt to rotate, but stay fixed in place horizontally. This belt is then looped through the frame of the picker.
+<figure class="image image_resized" style="width:50%;"><img src="/screenshot_20241209_093520_gallery.jpg"></figure>
 
-![screenshot_20241209_093520_gallery.jpg](/screenshot_20241209_093520_gallery.jpg)
 
 ## Barcode scanner
 The barcode scanner is mounted to the inside of the picker carriage's frame, facing outwards to the disk. It is connected to the internal PC via USB, and is used to determine the disk that is being returned or rented.
