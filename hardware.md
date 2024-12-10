@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-10T03:40:15.232Z
+date: 2024-12-10T03:42:52.209Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -158,10 +158,10 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
 - Code USB reader model CR1011_04
     - S/N: 20884820
     - Revision: 04.4
-    <figure class="image image_resized" style="width:30%;"><img src="/20241206_235637.jpg"></figure>
+    <figure class="image image_resized" style="width:30%; display: inline-block;"><img src="/20241206_235637.jpg"></figure>
     
   
-    <figure class="image image_resized" style="width:30%;"><img src="/20241206_235617.jpg"></figure>
+    <figure class="image image_resized" style="width:30%; display: inline-block;"><img src="/20241206_235617.jpg"></figure>
 
     
 ## Credit Card Reader
