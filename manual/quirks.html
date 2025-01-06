@@ -2,7 +2,7 @@
 title: Known Quirks / Bugs
 description: 
 published: true
-date: 2024-12-21T07:26:29.355Z
+date: 2025-01-06T00:07:08.826Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:42.966Z
@@ -32,3 +32,30 @@ dateCreated: 2024-10-21T14:16:42.966Z
 <p>&nbsp;</p>
 <h1>Gripper Calibrates, but Carousel Fails to Calibrate</h1>
 <p>Ensure that the kiosk is positioned upright and completely level. Use a spirit level or similar tool to confirm it is not tilted in any direction. If the kiosk is leaning or uneven, adjust the leveling feet at the bottom to achieve proper alignment. Rotate the feet as needed to stabilize the kiosk and ensure it stands precisely at a 90-degree angle relative to the floor or base surface. Double-check the alignment and stability after adjustments to confirm it is secure and correctly positioned.</p>
+<p>&nbsp;</p>
+<h1>No bootable device found</h1>
+<ul>
+  <li><strong>Check Boot Order</strong>: Ensure the correct drive is set as the first boot device in BIOS/UEFI.</li>
+  <li><strong>Switch SATA Ports</strong>: Switch SATA ports on the motherboard and confirm in BIOS it shows up.</li>
+  <li><strong>Verify Drive Connection</strong>: Confirm that the storage drive is securely connected and not damaged.</li>
+  <li><strong>Repair Bootloader</strong>: Use a bootable USB/DVD to run commands like <code>bootrec /fixmbr</code> and <code>bootrec /rebuildbcd</code>.</li>
+  <li><strong>Check Drive in BIOS</strong>: Make sure the drive is detected in BIOS.</li>
+  <li><strong>Adjust BIOS Settings</strong>: Disable Secure Boot and enable Legacy Boot or CSM mode.</li>
+  <li><strong>Reinstall OS</strong>: If the OS is missing/corrupted, reinstall it from a bootable USB.</li>
+  <li><strong>Reset BIOS</strong>: Restore default settings in BIOS.</li>
+  <li><strong>Test the Drive</strong>: Use diagnostic tools to check for drive health issues.</li>
+</ul>
+<p>If none of the above steps resolve your issue, you may need to replace the storage drive. Replacing the old drive with a HDD (not recommended) SSD (recommended) is advised. This is common with older kiosks, as many of the hard drives are either nearing failure or have already failed.</p>
+<p>&nbsp;</p>
+<h1>Windows 10/11 Booting into Shell Instead of OS When BIOS is Set to UEFI Mode</h1>
+<p>This issue is common in the Premio M2H6V1 computer when upgrading from <code>Windows 7 Embedded 32bit</code>. Here is how to solve that issue:</p>
+<ul>
+  <li><strong>Restart PC</strong>: Reboot the computer and press the BIOS key (<code>Delete</code>) during startup.</li>
+  <li><strong>Enter BIOS</strong>: Access the BIOS setup menu.</li>
+  <li><strong>Navigate</strong>: Go to the <code>Advanced</code> tab using arrow keys.</li>
+  <li><strong>Find Setting</strong>: Look for <code>Windows 8 Mode</code>.</li>
+  <li><strong>Enable</strong>: Highlight the option, press <code>Enter</code>, and make sure its enabled.</li>
+  <li><strong>Save and Exit</strong>: Press <code>F10</code> to save changes and restart the PC.</li>
+  <li><strong>Verify Changes</strong>: If you are still booting into <code>Shell</code>, then you will need to verify the drive partitions are correct and not corrupted.</li>
+</ul>
+<p>&nbsp;</p>
