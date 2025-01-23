@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2024-12-10T03:42:52.209Z
+date: 2025-01-23T16:55:30.451Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -228,3 +228,9 @@ Some items have been weighed, while others are estimates:
 - A single Redbox disk and case weights 2 oz (weighed by kas)
     - A single empty Redbox case weighs 1.5 oz
     - A fully loaded kiosk worth of disks (600) would weigh ~90 lbs
+    
+## Disc Dispenser / Return Slot Variant (Test Markets)
+Only available in test markets, a variant of the Disc Dispenser / Return Slot was tested but never widely rolled out.  It is not known how many exist.
+It was designed that if there was a line of people waiting to rent movies or games at a Redbox, and you only had to return a rental, you would go to the right side of the machine, press the green lit-up button, insert your return, and the small LCD display would tell you if your return was successful.  These photos are from the Walmart in Antioch, IL kisok from Google Maps.  The machine has been removed and probably scrapped.  These photos were uploaded to Google Maps by a visitor of the kiosk in January 2018, so it shows an old card reader and old UI.
+![cardreadervariant1.png](/cardreadervariant1.png)
+![cardreadervariant2.png](/cardreadervariant2.png)
