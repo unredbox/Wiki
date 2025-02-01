@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-01T07:51:46.591Z
+date: 2025-02-01T07:53:34.720Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -102,6 +102,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Intel i3 6100 @ 3.70GHz
    - BIOS Version: American Megatrends Inc. 2.P5
    - 1x HDMI, 2x USB 3.0
+   - IO expansion board 3RAM63014000 REV:1.0
 
 - M2H310V1
    - PN: RDBX01679-01 Rev. A
