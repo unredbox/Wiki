@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-01T07:49:20.625Z
+date: 2025-02-01T07:51:46.591Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -91,16 +91,18 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - 500GB WD500LPLX
    - 4GB RAM
    - Intel i3 6100 @ 3.70GHz
-   - BIOS Version: American Megatrends Inc. 2.P5
+   - unknown BIOS
    - 1x HDMI & 2x USB 3 ports
+
 - M2H110V1
    - PN: 259474-02 Rev A
    - MoBo: MSI CSM-H110M PRO-VHL
    - 500GB WD500LPLX
    - 4GB RAM (KVR21N15S8/4)
    - Intel i3 6100 @ 3.70GHz
-   - unknown BIOS
+   - BIOS Version: American Megatrends Inc. 2.P5
    - 1x HDMI, 2x USB 3.0
+
 - M2H310V1
    - PN: RDBX01679-01 Rev. A
    - Mobo: MSI H310M PRO-VLH PLUS
@@ -110,6 +112,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Windows 10 Enterprise LTSC x64
    - AMI 1.Q3, 1/22/2020
    - 1x HDMI, 2x USB 3.0
+
 All Redbox Premios have a power button located above on the I/O panel, it's a black discreet button.
  # Components
  ## Touch Screen
