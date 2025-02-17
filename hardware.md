@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-17T02:17:17.626Z
+date: 2025-02-17T02:27:03.589Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -202,8 +202,12 @@ To access the admin interface connect to the modem, head to 192.168.0.1 and when
 If you're having issues getting into the unit after a factory reset, try removing the SIM during the reset process. You can put the SIM back in once it's unprovisioned.
 
 ## Power Distribution Unit
+> There is possibilities that none of these will be in the unit and would be replaced with a random power strip.
+{.is-info}
 - APC Line-R 1200VA Automatic Voltage Regulator
+![apc_line-r_1200va.jpg](/apc_line-r_1200va.jpg)
 - Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
+![tripp_lite_900va.jpg](/tripp_lite_900va.jpg)
 
 ## Boards
 - PCB #DVD-26-000-04
