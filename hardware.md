@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-17T00:33:14.816Z
+date: 2025-02-17T01:48:51.860Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -169,7 +169,7 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
     <figure class="image image_resized" style="width:30%; display: inline-block;"><img src="/20241206_235617.jpg"></figure>
 
 ## Cooling Units
-### IceQube IQ2200VS
+### IceQube IQ2200VS (Air Conditioner)
 > These units are known to catch fire. Re-wiring is required to resolve this issue. Check for frayed wires.
 {.is-warning}
 
@@ -178,7 +178,7 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
 - Controller
 ![iq2200vs_controller.jpg](/iq2200vs_controller.jpg)
 
-### IceQube IQ900FFS
+### IceQube IQ900FFS (Air Exchanger)
 - Unit
 ![iq900ffs_unit.jpg](/iq900ffs_unit.jpg)
 - Controller
