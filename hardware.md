@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-17T01:48:51.860Z
+date: 2025-02-17T02:17:17.626Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -203,6 +203,7 @@ If you're having issues getting into the unit after a factory reset, try removin
 
 ## Power Distribution Unit
 - APC Line-R 1200VA Automatic Voltage Regulator
+- Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
 
 ## Boards
 - PCB #DVD-26-000-04
