@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-18T13:49:18.164Z
+date: 2025-02-18T14:43:44.833Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -200,6 +200,13 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
 To access the admin interface connect to the modem, head to 192.168.0.1 and when prompted for your password use the default password on the back of the modem. You may need to do a factory reset by pushing in the recessed reset button on the ethernet-port-side of the modem to deprovision the modem and make it accessible with the default credentials.
 
 If you're having issues getting into the unit after a factory reset, try removing the SIM during the reset process. You can put the SIM back in once it's unprovisioned.
+
+## Bluetooth Beacon Device
+Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2**, which would report back to Redbox with how many passed by and how many stayed at the kiosks. These had two known functionalities:
+1. Send offers to the Redbox App on your phone with promo codes.
+2. Determine if more Redbox Kiosks should be installed in the nearby area or the Retail Store itself, but most retailers would request a secondary unit if their location is high traffic.
+
+![footmarks_front_and_back.png](/footmarks_front_and_back.png)
 
 ## Power Distribution Unit
 > There is possibilities that none of these will be in the unit and would be replaced with a random power strip.
