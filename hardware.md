@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-18T13:39:45.362Z
+date: 2025-02-18T13:40:54.675Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
