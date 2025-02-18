@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-18T13:40:54.675Z
+date: 2025-02-18T13:48:58.157Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -207,6 +207,9 @@ If you're having issues getting into the unit after a factory reset, try removin
 - APC Line-R 1200VA Automatic Voltage Regulator
 ![apc_line-r_1200va.jpg](/apc_line-r_1200va.jpg)
 - Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
+> Most, if not all batteries in the USP are dead and will need to be replaced with either **12V 9AH SLA** or **12V 7AH SLA** Battery. Details on how to replace will be in replacement parts.
+{.is-warning}
+
 ![tripp_lite_900va.jpg](/tripp_lite_900va.jpg)
 
 ## Boards
