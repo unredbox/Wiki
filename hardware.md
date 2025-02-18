@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-17T02:27:03.589Z
+date: 2025-02-18T13:39:45.362Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -35,9 +35,9 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk17
   - Heating/Cooling unit
-  	- IceQube IQ2200VS and control panel (Before 2012)
+  	- IceQube IQ2200VS and control panel (Before February 2012)
       - Known to cause fires, should be removed before use
-    - IceQube IQ990FFS and control panel (After 2012)
+    - IceQube IQ990FFS and control panel (After February 2012)
       - No fires reported or known. Best to use with caution
     - Stego CR027 Heater
     
