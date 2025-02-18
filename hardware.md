@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-18T14:43:44.833Z
+date: 2025-02-18T17:30:38.154Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -214,7 +214,7 @@ Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2*
 - APC Line-R 1200VA Automatic Voltage Regulator
 ![apc_line-r_1200va.jpg](/apc_line-r_1200va.jpg)
 - Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
-> Most, if not all batteries in the USP are dead and will need to be replaced. Details on how to replace will be in replacement parts.
+> Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in replacement parts.
 {.is-warning}
 
 ![tripp_lite_900va.jpg](/tripp_lite_900va.jpg)
