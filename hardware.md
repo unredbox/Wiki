@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-18T17:30:38.154Z
+date: 2025-02-20T18:05:38.219Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -11,6 +11,9 @@ dateCreated: 2024-10-21T03:34:51.578Z
 This page is extremely WIP. If you have a kiosk or know of additional hardware variants, please contribute.
 
 # Kiosk Models
+> Any kiosk with a secondary sticker with an **R** at the end of the serial number means they were re-manufactured. Most of the time, they will have a primary sticker stating the original manufacture date for the kiosk itself above it. They would usually contain a slip of what was done to get the kiosk back out in the market, but most have been removed from the kiosks or have fallen off.
+{.is-info}
+
 ## Indoor
   - Model: DVD-IN
   - Part Number: Indoor_Kiosk
