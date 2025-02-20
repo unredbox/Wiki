@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-20T18:05:38.219Z
+date: 2025-02-20T18:38:13.612Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -18,14 +18,17 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
   - Model: DVD-IN
   - Part Number: Indoor_Kiosk
   - Has variants with outdoor screen for use in bright entryways
+
 ## Indoor (Blue Variant)
   - Model: DVD-IN
   - Part Number: Indoor_KioskWB
   - Made for Walmart per agreement with Redbox.
+
 ## Indoor (17" Screen)
   - Model: DVD-IN
   - Part Number: Indoor_Kiosk17
   - Manufactured in 2011+ (unconfirmed) with a 17" screen
+
 ## Outdoor
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk
@@ -34,6 +37,19 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
       - Known to cause fires, should be removed before use
     - Stego CR027 Heater
       - Plenty reliable according to employees
+
+## Outdoor (High Wind Variant)
+> Not much is known about these units other than they are installed near bad weather areas. Still needs more documentation.
+{.is-warning}
+
+  - Model: DVD-OT
+  - Part Number: Outdoor_Kiosk_HW
+  - Heating/Cooling unit
+  	- IceQube IQ2200VS and control panel
+      - Known to cause fires, should be removed before use
+    - Stego CR027 Heater
+      - Plenty reliable according to employees
+
 ## Outdoor (17" Screen)
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk17
