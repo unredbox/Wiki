@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-20T18:46:22.380Z
+date: 2025-02-21T02:43:03.525Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -272,6 +272,154 @@ Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2*
 ## Lock
 <figure class="image image_resized" style="width:70%;"><img src="/locked_lock.jpg" alt="Locked Lock from within a kiosk"></figure>
 
+## Remanufacturing
+Some kiosks contain 2 sheets of paper below the touch screen. First page contains the date refurbished and serial number of the kiosk, which would be the remanufactured Serial Number.
+
+### Required Operations
+> This operation would take about 3 hours and 24 minutes to complete
+{.is-info}
+
+- Clean & Paint touchup
+  - Time: 30 minutes
+
+- Check/replace lever feet
+  - Time: 5 minutes
+  
+- Install New Power Cord
+  - Time: 15 minutes
+  
+- Apply Loctite 420 to 7th Deck Screws
+  - Time: 3 minutes
+
+- Replace Touchscreen Power Supply
+  - Time: 5 minutes
+  
+- Install Speakers
+  - Time: 5 minutes
+  
+- Reman vend door assy
+  - Time: 15 minutes
+
+- Adjust Vend Door Clutch
+  - Time: 5 minutes
+  
+- Install Track Bands
+  - Time: 10 minutes
+  
+- Replace Gripper finger insert
+  - Time: 1 minute 30 seconds
+  
+- Install Antenna grommet
+  - Time: 5 minutes
+
+- Replace Heater
+  - Time: 10 minutes
+  
+- Inspect for loose hardware
+  - Time: 3 minutes
+  
+- Replace Credit card reader
+  - Time: 8 minutes
+  
+- Adjust slot data and perform calibration
+  - Time: 40 minutes
+  
+- Perform Burnin Test
+  - Time: 6 minutes 30 seconds
+  
+- Provide new Antenna
+  - Time: 7 minutes
+  
+- Packaging, labels, decals
+  - Time: 30 minutes
+  
+### As Needed Operations
+> This operation is done on an as needed basis. Not all operations are done as they are not required. Time depended on what was needed, so time varies.
+{.is-warning}
+
+- Replace computer
+  - Time: 12 minutes
+  
+- Replace UPS
+  - Time: 13 minutes
+  
+- Replace Camera
+  - Time: 5 minutes
+  
+- Replace Air Conditioner (required if kiosk has AC)
+  - Time: 25 minutes
+  
+- Replace Air Exchange Filters
+  - Time: 5 minutes
+  
+- Air exchanger controller
+  - Time: 15 minutes
+
+- Replace Drum Assembly
+  - Time: 3 hours
+  
+- Replace Encoder (required if Replacing Drum)
+  - Time: 15 minutes
+  
+- Bolt QLM Door Shut
+  - Time: 30 minutes
+  
+- QLM remove and install 8th Deck (8th deck, door sensors tote)
+  - Time: 25 minutes
+  
+- Replace Picker Harness
+  - Time: 45 minutes
+  
+- Replace Picker Assembly
+  - Time: 45 minutes
+  
+- Replace Main Cable Harness
+  - Time: 1 hour 15 minutes
+  
+- Replace X motor and motor pulley
+  - Time: 25 minutes
+  
+- Replace Y motor, top sprocket, bottom sprocket, bearing
+  - Time: 15 minutes
+  
+- Replace double decker Arcus
+  - Time: 10 minutes
+  
+- Replace Aux Board
+  - Time: 15 minutes
+  
+- Replace Picker Board
+  - Time: 15 minutes
+  
+- Replace Serial Board
+  - Time: 10 minutes
+  
+- Replace Vend door Board
+  - Time: 5 minutes
+  
+- Replace Sensor Board Camera side
+  - Time: 10 minutesz
+  
+- Replace Sensor Board Non Camera side
+  - Time: 5 minutes
+
+- Replace picker motors older than 4 years. Replace older than 6 years if kiosk has been installed for less than 6 months. long shaft, short shaft, pulleys
+  - Time: 45 minutes
+  
+- Replace vend door motor older than 4 years. Replace older than 6 years if kiosk has been installed for less than 6 months.
+  - Time: 5 minutes
+  
+- Replace gripper fingers left gripper, right gripper, bushing
+  - Time: 10 minutes
+  
+- Replace Touchscreen
+  - Time: 15 minutes
+  
+- Drill and install new antenna
+  - Time: 10 minutes
+  
+- Mask & Repaint Kiosk
+  - Time: 2 hours, 40 minutes, and 4.08 seconds
 
 ## Weights
 Some items have been weighed, while others are estimates:
