@@ -2,7 +2,7 @@
 title: Digital Signage
 description: 
 published: true
-date: 2025-02-22T11:06:26.596Z
+date: 2025-02-22T11:33:57.656Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-01-26T15:06:25.990Z
@@ -13,15 +13,22 @@ dateCreated: 2025-01-26T15:06:25.990Z
 <p>These displays are housed in a custom, metal box. The back and front of the display unit are secured using the same Camlock-type locks as the main kiosk door uses. It's unknown if it's the exact key as the kiosk itself. Both lock cylinders are keyed for A keys.</p>
 <p>Internally, these signs use displays manufactured by Videri. They are model number VDS-30, hosting a 32 inch display. This display is a self-contained unit and therefore has no IO, only accepting power via a proprietary connector. Due to this, there is no way to utilize the display unit as a monitor or TV without hardware modifications.</p>
 <h2>Internal Android Device Specs</h2>
-<figure class="image"><img src="/hardware/advertdisplay/android_board_top.jpg"></figure>
+<figure class="image image_resized" style="width:58.03%;"><img src="/hardware/advertdisplay/android_board_top.jpg"></figure>
 <ul>
+  <li>Board Model: DPC430</li>
   <li>CPU: MSM8994</li>
   <li>RAM: 4GB</li>
   <li>OS: Android 6.0.1</li>
   <li>Storage: 16GB</li>
   <li>Connectivity<ul>
-      <li>MicroUSB 3.0</li>
-      <li>Micro SD card slot</li>
+      <li>MicroUSB 3.0<ul>
+          <li>The device will boot into Qualcomm 9008 EDL mode if this USB is connected while the device is powered down</li>
+        </ul>
+      </li>
+      <li>Micro SD card slot<ul>
+          <li>Not used for much, can be useful for dumping/loading data</li>
+        </ul>
+      </li>
       <li>(Possible) Unpopulated MicroUSB 2.0</li>
       <li>Unpopulated Ethernet</li>
     </ul>
@@ -50,6 +57,9 @@ dateCreated: 2025-01-26T15:06:25.990Z
 <p>Outside of 32" screens, these specs possibly vary. Notably, these display units utilize LCDs with no backlight assembly. This means they have a custom backlight solution, so they cannot be entirely driven by a generic test board.</p>
 <p>Here are the known panel models as well as their specs.</p>
 <p>Todo: info</p>
+<h1>Factory Software</h1>
+<p>These panels run Android provided by Videri. The OS contains minimal apps and is very locked down normally and pretty secure. There's no way to gain access to the file system or anything on these devices without disassembling the device in its entirety. They will only connect to their pre-configured network in the wild.</p>
+<p>It should be possible to install full AOSP Android on these devices in the future, installed over the internal USB port. However, this has not been done yet.</p>
 <h1>Disassembly Details</h1>
 <p>The main casing is fixed to the kiosk via the same large, philips head screws the standard lightboxes are attached with.</p>
 <p>The screen itself is meant to be retained by both the locks, as well front metal bezel built out of polycarbonate and a metal of some kind. The internals are secured by both the front bezel panel and the rear door.</p>
