@@ -2,7 +2,7 @@
 title: Digital Signage
 description: 
 published: true
-date: 2025-02-22T10:58:42.315Z
+date: 2025-02-22T11:06:26.596Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-01-26T15:06:25.990Z
@@ -13,6 +13,7 @@ dateCreated: 2025-01-26T15:06:25.990Z
 <p>These displays are housed in a custom, metal box. The back and front of the display unit are secured using the same Camlock-type locks as the main kiosk door uses. It's unknown if it's the exact key as the kiosk itself. Both lock cylinders are keyed for A keys.</p>
 <p>Internally, these signs use displays manufactured by Videri. They are model number VDS-30, hosting a 32 inch display. This display is a self-contained unit and therefore has no IO, only accepting power via a proprietary connector. Due to this, there is no way to utilize the display unit as a monitor or TV without hardware modifications.</p>
 <h2>Internal Android Device Specs</h2>
+<figure class="image"><img src="/hardware/advertdisplay/android_board_top.jpg"></figure>
 <ul>
   <li>CPU: MSM8994</li>
   <li>RAM: 4GB</li>
@@ -22,6 +23,26 @@ dateCreated: 2025-01-26T15:06:25.990Z
       <li>MicroUSB 3.0</li>
       <li>Micro SD card slot</li>
       <li>(Possible) Unpopulated MicroUSB 2.0</li>
+      <li>Unpopulated Ethernet</li>
+    </ul>
+  </li>
+  <li>PCB Switches<ul>
+      <li>PKEY1 (Near corner of board, unpopulated)<ul>
+          <li>Basically the power button</li>
+        </ul>
+      </li>
+      <li>SW1 (Near USB 3.0 and LCD ribbon)<ul>
+          <li>Activates Download Mode when device is powered while held</li>
+        </ul>
+      </li>
+      <li>SW2 (Beside LED)<ul>
+          <li>Same as pinhole, GPIO for resetting canvas via standard Videri software</li>
+        </ul>
+      </li>
+      <li>SW3 (By black/white cable connector)<ul>
+          <li>Hangs boot process when held during boot, unknown function. Possibly Fastboot?</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
