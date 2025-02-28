@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-21T02:43:03.525Z
+date: 2025-02-28T22:29:01.555Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -204,15 +204,17 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
 {.is-warning}
 
 - Unit
-![iq2200vs_unit.jpg](/iq2200vs_unit.jpg)
+  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/iq2200vs_unit.jpg"></figure>
+
 - Controller
-![iq2200vs_controller.jpg](/iq2200vs_controller.jpg)
+  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/iq2200vs_controller.jpg"></figure>
 
 ### IceQube IQ900FFS (Air Exchanger)
 - Unit
-![iq900ffs_unit.jpg](/iq900ffs_unit.jpg)
+  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/iq900ffs_unit.jpg"></figure>
+
 - Controller
-![iq900ffs_controller.jpg](/iq900ffs_controller.jpg)
+  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/iq900ffs_controller.jpg"></figure>
     
 ## Credit Card Reader
  - Ingenico iUC285
@@ -236,18 +238,18 @@ Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2*
 1. Send offers to the Redbox App on your phone with promo codes.
 2. Determine if more Redbox Kiosks should be installed in the nearby area or the Retail Store itself, but most retailers would request a secondary unit if their location is high traffic.
 
-![footmarks_front_and_back.png](/footmarks_front_and_back.png)
+<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/footmarks_front_and_back.png"></figure>
 
 ## Power Distribution Unit
 > There is possibilities that none of these will be in the unit and would be replaced with a random power strip.
 {.is-info}
 - APC Line-R 1200VA Automatic Voltage Regulator
-![apc_line-r_1200va.jpg](/apc_line-r_1200va.jpg)
-- Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
-> Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in replacement parts.
-{.is-warning}
+  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/apc_line-r_1200va.jpg"></figure>
 
-![tripp_lite_900va.jpg](/tripp_lite_900va.jpg)
+- Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
+  > Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in replacement parts.
+{.is-warning}
+  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/tripp_lite_900va.jpg"></figure>
 
 ## Boards
 - PCB #DVD-26-000-04
@@ -444,6 +446,9 @@ Some items have been weighed, while others are estimates:
     
 ## Disc Dispenser / Return Slot Variant (Test Markets)
 Only available in test markets, a variant of the Disc Dispenser / Return Slot was tested but never widely rolled out.  It is not known how many exist.
-It was designed that if there was a line of people waiting to rent movies or games at a Redbox, and you only had to return a rental, you would go to the right side of the machine, press the green lit-up button, insert your return, and the small LCD display would tell you if your return was successful.  These photos are from the Walmart in Antioch, IL kiosk from Google Maps.  The machine has been removed and probably scrapped.  These photos were uploaded to Google Maps by a visitor of the kiosk in January 2018, so it shows an old card reader and old UI.
-![cardreadervariant1.png](/cardreadervariant1.png)
-![cardreadervariant2.png](/cardreadervariant2.png)
+It was designed that if there was a line of people waiting to rent movies or games at a Redbox, and you only had to return a rental, you would go to the right side of the machine, press the green lit-up button, insert your return, and the small LCD display would tell you if your return was successful.  
+> These photos are from the Walmart in Antioch, IL kiosk from Google Maps.  The machine has been removed and probably scrapped.  These photos were uploaded to Google Maps by a visitor of the kiosk in January 2018, so it shows an old card reader and old UI.
+{.is-info}
+
+<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/cardreadervariant1.png"></figure>
+<figure class="image image_resized" style="width:80%; display: inline-block;"><img src="/cardreadervariant2.png"></figure>
