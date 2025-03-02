@@ -2,7 +2,7 @@
 title: Digital Signage
 description: 
 published: true
-date: 2025-03-02T17:01:21.445Z
+date: 2025-03-02T17:07:42.090Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-01-26T15:06:25.990Z
@@ -60,6 +60,7 @@ dateCreated: 2025-01-26T15:06:25.990Z
 <h1>Factory Software</h1>
 <p>These panels run Android provided by Videri. The OS contains minimal apps and is very locked down normally and pretty secure. There's no way to gain access to the file system or anything on these devices without disassembling the device in its entirety. They will only connect to their pre-configured network in the wild.</p>
 <p>It should be possible to install full AOSP Android on these devices in the future, installed over the internal USB port. Full firmware images have been found for these displays, which should make this quite easy. However, this has not been done yet.</p>
+<p>It's possible to gain ADB access to these devices by reprovisioning them. You should follow Videri's instructions on factory resetting the device to get it to put up an Access Point.</p>
 <p>Once you've gained full ADB access to the device, you should be able to install apps onto it and disable iCanvasPlayer / AdSync. Once iCanvasPlayer is disabled, the provisioning website will no longer be available, so ensure that you have a way to enable it without accessing provisioning again. If not, you will have to factory reset the device.</p>
 <p>You can use a reliable USB hub with a USB speaker and USB input device of some kind to control the device without ADB. You can use the device with Android USB TV Remotes as if it was an Android TV, assuming you install the appropriate launcher, app store, and apps. Aptoide TV is recommended, though other options may exist.</p>
 <h1>Disassembly Details</h1>
