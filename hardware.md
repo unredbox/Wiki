@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-02-28T22:29:01.555Z
+date: 2025-03-08T00:04:41.850Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -170,7 +170,7 @@ All Redbox Premios have a power button located above on the I/O panel, it's a bl
 The carousel consists of a central solid steel rod with 8 plastic platters (decks), each deck consists of 6 quadrants (the area between posts) where each quadrant holds 15 disks, for a total of 90 disks per deck. A VMZ equipped kiosk can store a total of 720 disks (but usually only contains around 600 to keep the VMZ empty and to reserve space for returns).
 
 Carousel in a VMZ kiosk:
-<figure class="image image_resized" style="width:40%;"><img src="/20241209_093046.jpg"></figure>
+<figure class="image image_resized" style="width:40%;"><img src="/redbox_carousel.jpg"></figure>
 
 
  - Vexta 5-Phase Driver
@@ -185,7 +185,8 @@ Carousel in a VMZ kiosk:
    
  ## Picker/Y-axis
 The picker (or Y-axis) consists of a vertically mounted metal extrusion, with a rail mounted in the center. At the top and bottom of the section are ball bearing belt rollers, that allow the belt to rotate, but stay fixed in place horizontally. This belt is then looped through the frame of the picker.
-<figure class="image image_resized" style="width:50%;"><img src="/screenshot_20241209_093520_gallery.jpg"></figure>
+<figure class="image image_resized" style="width:50%;"><img src="/	
+"></figure>
 
 
 ## Barcode scanner
