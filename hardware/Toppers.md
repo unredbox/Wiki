@@ -2,7 +2,7 @@
 title: Toppers
 description: 
 published: true
-date: 2025-03-08T01:11:22.454Z
+date: 2025-03-08T01:13:16.290Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -79,4 +79,12 @@ These topper variants are ones that were designed for testing and never deployed
 Prototype topper which utilizes a digital display to play unknown content, likely content trailers or other Redbox media.
   - Dimensions: UNKNOWN
   - Title Cards Held: None
+  
+# Topper Add-Ons
+These items were used to further accentuate toppers but were only sparingly used.
+
+## Topper Backers
+<figure class="image image_resized" style="width:40%;"><img src="/topper_backer.jpg"></figure>
+
+Mounted directly onto topper and extended the fascia of the topper. Only reported on one unit in the wild, likely experimental or discontinued long before bankruptcy.
 
