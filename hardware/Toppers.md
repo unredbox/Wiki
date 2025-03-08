@@ -2,7 +2,7 @@
 title: Toppers
 description: 
 published: true
-date: 2025-03-08T01:13:16.290Z
+date: 2025-03-08T01:14:17.063Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -50,8 +50,6 @@ White face topper that holds 12 title cards with lighting inside unit, lighting 
   - Title Cards Held: 12
   
 ## Non-Title Topper (Red Face)
-<figure class="image image_resized" style="width:40%;"><img src="/non-title_topper_(white).jpg"></figure>
-
 Red face topper that holds no title cards and does not utilize any lighting. **Assumed to exist but no pictures available.**
   - Dimensions: UNKNOWN
   - Title Cards Held: None
