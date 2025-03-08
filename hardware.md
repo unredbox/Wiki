@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-08T00:05:21.817Z
+date: 2025-03-08T00:08:51.748Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -186,7 +186,7 @@ Carousel in a VMZ kiosk:
  ## Picker/Y-axis
 The picker (or Y-axis) consists of a vertically mounted metal extrusion, with a rail mounted in the center. At the top and bottom of the section are ball bearing belt rollers, that allow the belt to rotate, but stay fixed in place horizontally. This belt is then looped through the frame of the picker.
 <figure class="image image_resized" style="width:50%;"><img src="/	
-redbox_picker.jpg"	
+redbox_picker_zoomed.jpg"	
 "></figure>
 
 
