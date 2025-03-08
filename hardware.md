@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-08T00:33:13.085Z
+date: 2025-03-08T00:34:40.204Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -223,10 +223,10 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
 	<figure class="image image_resized" style="width:40%;"><img src="/ingenico_iuc285_hd.jpg"></figure>
   
  - IDTECH SecureMag/MiniMag II 
-	<figure class="image image_resized" style="width:40%;"><img src="/ingenico_iuc285_hd.jpg"></figure>
+	<figure class="image image_resized" style="width:40%;"><img src="/original_card_reader.jpg"></figure>
 
   
-Original card reader integrated with the kiosk shell, removed and upgraded to Ingenico iUC285 around 2018, new card readers utilized mounting plate.
+Original card reader integrated with the kiosk shell, removed and upgraded to Ingenico iUC285 around 2018 due to updated account security protocols issued in 2015, new card readers utilized mounting plate.
 
 ## Modems
 - Cradlepoint IBR650LPE Netcloud
