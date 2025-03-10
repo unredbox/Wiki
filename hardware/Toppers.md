@@ -2,7 +2,7 @@
 title: Toppers
 description: 
 published: true
-date: 2025-03-10T19:41:00.863Z
+date: 2025-03-10T19:41:40.084Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -33,6 +33,7 @@ Red face topper that holds 6 title cards with lighting inside unit, lighting is 
 
 ## 12-Title Topper (Red Face)
 <figure class="image image_resized" style="width:40%;"><img src="/12-title_topper.jpg"></figure>
+
 Red face topper that holds 12 title cards with lighting inside unit, lighting is either tube or LED depending on manufacture date.
   - Dimensions: UNKNOWN
   - Title Cards Held: 12
@@ -42,7 +43,7 @@ Red face topper that holds 12 title cards with lighting inside unit, lighting is
 
 White face topper that holds 6 title cards with lighting inside unit, lighting is either tube or LED depending on manufacture date.
   - Dimensions: UNKNOWN
-  - Title Cards Held: 12
+  - Title Cards Held: 6
   
 ## 12-Title Topper (White Face)
 White face topper that holds 12 title cards with lighting inside unit, lighting is either tube or LED depending on manufacture date. **Assumed to exist but no pictures available.**
@@ -59,7 +60,7 @@ Red face topper that holds no title cards and does not utilize any lighting. Uti
 
 White face topper that holds 6 title cards with lighting inside unit, lighting is either tube or LED depending on manufacture date. This variant is taller than the standard white face 6-title topper with both the title cards and the full redbox logo/slogan.
   - Dimensions: UNKNOWN
-  - Title Cards Held: 12
+  - Title Cards Held: 6
   
 ## Non-Title Topper (White Face)
 <figure class="image image_resized" style="width:40%;"><img src="/non-title_topper_(white).jpg"></figure>
