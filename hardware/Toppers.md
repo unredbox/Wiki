@@ -2,7 +2,7 @@
 title: Toppers
 description: 
 published: true
-date: 2025-03-10T19:41:40.084Z
+date: 2025-03-11T14:09:42.403Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -94,3 +94,7 @@ These items were used to further accentuate toppers but were only sparingly used
 
 Mounted directly onto topper and extended the fascia of the topper. Only reported on one unit in the wild, likely experimental or discontinued long before bankruptcy.
 
+# Redbox Inside Sign
+These were hung from the ceiling of a business to advertise through a window that a Redbox is inside the building.
+
+<figure class="image image_resized" style="width:40%;"><img src="/redboxinsidesign.png"></figure>
