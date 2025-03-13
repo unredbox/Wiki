@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-13T00:37:20.246Z
+date: 2025-03-13T10:57:17.716Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -214,6 +214,10 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
 
 - Controller
   <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/iq2200vs_controller.jpg"></figure>
+- Power Dependency Control Matrix (IQPDCM-15)   
+  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/iqpdcm-15.jpg"></figure>
+>   These PDCM Boxes were installed by Techs to prevent the AC units from turning on if there was a fault, but were later removed and Master Lock Plug Prong Lockouts were installed, thus keeping the AC unit unplugged. Former employees do not recommend removing these lockouts as they were put in by techs due to faults. These PDCM boxes can be removed as they showed that the AC problem worsened and causes the AC unit to run poorly.
+{.is-warning}
 
 ### IceQube IQ900FFS (Air Exchanger)
 - Unit
