@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-12T21:02:25.009Z
+date: 2025-03-13T00:21:34.232Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -282,6 +282,14 @@ Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2*
   - PCB "PROTEUS USB2EX Rev. D6"
 
 	<figure class="image image_resized" style="width:50%;"><img src="/hardware/proteus2ex-board-rev-d6-bare.jpg"></figure>
+  
+## Audio Accessibility Keypad
+>   To install this on a kiosk that didn't contain this keypad, drilling will be required.
+{.is-warning}
+
+  Some kiosks were equipped with the Accessibility Keypad from Storm Interface while some were not equipped with this keypad. When renting a movie, someone who is wheelchair bound would plug in headphones into the audio jack and it would give instructions on what to press. Keys would correspond just like a phone when inputting an email address. Outside this, it acts as a regular number pad.
+  - Part Number: INP738-01 (Custom built 700 Series for Redbox)
+  	<figure class="image image_resized" style="width:70%;"><img src="/storm_interface_inp738-01.png"></figure>
 
 ## Lock
 <figure class="image image_resized" style="width:70%;"><img src="/locked_lock.jpg" alt="Locked Lock from within a kiosk"></figure>
