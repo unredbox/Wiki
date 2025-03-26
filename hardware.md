@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-15T23:37:42.741Z
+date: 2025-03-26T17:57:17.334Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -72,6 +72,7 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
     - IceQube IQ990FFS and control panel (Showed up around 2012)
       - No fires reported or known. Best to use with caution
     - Stego CR027 Heater
+  - CN units were designed for Canadian markets, then were moved to the United States after Redbox shut down their Canadian division.
     
 # Toppers
 A variety of toppers were used on indoor kiosks. [See the toppers page for details.](/hardware/Toppers)
