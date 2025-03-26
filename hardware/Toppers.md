@@ -2,7 +2,7 @@
 title: Toppers
 description: 
 published: true
-date: 2025-03-26T17:40:28.986Z
+date: 2025-03-26T18:06:28.838Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -92,12 +92,12 @@ These items were used to further accentuate toppers but were only sparingly used
 ## Small Topper Backer
 <figure class="image image_resized" style="width:40%;"><img src="/topper_backer.jpg"></figure>
 
-Mounted directly onto topper and extended the fascia of the topper. Only reported on one unit in the wild, likely experimental or discontinued long before bankruptcy.
+Mounted directly onto topper and extended the fascia of the topper.
 
 ## Large Topper Backer
 <figure class="image image_resized" style="width:40%;"><img src="/img_2422.jpeg"></figure>
 
-Only 1 unit reported to have existed at this moment. Appears to be mounted onto the topper itself. Likely experimental.
+Mounted directly onto topper and extended the fascia of the topper.
 
 # Redbox Signage
 These were hung from the ceiling of a business to advertise through a window that a Redbox is inside the building.
