@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-26T17:57:17.334Z
+date: 2025-03-26T19:39:16.415Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -209,7 +209,7 @@ The barcode scanner is mounted to the inside of the picker carriage's frame, fac
 
 ## Cooling Units
 ### IceQube IQ2200VS (Air Conditioner)
-> These units are known to catch fire. Re-wiring is required to resolve this issue. Check for frayed wires.
+> Units made before 2012 are known to catch fire. Blower motor replacement is required to resolve this issue. [See the replacement parts page for details.](/hardware/parts)
 {.is-warning}
 
 - Unit
