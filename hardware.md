@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-26T19:39:16.415Z
+date: 2025-03-27T11:39:37.803Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -266,7 +266,7 @@ Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2*
   <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/apc_line-r_1200va.jpg"></figure>
 
 - Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
-  > Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in replacement parts.
+  > Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in [replacement parts](/hardware/parts).
 {.is-warning}
   <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/tripp_lite_900va.jpg"></figure>
 
