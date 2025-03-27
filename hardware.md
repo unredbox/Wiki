@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-27T11:39:37.803Z
+date: 2025-03-27T11:43:20.478Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -263,6 +263,8 @@ Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2*
 > There is possibilities that none of these will be in the unit and would be replaced with a random power strip.
 {.is-info}
 - APC Line-R 1200VA Automatic Voltage Regulator
+  
+This device ensures that the proper voltage is going into the kiosk. It is NOT a UPS and does not have a battery inside.
   <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/apc_line-r_1200va.jpg"></figure>
 
 - Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
