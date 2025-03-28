@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-27T11:43:20.478Z
+date: 2025-03-28T04:50:40.253Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -278,7 +278,12 @@ This device ensures that the proper voltage is going into the kiosk. It is NOT a
 		<figure class="image image_resized" style="width:50%;"><img src="/pcb_dvd-26-000-04_snachodog.jpg" alt="PCB #DVD-26-000-04 Board"></figure>
 
 - Dan Leiwe disc dispenser controller
+  
+  - With sell sensor
 	<figure class="image image_resized" style="width:50%;"><img src="/hardware/dan_leiwe_board_motor_position.jpg"></figure>
+
+  - Without sell sensor
+  	<figure class="image image_resized" style="width:50%;"><img src="/vend_door_without_sell_pin.jpg"></figure>
 
 - AUX I/O Controller
    - PCB #DVD-25-000-04 7/25/06
