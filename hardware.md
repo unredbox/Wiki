@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-04-19T16:01:14.804Z
+date: 2025-04-19T17:35:43.953Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -265,14 +265,53 @@ Some, if not all lightboxes contains a **FOOTMARKS SmartConnect Beacon FM004-E2*
 - APC Line-R 1200VA Automatic Voltage Regulator
   
 This device ensures that the proper voltage is going into the kiosk. It is NOT a UPS and does not have a battery inside.
-  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/apc_line-r_1200va.jpg"></figure>
+<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/apc_line-r_1200va.jpg"></figure>
 
-- Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
-  > Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in [replacement parts](/hardware/parts).
+- Tripp-Lite 900VA UPS Battery Back Up - OMNI900LCD
+
+> Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in [replacement parts](/hardware/parts).
 {.is-warning}
   
-  When the kiosk loses power, this device powers the kiosk PC for safe shutdown.
-  <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/tripp_lite_900va.jpg"></figure>
+  
+  
+When the kiosk loses power, this device powers the kiosk PC for safe shutdown providing there is no faults with the UPS.
+<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/tripp_lite_900va.jpg"></figure>
+
+
+### Tripp-Lite Status/Error Codes
+
+<figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/tripp-lite_status_screen_labeled.png"></figure>
+
+1. **AVR (Automatic Voltage Regulation) Icon**
+   This icon will illuminate whenever your UPS is
+automatically correcting AC line voltage without depleting battery power. This is a normal,
+automatic operation of your UPS, and no action is required on your part.
+2. **REPLACE (Battery Recharge/Replace) Icon**
+   This icon will illuminate and an alarm will
+sound after a self-test to indicate the UPS battery needs to be recharged or replaced. Allow
+the UPS to recharge continuously for 24 hours, and repeat the self-test. If the icon
+continues to illuminate, contact Tripp Lite for service. Battery replacement should only be
+performed by qualified service personnel.
+3. **ON BAT (On Battery) Icon**
+   During a severe brownout or blackout, this icon illuminates
+and an alarm sounds (four short beeps followed by a pause) to indicate the UPS is operating
+from its internal batteries. Monitor the “Battery Capacity” Meter to determine the
+approximate battery charge level available to support equipment. During a prolonged
+brownout or blackout, the alarm will sound continuously (and the “BATTERY CAPACITY”
+Meter will show one 20% capacity segment shaded) to indicate the UPS's batteries are
+nearly out of power; you should save files and shut down your equipment immediately
+4. **FAULT Icon**
+   This icon will illuminate and an alarm will sound after a self-test to indicate
+the battery-supported outlets are overloaded. To clear the overload, unplug some of your
+equipment from the battery-supported outlets and run the self-test until the icon is no longer
+illuminated and the alarm is no longer sounding.
+> Any overload that is not corrected by the user immediately following a
+self-test may cause the UPS to shut down and cease supplying output power in the
+event of a blackout or brownout.
+{.is-danger}
+
+
+
 
 ## Boards
 - PCB #DVD-26-000-04
