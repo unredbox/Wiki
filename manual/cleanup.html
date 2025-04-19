@@ -2,7 +2,7 @@
 title: Cleanup & Security
 description: 
 published: true
-date: 2025-04-19T05:41:20.074Z
+date: 2025-04-19T05:44:11.911Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:25:51.187Z
@@ -17,7 +17,7 @@ dateCreated: 2024-10-21T14:25:51.187Z
 <p>todo: (add images)</p>
 <h1>Security</h1>
 <h2>Remove the Cellular Modem</h2>
-<p>Every kiosk is equipped with a cellular modem, which likely still has an active data plan, though these plans have been inactive since December 2024 due to delinquency in payments. This means any powered units may still be connected to the internet. It's recommended to remove the modem before powering the unit on to avoid direct exposure to the internet, especially since these Windows 7 Embedded systems are now outdated. Additionally, the IBR200 modem can also function as a Wi-Fi extender, operating on the 2.4GHz channel with a maximum speed of 60 Mbps.</p>
+<p>Each kiosk includes a cellular modem, which was previously used to maintain an internet connection. However, most data plans have been inactive since December 2024 due to non-payment, meaning the unit may not currently be online. Before reconnecting any kiosk to the internet, it’s strongly recommended to remove or disable vulnerable software such as Kaseya and RealVNC 4 to reduce security risks. These outdated tools could expose the system to potential threats. If still installed, the IBR200 modem can also be repurposed as a Wi-Fi extender, operating on the 2.4GHz band with a maximum speed of 60 Mbps.</p>
 <h2>Disable or Uninstall Kaseya</h2>
 <p>Kaseya was used by Redbox for remote kiosk management. The software can only connect via the <code>accessredbox.net</code> servers, which is still registered at present. However, the domain could potentially be repurposed in the future by a malicious actor to serve as a Command and Control server for any kiosks still connected to the internet. To mitigate this risk, you should disable Kaseya services in Service Management or uninstall the software entirely.</p>
 <h2>Disable or Uninstall RealVNC</h2>
@@ -60,35 +60,35 @@ dateCreated: 2024-10-21T14:25:51.187Z
 <p>This guide is for individuals who plan to reuse the existing outlets within the kiosk. If you're not confident in completing this process, consider using an extension cord as an alternative. Make sure the cord supports at least 125V. Keep in mind that, depending on the type of cord used, it may obstruct the removal and reinstallation of the drop bin.</p>
 <h2>Required Tools &amp; Materials</h2>
 <ul>
-  <li>&nbsp;<strong>1x 12-AWG/2 or 12AWG/3 Power Cord (25ft)&nbsp;</strong><br>A thick, durable cable suitable for 20-amp circuits. The 25ft length should give you plenty of wire to work with inside the kiosk. You technically shouldn’t need more than 15 feet, but this allows you to have the proper lengths for daisy chaining from Outlet 1 to Outlet 2</li>
-  <li><strong>1x GFCI Outlet Tester</strong>&nbsp;<br>Use this to verify that the outlet is properly wired and the GFCI protection works as intended.&nbsp;</li>
-  <li><strong>1x 3/8" Clamp-on Service Entrance Connector</strong><br>Prevents stress or accidental tugging from damaging the internal wiring. Required for secure and safe cable entry into the box.&nbsp;</li>
-  <li><strong>5x 12-10 Yellow Ring Terminals&nbsp;</strong><br>These will be crimped onto the ground wires to ensure a tight, secure, and corrosion-resistant connection to the outlets and chassis.&nbsp;</li>
-  <li><strong>1x Wire Stripper/Cutter/Crimper Tool&nbsp;</strong><br>A basic model will do fine. Used to cut wire to length, strip the outer jacket, and crimp terminals to the exposed copper.&nbsp;</li>
+  <li><strong>1x 12-AWG/2 or 12AWG/3 Power Cord (25ft)&nbsp;</strong><br>A thick, durable cable suitable for 20-amp circuits. The 25ft length should give you plenty of wire to work with inside the kiosk. You technically shouldn’t need more than 15 feet, but this allows you to have the proper lengths for daisy chaining from Outlet 1 to Outlet 2</li>
+  <li><strong>1x GFCI Outlet Tester</strong>&nbsp;<br>Use this to verify that the outlet is properly wired and the GFCI protection works as intended.</li>
+  <li><strong>1x 3/8" Clamp-on Service Entrance Connector</strong><br>Prevents stress or accidental tugging from damaging the internal wiring. Required for secure and safe cable entry into the box.</li>
+  <li><strong>5x 12-10 Yellow Ring Terminals&nbsp;</strong><br>These will be crimped onto the ground wires to ensure a tight, secure, and corrosion-resistant connection to the outlets and chassis.</li>
+  <li><strong>1x Wire Stripper/Cutter/Crimper Tool&nbsp;</strong><br>A basic model will do fine. Used to cut wire to length, strip the outer jacket, and crimp terminals to the exposed copper.</li>
   <li><strong>1x GFCI Outlet or 1x 20 Amp Circuit Breaker</strong>&nbsp;<br>Even though you're using 12 AWG wiring rated for 20 amps, GFCI outlets usually max out at 15 amps. Do not exceed the rated amperage.&nbsp;<br>&nbsp; &nbsp; •&nbsp;For permanent or outdoor setups, you may want to install a dedicated 20- amp breaker. If you’re not experienced with electrical panels, hire a licensed electrician to handle this part.</li>
   <li><strong>1x 1/2" Plastic Screw-in Connector Conduit Fitting&nbsp;</strong><br>Optional, but great for helping keep moisture and rain out of the box, especially if the kiosk is outdoors.</li>
 </ul>
 <h2>Optional Parts</h2>
 <ul>
-  <li><strong>2x 20-Amp 125V Outlets (or better)&nbsp;</strong><br>Used if you're replacing both receptacles inside the kiosk.&nbsp;</li>
+  <li><strong>2x 20-Amp 125V Outlets (or better)&nbsp;</strong><br>Used if you're replacing both receptacles inside the kiosk.</li>
   <li><strong>1x 1/2" Plastic Screw-in Connector Conduit Fitting&nbsp;</strong><br>Optional, but great for helping keep moisture and rain out of the box, especially if the kiosk is outdoors. Most of the time, it is ok to re-use the old one, but is a good idea to use a new one to keep water from entering the kiosk.</li>
 </ul>
 <h2>Step-by-Step Instructions</h2>
 <ol>
   <li><strong>Disassemble the Electrical Box&nbsp;</strong><br>•&nbsp;Unscrew and remove the two bolts holding the electrical box in place inside the kiosk.&nbsp;<br>•&nbsp;Pull the box outward carefully to access the internal wiring.</li>
-  <li><strong>Remove the Old Wiring&nbsp;</strong><br>•&nbsp;Disconnect and discard all old wiring inside the box.&nbsp;<br>•&nbsp;You may need to cut the old green ground wire connected to the kiosk body. Don’t worry — you’ll replace it with fresh wire.&nbsp;</li>
-  <li><strong>Inspect the Kiosk Entry Point&nbsp;</strong><br>•&nbsp;Check the condition of the plastic screw-in fitting where the cable enters the kiosk. If damaged or missing, replace it to ensure weather resistance.&nbsp;</li>
-  <li><strong>Feed in the New Power Cord&nbsp;</strong><br>•&nbsp;Insert your 12AWG power cord through the back of the kiosk and into the box area.&nbsp;<br>•&nbsp;Pull enough slack through to work comfortably and reach all terminals.&nbsp;</li>
-  <li><strong>Strip the Outer Jacket&nbsp;</strong><br>•&nbsp;Use the wire stripper to remove the outer black insulation from the cord — be careful not to nick the internal wires.&nbsp;<br>•&nbsp;You should see 3 wires inside: &nbsp;<br>&nbsp; &nbsp; - Black or Red = Hot/Live&nbsp;<br>&nbsp; &nbsp; - White = Neutral&nbsp;<br>&nbsp; &nbsp; - Green = Ground&nbsp;</li>
-  <li><strong>Replace the Clamp Connector&nbsp;</strong><br>•&nbsp;Remove the existing 3/8" clamp connector from the electrical box.&nbsp;<br>•&nbsp;Install the new clamp connector and feed the stripped cable through it.&nbsp;<br>•&nbsp;Tighten the clamp securely to prevent movement.&nbsp;</li>
-  <li><strong>Prepare the Jumper Wire&nbsp;</strong><br>•&nbsp;Cut a short length of cable to connect the first outlet to the second outlet inside the box.&nbsp;<br>•&nbsp;Leave extra length in case you ever need to remove or reposition the outlets.&nbsp;</li>
-  <li><strong>Strip and Prep Wires</strong>&nbsp;<br>•&nbsp;Strip both ends of the jumper wire. Remove the black jacket and expose the individual wires.&nbsp;<br>•&nbsp;Crimp a yellow ring terminal to the ground wire at both ends.&nbsp;</li>
-  <li>Secure Cable and Connector<br>•&nbsp;Insert the power cord and jumper wire into the electrical box.&nbsp;<br>•&nbsp;Tighten the clamp-on connector to hold everything in place.&nbsp;</li>
-  <li>Tie the Underwriter’s Knot Before connecting wires to the GFCI or breaker:&nbsp;<br>• Create a loop in the hot and neutral wires.&nbsp;<br>• Intertwine them so they form a knot (this prevents tension from pulling on the terminals).&nbsp;<br>• Pull the knot tight and push it back into the box.&nbsp;</li>
-  <li>Connect to Outlet 1&nbsp;<br>• Using the labeling on the outlet, connect:<br>&nbsp; &nbsp; - Black wire or Red wire (Live) to the brass screw&nbsp;<br>&nbsp; &nbsp; - White wire (Neutral) to the silver screw&nbsp;<br>&nbsp; &nbsp; - Green wire (Ground) with a ring terminal to the green screw&nbsp;</li>
-  <li>Connect the Jumper to Outlet 2&nbsp;<br>• Repeat the connections using the jumper wire on Outlet 2:&nbsp;<br>&nbsp; &nbsp; - Live to brass screw&nbsp;<br>&nbsp; &nbsp; - Neutral to silver screw&nbsp;<br>&nbsp; &nbsp; - Ground (ring terminal) to green screw&nbsp;</li>
-  <li>Install and Mount the Outlets&nbsp;<br>• Secure Outlet 1 (the back outlet) to the electrical box.&nbsp;<br>• Tighten the mounting screws and install the cover plate.&nbsp;</li>
-  <li>Ground to Kiosk Frame&nbsp;<br>• Cut another length of ground wire to run from Outlet 2 to the metal frame of the kiosk.&nbsp;<br>• Crimp a ring terminal on both ends.&nbsp;<br>• Secure one end to the green screw on Outlet 2 and the other to the chassis ground point on the kiosk.&nbsp;</li>
+  <li><strong>Remove the Old Wiring&nbsp;</strong><br>•&nbsp;Disconnect and discard all old wiring inside the box.&nbsp;<br>•&nbsp;You may need to cut the old green ground wire connected to the kiosk body. Don’t worry — you’ll replace it with fresh wire.</li>
+  <li><strong>Inspect the Kiosk Entry Point&nbsp;</strong><br>•&nbsp;Check the condition of the plastic screw-in fitting where the cable enters the kiosk. If damaged or missing, replace it to ensure weather resistance.</li>
+  <li><strong>Feed in the New Power Cord&nbsp;</strong><br>•&nbsp;Insert your 12AWG power cord through the back of the kiosk and into the box area.&nbsp;<br>•&nbsp;Pull enough slack through to work comfortably and reach all terminals.</li>
+  <li><strong>Strip the Outer Jacket&nbsp;</strong><br>•&nbsp;Use the wire stripper to remove the outer black insulation from the cord — be careful not to nick the internal wires.&nbsp;<br>•&nbsp;You should see 3 wires inside: &nbsp;<br>&nbsp; &nbsp; - Black or Red = Hot/Live&nbsp;<br>&nbsp; &nbsp; - White = Neutral&nbsp;<br>&nbsp; &nbsp; - Green = Ground</li>
+  <li><strong>Replace the Clamp Connector&nbsp;</strong><br>•&nbsp;Remove the existing 3/8" clamp connector from the electrical box.&nbsp;<br>•&nbsp;Install the new clamp connector and feed the stripped cable through it.&nbsp;<br>•&nbsp;Tighten the clamp securely to prevent movement.</li>
+  <li><strong>Prepare the Jumper Wire&nbsp;</strong><br>•&nbsp;Cut a short length of cable to connect the first outlet to the second outlet inside the box.&nbsp;<br>•&nbsp;Leave extra length in case you ever need to remove or reposition the outlets.</li>
+  <li><strong>Strip and Prep Wires</strong>&nbsp;<br>•&nbsp;Strip both ends of the jumper wire. Remove the black jacket and expose the individual wires.&nbsp;<br>•&nbsp;Crimp a yellow ring terminal to the ground wire at both ends.</li>
+  <li>Secure Cable and Connector<br>•&nbsp;Insert the power cord and jumper wire into the electrical box.&nbsp;<br>•&nbsp;Tighten the clamp-on connector to hold everything in place.</li>
+  <li>Tie the Underwriter’s Knot Before connecting wires to the GFCI or breaker:&nbsp;<br>• Create a loop in the hot and neutral wires.&nbsp;<br>• Intertwine them so they form a knot (this prevents tension from pulling on the terminals).&nbsp;<br>• Pull the knot tight and push it back into the box.</li>
+  <li>Connect to Outlet 1&nbsp;<br>• Using the labeling on the outlet, connect:<br>&nbsp; &nbsp; - Black wire or Red wire (Live) to the brass screw&nbsp;<br>&nbsp; &nbsp; - White wire (Neutral) to the silver screw&nbsp;<br>&nbsp; &nbsp; - Green wire (Ground) with a ring terminal to the green screw</li>
+  <li>Connect the Jumper to Outlet 2&nbsp;<br>• Repeat the connections using the jumper wire on Outlet 2:&nbsp;<br>&nbsp; &nbsp; - Live to brass screw&nbsp;<br>&nbsp; &nbsp; - Neutral to silver screw&nbsp;<br>&nbsp; &nbsp; - Ground (ring terminal) to green screw</li>
+  <li>Install and Mount the Outlets&nbsp;<br>• Secure Outlet 1 (the back outlet) to the electrical box.&nbsp;<br>• Tighten the mounting screws and install the cover plate.</li>
+  <li>Ground to Kiosk Frame&nbsp;<br>• Cut another length of ground wire to run from Outlet 2 to the metal frame of the kiosk.&nbsp;<br>• Crimp a ring terminal on both ends.&nbsp;<br>• Secure one end to the green screw on Outlet 2 and the other to the chassis ground point on the kiosk.</li>
   <li>Final Assembly&nbsp;<br>• Neatly tuck in the wires inside the box.&nbsp;<br>• Reattach the electrical box to the kiosk with the original bolts.&nbsp;<br>• Ensure everything is tight and sealed.</li>
 </ol>
 <h2>Testing and Verification</h2>
@@ -96,8 +96,8 @@ dateCreated: 2024-10-21T14:25:51.187Z
   <p>Ensure all outlet connections are secure and tight before performing any tests.</p>
 </blockquote>
 <ol>
-  <li>Plug in your GFCI Outlet Tester.&nbsp;</li>
-  <li>Make sure each outlet shows correct wiring and that GFCI protection functions.&nbsp;</li>
-  <li>If you get an error, double-check all wire connections, especially Live vs Neutral.&nbsp;</li>
-  <li>Once everything tests correctly, plug in your kiosk equipment.&nbsp;</li>
+  <li>Plug in your GFCI Outlet Tester.</li>
+  <li>Make sure each outlet shows correct wiring and that GFCI protection functions.</li>
+  <li>If you get an error, double-check all wire connections, especially Live vs Neutral.</li>
+  <li>Once everything tests correctly, plug in your kiosk equipment.</li>
 </ol>
