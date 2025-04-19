@@ -2,7 +2,7 @@
 title: Cleanup & Security
 description: 
 published: true
-date: 2025-04-19T05:44:11.911Z
+date: 2025-04-19T05:45:28.814Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:25:51.187Z
@@ -18,6 +18,7 @@ dateCreated: 2024-10-21T14:25:51.187Z
 <h1>Security</h1>
 <h2>Remove the Cellular Modem</h2>
 <p>Each kiosk includes a cellular modem, which was previously used to maintain an internet connection. However, most data plans have been inactive since December 2024 due to non-payment, meaning the unit may not currently be online. Before reconnecting any kiosk to the internet, it’s strongly recommended to remove or disable vulnerable software such as Kaseya and RealVNC 4 to reduce security risks. These outdated tools could expose the system to potential threats. If still installed, the IBR200 modem can also be repurposed as a Wi-Fi extender, operating on the 2.4GHz band with a maximum speed of 60 Mbps.</p>
+<p><strong>It is not recommended to connect systems running Windows 7 Embedded Standard (32-bit) to the internet.</strong> This operating system is no longer supported by Microsoft and does not receive security updates, leaving it highly vulnerable to modern exploits. Connecting it to the internet increases the risk of unauthorized access, malware infections, and data breaches—especially if legacy software like RealVNC 4 or Kaseya is still installed.</p>
 <h2>Disable or Uninstall Kaseya</h2>
 <p>Kaseya was used by Redbox for remote kiosk management. The software can only connect via the <code>accessredbox.net</code> servers, which is still registered at present. However, the domain could potentially be repurposed in the future by a malicious actor to serve as a Command and Control server for any kiosks still connected to the internet. To mitigate this risk, you should disable Kaseya services in Service Management or uninstall the software entirely.</p>
 <h2>Disable or Uninstall RealVNC</h2>
