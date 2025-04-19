@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-03-28T04:50:40.253Z
+date: 2025-04-19T16:01:14.804Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -270,6 +270,8 @@ This device ensures that the proper voltage is going into the kiosk. It is NOT a
 - Tripp Lite 900VA UPS Battery Back Up - OMNI900LCD
   > Most, if not all batteries in the UPS are dead and will need to be replaced. Details on how to replace will be in [replacement parts](/hardware/parts).
 {.is-warning}
+  
+  When the kiosk loses power, this device powers the kiosk PC for safe shutdown.
   <figure class="image image_resized" style="width:40%; display: inline-block;"><img src="/tripp_lite_900va.jpg"></figure>
 
 ## Boards
