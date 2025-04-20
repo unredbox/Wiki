@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-04-19T17:35:43.953Z
+date: 2025-04-20T01:41:17.649Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -349,6 +349,25 @@ event of a blackout or brownout.
 ## Lock
 <figure class="image image_resized" style="width:70%;"><img src="/locked_lock.jpg" alt="Locked Lock from within a kiosk"></figure>
 
+## Decals
+  
+Several different decals were used to populate the area above the touchscreen. Some are more common than others. If more decals are known, please contribute.
+  
+- NEW RELEASE movies & games
+![newrelease.png](/newrelease.png)
+  
+- New Relase MOVIES & GAMES (New Background)
+![newrelease2.png](/newrelease2.png)
+  
+- $1 DVD RENTALS $1
+![1dollardvdrentals.png](/1dollardvdrentals.png)
+  
+- RENT NEW MOVIES FRESH FROM THE THEATRE
+![rentnewmoviesfreshfromthetheater.png](/rentnewmoviesfreshfromthetheater.png)
+
+- NEW MOVIES ARE BACK
+![newmoviesareback.png](/newmoviesareback.png)
+  
 ## Remanufacturing
 Some kiosks contain 2 sheets of paper below the touch screen. First page contains the date refurbished and serial number of the kiosk, which would be the remanufactured Serial Number.
 
