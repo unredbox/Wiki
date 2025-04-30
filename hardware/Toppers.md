@@ -2,7 +2,7 @@
 title: Toppers
 description: 
 published: true
-date: 2025-03-26T18:06:28.838Z
+date: 2025-04-30T00:38:14.879Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -20,8 +20,8 @@ These topper variants are ones that were actively deployed to the field and atta
 ## Videri Digital Display Topper
 <figure class="image image_resized" style="width:40%;"><img src="/videri_display_topper.jpg"></figure>
 
-Digital display topper produced by Videri. Utilized display to play Redbox advertisements and content trailers.
-  - Dimensions: UNKNOWN
+Digital display topper engineered by Videri to deliver Redbox and Crackle advertisements and content trailers. Operates on a restricted Android 6 device, though system lockdown could be bypassed via ADB due to insufficient hardening.
+  - Dimensions: 30"×4.81"×20"
   - Title Cards Held: None
 
 ## 6-Title Topper (Red Face)
