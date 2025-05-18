@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2025-05-18T22:45:39.333Z
+date: 2025-05-18T22:52:13.233Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -96,6 +96,57 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <h2>“CAMERA CAPTURE error. I'm sorry!”</h2>
 <p>You may encounter issues with the camera, despite it being connected, recognized by windows and having drivers installed.&nbsp;</p>
 <p>You may also see the error “CAMERA CAPTURE error. I'm sorry!” in HAL Tester console, and the camera preview is blank. This is usually an issue with incorrect camera settings for the kiosk software.<br>To fix this, open <code>C:\Program Files\Redbox\halservice\bin\hal.xml</code> in a text editor, find the line starting with <code>&lt;ScannerService&gt;</code>, and change it to one of the following:</p>
-<p>For Gen 4 cameras or earlier: <code>&lt;ScannerService&gt;Legacy&lt;/ScannerService&gt;</code></p>
-<p>For Gen 5: <code>&lt;ScannerService&gt;Cortex&lt;/ScannerService&gt;</code></p>
+<p>For Gen 3 and Gen 4 Cameras (You can switch between both Generations as they are plug and play):&nbsp;</p>
+<blockquote>
+  <p>&nbsp; &lt;Camera&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CameraPlugin&gt;DirectShowFrame&lt;/CameraPlugin&gt;</p>
+  <p>&nbsp; &nbsp;&lt;SnapDecodePort&gt;NONE&lt;/SnapDecodePort&gt;</p>
+  <p>&nbsp; &nbsp;&lt;WritePause&gt;500&lt;/WritePause&gt;</p>
+  <p>&nbsp; &nbsp;&lt;RebootOnStart&gt;true&lt;/RebootOnStart&gt;</p>
+  <p>&nbsp; &nbsp;&lt;EnableInfared&gt;false&lt;/EnableInfared&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CycleCameraOnUse&gt;False&lt;/CycleCameraOnUse&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseInliteOnFail&gt;True&lt;/UseInliteOnFail&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ScannerService&gt;Legacy&lt;/ScannerService&gt;</p>
+  <p>&nbsp; &nbsp;&lt;LogDetailedScan&gt;False&lt;/LogDetailedScan&gt;</p>
+  <p>&nbsp; &nbsp;&lt;InsertReadStats&gt;true&lt;/InsertReadStats&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ExpectedCodes&gt;4&lt;/ExpectedCodes&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ScanTimeout&gt;2000&lt;/ScanTimeout&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ScannerWakeupPause&gt;15000&lt;/ScannerWakeupPause&gt;</p>
+  <p>&nbsp; &nbsp;&lt;FilterExcessReadCodes&gt;True&lt;/FilterExcessReadCodes&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CortexPortOpenWait&gt;50&lt;/CortexPortOpenWait&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CortexSnapOnDecodeFailure&gt;False&lt;/CortexSnapOnDecodeFailure&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CortexPortBufferSize&gt;8192&lt;/CortexPortBufferSize&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseRuntimePath&gt;False&lt;/UseRuntimePath&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseCortexHDField&gt;True&lt;/UseCortexHDField&gt;</p>
+  <p>&nbsp; &nbsp;&lt;IRHardwareInstallDate&gt;NONE&lt;/IRHardwareInstallDate&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseInliteForFraudValidation&gt;False&lt;/UseInliteForFraudValidation&gt;</p>
+  <p>&nbsp;&lt;/Camera&gt;</p>
+</blockquote>
+<p>For Gen 5 Barcode Scanner:&nbsp;</p>
+<blockquote>
+  <p>&nbsp; &lt;Camera&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CameraPlugin&gt;DirectShowFrame&lt;/CameraPlugin&gt;</p>
+  <p>&nbsp; &nbsp;&lt;SnapDecodePort&gt;NONE&lt;/SnapDecodePort&gt;</p>
+  <p>&nbsp; &nbsp;&lt;WritePause&gt;500&lt;/WritePause&gt;</p>
+  <p>&nbsp; &nbsp;&lt;RebootOnStart&gt;true&lt;/RebootOnStart&gt;</p>
+  <p>&nbsp; &nbsp;&lt;EnableInfared&gt;false&lt;/EnableInfared&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CycleCameraOnUse&gt;False&lt;/CycleCameraOnUse&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseInliteOnFail&gt;True&lt;/UseInliteOnFail&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ScannerService&gt;Cortex&lt;/ScannerService&gt;</p>
+  <p>&nbsp; &nbsp;&lt;LogDetailedScan&gt;False&lt;/LogDetailedScan&gt;</p>
+  <p>&nbsp; &nbsp;&lt;InsertReadStats&gt;true&lt;/InsertReadStats&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ExpectedCodes&gt;4&lt;/ExpectedCodes&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ScanTimeout&gt;2000&lt;/ScanTimeout&gt;</p>
+  <p>&nbsp; &nbsp;&lt;ScannerWakeupPause&gt;15000&lt;/ScannerWakeupPause&gt;</p>
+  <p>&nbsp; &nbsp;&lt;FilterExcessReadCodes&gt;True&lt;/FilterExcessReadCodes&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CortexPortOpenWait&gt;50&lt;/CortexPortOpenWait&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CortexSnapOnDecodeFailure&gt;False&lt;/CortexSnapOnDecodeFailure&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CortexPortBufferSize&gt;8192&lt;/CortexPortBufferSize&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseRuntimePath&gt;False&lt;/UseRuntimePath&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseCortexHDField&gt;True&lt;/UseCortexHDField&gt;</p>
+  <p>&nbsp; &nbsp;&lt;IRHardwareInstallDate&gt;NONE&lt;/IRHardwareInstallDate&gt;</p>
+  <p>&nbsp; &nbsp;&lt;UseInliteForFraudValidation&gt;False&lt;/UseInliteForFraudValidation&gt;</p>
+  <p>&nbsp; &nbsp;&lt;CortexStartupAction&gt;Decode&lt;/CortexStartupAction&gt;</p>
+  <p>&nbsp;&lt;/Camera&gt;</p>
+</blockquote>
 <p>If you are unsure what generation camera you have, try just flipping whatever the current setting.<br>After making the changes, save the file and restart the kiosk (or HAL Service if you prefer)</p>
