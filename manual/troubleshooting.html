@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2024-12-08T02:22:46.591Z
+date: 2025-05-18T22:41:54.825Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -93,3 +93,9 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>If the Start screen is blank (no carousel with titles), and no titles are shown on the Rental screen, you may have accidentally “closed” your kiosk. This setting is found in the Redbox Desktop and clears the inventory in the kiosk, resulting in no products being in stock. To resolve this, login to Field Maintenance and look for the Inventory Sync option. This will allow you to schedule a sync of your inventory, which usually takes about 3-4 hours to complete. After the sync is complete, you should be able to view your available titles.</p>
 <h2>Kiosk Not Showing Titles Despite Having Inventory</h2>
 <p>If the Start screen is blank (no carousel with titles), and the Rental screen is not showing any titles (except for replacement cases) despite having inventory data, this is likely because of an incorrect date and time on your kiosk's computer. This often happens after resetting your CMOS, likely because the system date is cleared. If you've disconnected your kiosk from the internet, your computer won't be able to get the correct date and time for your time zone, hence why it's set to an old date (like 2009). Luckily, the fix is easy: just enter your Date and Time settings and manually update the information. Then, restart your kiosk, and you should be good to go!</p>
+<h2>“CAMERA CAPTURE error. I'm sorry!”</h2>
+<p>You may encounter issues with the camera, despite it being connected, recognized by windows and having drivers installed.&nbsp;</p>
+<p>You may also see the error “CAMERA CAPTURE error. I'm sorry!” in HAL Tester console, and the camera preview is blank. This is usually an issue with incorrect camera settings for the kiosk software.<br>To fix this, open <code>C:\Program Files\Redbox\halservice\bin\hal.xml</code> in a text editor, find the line starting with <code>&lt;ScannerService&gt;</code>.</p>
+<p>For Gen 4 cameras or earlier: <code>&lt;ScannerService&gt;Legacy&lt;/ScannerService&gt;</code></p>
+<p>For Gen 5: <code>&lt;ScannerService&gt;Cortex&lt;/ScannerService&gt;</code></p>
+<p>If you are unsure what generation camera you have, try just flipping whatever the current setting.<br>After making the changes, save the file and restart the kiosk (or HAL Service if you prefer)</p>
