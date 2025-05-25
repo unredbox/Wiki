@@ -2,7 +2,7 @@
 title: Cleanup & Security
 description: 
 published: true
-date: 2025-04-19T05:45:28.814Z
+date: 2025-05-25T16:09:34.718Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:25:51.187Z
@@ -54,6 +54,22 @@ dateCreated: 2024-10-21T14:25:51.187Z
   <p>Name: [enter any name here]<br>Restrict to address family: <strong>IPv4 and IPv6</strong> (default)<br>Protocol: <strong>TCP+UDP</strong> (default)<br>Source zone: <strong>LAN</strong> (default)<br>Source MAC address: [select your kiosk's MAC address here]<br>Source address: [select your kiosk's local IP address here]<br>Source port: <strong>any</strong> (default)<br>Destination zone: <strong>WAN</strong> (default)<br>Destination address: <strong>any</strong> (default)<br>Destination port: <strong>any</strong> (default)<br>Action: <strong>reject</strong></p>
 </blockquote>
 <p>Click the <strong>Save &amp; apply</strong> button below, and wait for the changes to propagate. Your kiosk should now have internet access restricted to only communicate devices in your local network.</p>
+<h2>Replacing the stock HDD with a newer SSD/HDD</h2>
+<p>It is highly recommended to replace the existing hard disk drives (HDDs) with solid-state drives (SSDs) or, at a minimum, newer HDDs that run at 7200 RPM max. The current drives in many kiosks are aging and prone to failure, with numerous cases already showing signs of degradation or complete failure.</p>
+<p>&nbsp;</p>
+<h3><strong>Benefits of SSD Replacement</strong></h3>
+<ul>
+  <li><strong>Improved Reliability:</strong> SSDs have no moving parts, which significantly reduces the risk of mechanical failure.</li>
+  <li><strong>Faster Performance:</strong> Boot times, application loading, and overall system responsiveness are dramatically improved with SSDs.</li>
+  <li><strong>Lower Power Consumption:</strong> SSDs consume less power, which can benefit both thermal management and energy costs in the long term.</li>
+  <li><strong>Extended Lifespan of Kiosks:</strong> Replacing failing drives ensures continued operation and minimizes the risk of downtime.</li>
+</ul>
+<p>&nbsp;</p>
+<h3><strong>Alternative Option – Newer HDDs</strong></h3>
+<p>If budget or compatibility constraints prevent the adoption of SSDs, replacing the old HDDs with new ones can still offer increased reliability and mitigate immediate failure risks. It is recommended to buy one that runs at 7200 RPM max as 5400 RPM is known to struggle with querying the local database, which can cause instability issues down the road.</p>
+<p>&nbsp;</p>
+<h3><strong>Drive Cloning</strong></h3>
+<p>For a smooth transition from the old drive to the new one, we recommend using reliable drive cloning software. Be sure to back up all important data before starting the cloning process. If you're cloning to an SSD, choose software that supports SSD alignment to ensure optimal performance and longevity. While there are various free and paid tools available, we've had the most consistent success with <strong>Macrium Reflect 8 Home</strong>.</p>
 <h1>Outdoor Unit Outlet Rewiring Guide</h1>
 <blockquote>
   <p>Electrical work must be performed with extreme caution and precision. If you are unsure about any part of this process, or lack the proper tools or experience, <strong>stop immediately and consult a licensed electrician.</strong> Improper wiring can result in <strong>serious injury, death, fire, and/or damage to kiosk equipment.</strong></p>
