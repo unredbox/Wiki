@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2025-05-18T22:52:13.233Z
+date: 2025-06-11T08:27:34.944Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -150,3 +150,13 @@ dateCreated: 2024-10-21T14:16:14.709Z
   <p>&nbsp;&lt;/Camera&gt;</p>
 </blockquote>
 <p>If you are unsure what generation camera you have, try just flipping whatever the current setting.<br>After making the changes, save the file and restart the kiosk (or HAL Service if you prefer)</p>
+<h1>Unknown vs. Unknown Title</h1>
+<p>These definitions gets mixed up. Both are not the same or have the same meaning.</p>
+<h2>Unknown</h2>
+<p>When the camera interface or Cortex processing module fails to decode the barcode symbology, confirm that your HAL XML configuration (hal.xml) specifies the correct device node, scan parameters, and decoding settings. Be sure the device is firmly plugged in to the USB slot on the gripper and appears in Device Manager.</p>
+<ul>
+  <li><strong>Camera (3rd/4th Generation)</strong><br>Please tweak the camera settings in HAL Tester until the barcode is successfully read. Make sure IR lights are plugged into&nbsp;</li>
+  <li><strong>Cortex</strong><br>This issue is infrequent; occasionally reinserting the disc will resolve it.</li>
+</ul>
+<h2>Unknown Title</h2>
+<p>When the scanning subsystem decodes a Data Matrix code but cannot resolve it to a title record, you will need to use a program to bind the scanned Data Matrix to the proper product entry. Before performing the association, eject the disc from the kiosk’s drive or restart the Kiosk Engine service to clear the “Unknown Title” state.</p>
