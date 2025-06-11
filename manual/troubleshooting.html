@@ -2,13 +2,13 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2025-06-11T08:27:34.944Z
+date: 2025-06-11T08:28:42.303Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
 -->
 
-<h2>Kiosk Error Screens</h2>
+<h1>Kiosk Error Screens</h1>
 <p>The basic error screens on a Redbox have different color backgrounds, indicating the problem at a basic level. Credits to @mordanthanus in the Discord for posting this info.</p>
 <ul>
   <li><u>Black with white text</u> – Kiosk is booting or updating. Black screens automatically clear themselves when completed, usually 5-15 minutes. Watchdog must be turned on for this screen to disappear. Watchdog can be turned on or off through the Redbox Desktop.</li>
@@ -21,7 +21,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <figure class="image image_resized" style="width:26.41%;"><img src="/red-error.jpg"></figure>
 <figure class="image image_resized" style="width:28.21%;"><img src="/orange-error.jpg"></figure>
 <figure class="image image_resized" style="width:22.69%;"><img src="/green-error.jpg"></figure>
-<h2>Kiosk Error Codes</h2>
+<h1>Kiosk Error Codes</h1>
 <p>These error codes show on screen in maintenance mode. Credits to @mordanthanus in the Discord for posting this info.</p>
 <p><code><strong>= 0073CDRR =</strong></code></p>
 <p>- MS will always dispatch these due to an EMV error.</p>
@@ -75,25 +75,25 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>- Indication that the EMV has failed or been tampered with. Plan on bringing on with you. Alert Irruptions are not field repairable.</p>
 <p><code><strong>= CCF&nbsp;</strong></code></p>
 <p>- Camera Capture Failure.</p>
-<h2>Locked Out of Redbox Account</h2>
+<h1>Locked Out of Redbox Account</h1>
 <p>It's common for some people to get locked out of the Administrator account on their Windows 7 OS (usually named <code>Rbuser</code>). This usually occurs when you enter incorrect credentials, but can happen for a variety of other reasons. To log back into your kiosk, you'll need to reset the password first. Unfortunately, this fix isn't simple and will require some technical knowledge.</p>
 <p>In order to reset your password, you'll need to have a USB Drive and access to BIOS on your kiosk. If you boot into BIOS and are greeted with a password screen, you'll need to reset your CMOS first. You can do this by removing your computer from the Redbox kiosk, opening the side panel, and removing the CMOS battery (then putting it back in after 5 seconds). The CMOS battery is a CR2032 located on the motherboard. Although it isn't required, it's highly recommended that you replace the battery before further usage to prevent issues further on. <strong>Before you do <u>anything</u>, make sure that your computer is completely unplugged. A potential electrical shock is not worth the risk.</strong></p>
 <p>Once you've reset your CMOS and plugged in your machine, it's time to create a bootable USB stick. To do this, visit <a href="https://pogostick.net/~pnh/ntpasswd/">this page</a> and follow the instructions to download the latest release and create a bootable USB. This can be done using a CD or floppy disk as well, but you'll need to boot from it on the Redbox computer. When you insert your bootable USB, power on your computer and enter BIOS (depending on your computer, this can usually be done by holding down the F1/F2/F12/DEL key). Select your USB stick to boot with it, and follow the instructions on the screen to reset your password (the default selections are usually the correct ones, but <strong>always read before you click</strong>).</p>
 <p>Finally, remove your USB stick and boot your computer as normal. You should be able to enter without issues, and your kiosk is restored. Congratulations!</p>
-<h2>Changing your Administrator Password</h2>
+<h1>Changing your Administrator Password</h1>
 <p>If you've experienced being locked out of your Redbox account, it might be a good idea to update your administrator password. This process is straightforward, and it'll prevent these issues from happening again. To do this, open Command Prompt and run the following command to update the password:</p>
 <p><code>net user Rbuser &lt;enter your password here&gt;</code></p>
 <p>If you see a success message appear on-screen, you've done this step correctly! Next, you'll need to update the password on the system so it automatically boots without password entry. This step is highly recommend, and skipping it will result in future complications. If you'd like to continue, open your File Explorer and navigate to <code>C:\Program Files\Redbox\REDS\Installers\KioskAdmin.zip</code> and unzip this file. Then, launch the <code>Autologon.exe</code> and replace the credentials with the new password that was set. After you do this, restart your machine to confirm that the changes were made, and that's it.</p>
-<h2>Powering On a Redbox Kiosk Computer After a BIOS Reset</h2>
+<h1>Powering On a Redbox Kiosk Computer After a BIOS Reset</h1>
 <p>Redbox kiosk computers are configured to automatically power on when connected to a power source (autoboot). However, if the BIOS is reset—whether from a manual reset or due to a CMOS battery failure—this autoboot setting will revert to its default state and become disabled. After this, the computer will require a manual power-on each time until the autoboot setting is re-enabled in the BIOS.</p>
-<h2>Locating the Power Button on Premio Computers</h2>
+<h1>Locating the Power Button on Premio Computers</h1>
 <p>On Premio computers, the power button is discreet and may not be immediately visible. It is located on the back of the unit, near the I/O panel. Look for a small button close to the I/O LEDs (typically used to indicate network or drive activity). Pressing this button will power on the computer, allowing access to the BIOS to re-enable the autoboot setting if needed.</p>
 <p>Note: Once the autoboot on power setting is re-enabled in the BIOS, the computer should resume automatic boot-up on power connection, as originally configured.</p>
-<h2>Kiosk Not Showing Titles</h2>
+<h1>Kiosk Not Showing Titles</h1>
 <p>If the Start screen is blank (no carousel with titles), and no titles are shown on the Rental screen, you may have accidentally “closed” your kiosk. This setting is found in the Redbox Desktop and clears the inventory in the kiosk, resulting in no products being in stock. To resolve this, login to Field Maintenance and look for the Inventory Sync option. This will allow you to schedule a sync of your inventory, which usually takes about 3-4 hours to complete. After the sync is complete, you should be able to view your available titles.</p>
-<h2>Kiosk Not Showing Titles Despite Having Inventory</h2>
+<h1>Kiosk Not Showing Titles Despite Having Inventory</h1>
 <p>If the Start screen is blank (no carousel with titles), and the Rental screen is not showing any titles (except for replacement cases) despite having inventory data, this is likely because of an incorrect date and time on your kiosk's computer. This often happens after resetting your CMOS, likely because the system date is cleared. If you've disconnected your kiosk from the internet, your computer won't be able to get the correct date and time for your time zone, hence why it's set to an old date (like 2009). Luckily, the fix is easy: just enter your Date and Time settings and manually update the information. Then, restart your kiosk, and you should be good to go!</p>
-<h2>“CAMERA CAPTURE error. I'm sorry!”</h2>
+<h1>“CAMERA CAPTURE error. I'm sorry!”</h1>
 <p>You may encounter issues with the camera, despite it being connected, recognized by windows and having drivers installed.&nbsp;</p>
 <p>You may also see the error “CAMERA CAPTURE error. I'm sorry!” in HAL Tester console, and the camera preview is blank. This is usually an issue with incorrect camera settings for the kiosk software.<br>To fix this, open <code>C:\Program Files\Redbox\halservice\bin\hal.xml</code> in a text editor, find the line starting with <code>&lt;ScannerService&gt;</code>, and change it to one of the following:</p>
 <p>For Gen 3 and Gen 4 Cameras (You can switch between both Generations as they are plug and play):&nbsp;</p>
@@ -155,7 +155,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <h2>Unknown</h2>
 <p>When the camera interface or Cortex processing module fails to decode the barcode symbology, confirm that your HAL XML configuration (hal.xml) specifies the correct device node, scan parameters, and decoding settings. Be sure the device is firmly plugged in to the USB slot on the gripper and appears in Device Manager.</p>
 <ul>
-  <li><strong>Camera (3rd/4th Generation)</strong><br>Please tweak the camera settings in HAL Tester until the barcode is successfully read. Make sure IR lights are plugged into&nbsp;</li>
+  <li><strong>Camera (3rd/4th Generation)</strong><br>Please tweak the camera settings in HAL Tester until the barcode is successfully read. Make sure IR lights are plugged into</li>
   <li><strong>Cortex</strong><br>This issue is infrequent; occasionally reinserting the disc will resolve it.</li>
 </ul>
 <h2>Unknown Title</h2>
