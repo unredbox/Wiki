@@ -2,11 +2,47 @@
 title: Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-15T21:46:21.628Z
+date: 2025-06-15T22:58:45.021Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
 ---
+
+# From HardDrive to a Solid-State Drive
+For this, we will be using Macrium Reflect 8 (X works the same) though there are other tools to clone to a drive. You will need to prep the PC.
+
+### Pre-existing OS Cloning/Restoring
+This is for cloning your previous OS from your physical drive.
+1. Disconnect the HardDrive from the Kiosk PC <figure class="image image_resized" style="width:40%;"><img src="/guides/drive_location.jpg"></figure>
+2. Plug the Harddrive and Solid-State Drive into your PC (Recommended) or a SATA Drive Dock.
+3. Open Macrium Reflect.
+4. Locate **Backup** and select **Image Selected Disks**.<figure class="image image_resized" style="width:60%;"><img src="/guides/reflectbin_sjjl7sckt7.png"></figure>
+5. Select the drive you wish to back up and restore on a Solid-State Drive.<figure class="image image_resized" style="width:60%;"><img src="/guides/reflectbin_nfxh8xa9j5.png"></figure>
+6. You can skip the **Edit the Plan for this Backup** window as this is not required for our backup
+7. Check advanced options and make sure the **Compression Level** is set to **Medium** and use **Intellegent sector copy**.<figure class="image image_resized" style="width:60%;"><img src="/guides/reflectbin_1tdbkhxyrt.png"></figure>
+> If your backup fails upon restoring, you can set Compression Level to **None** which sometimes solves this issues.
+> {.is-danger}
+8. Press **Finish** and your backup should start. We recommend using Macrium Reflect 8 at the Highest Priority to speed up the backup process.
+9. Once Finished, you will need to navigate to Restore and look for **Browse for an image or backup to restore...** and select the image we just backed up.<figure class="image image_resized" style="width:60%;"><img src="/guides/reflectbin_gnpcksufyy.png"></figure>
+10. Press Restore once you verify the contents match what we backed up earlier.<figure class="image image_resized" style="width:60%;"><img src="/guides/reflectbin_hxe4dslkzx.png"></figure>
+11. Make sure you select the correct target disk, then select **Erase Disk** and **Copy Partitions**.<figure class="image image_resized" style="width:60%;"><img src="/guides/olljysg2ii.png"></figure>
+12. Press Finish and Macrium should start restoring.<figure class="image image_resized" style="width:60%;"><img src="/guides/r5phc7h3a9.png"></figure>
+13. Unplug the Solid-State Drive from your PC or Dock and Plug it back into your Kiosk PC.
+14. Boot up the PC and verify it boots properly before plugging all the cables back into your kiosk and screwing the Solid-State Drive to the mount in the case.
+
+### Restoring from Images
+Wanting to upgrade to the Windows 10 Image or having to get the Windows 7 Image because the drive was dead on arrival or missing? This section should help with restoring. You will need to get the images from the discord server.
+1. Plug the Harddrive (7200 RPM Recommended. 5400 RPM will have a hard time querying the VistaDB database and may crash the kiosk software) or Solid-State Drive (Recommended) into your PC (Recommended) or a SATA Drive Dock.
+2. Open Macrium Reflect.
+3. Navigate to Restore and look for **Browse for an image or backup to restore...** and select the image we downloaded from the discord server.<figure class="image image_resized" style="width:60%;"><img src="/guides/reflectbin_gnpcksufyy.png"></figure>
+4. Press Restore.<figure class="image image_resized" style="width:60%;"><img src="/guides/reflectbin_hxe4dslkzx.png"></figure>
+5. Make sure you select the correct target disk, then select **Erase Disk** and **Copy Partitions**.<figure class="image image_resized" style="width:60%;"><img src="/guides/olljysg2ii.png"></figure>
+6. Press Finish and Macrium should start restoring.<figure class="image image_resized" style="width:60%;"><img src="/guides/r5phc7h3a9.png"></figure>
+7. Unplug the drive from your PC or Dock and Plug it back into your Kiosk PC.
+8. Boot up the PC and verify it boots properly before plugging all the cables back into your kiosk and screwing the Solid-State Drive to the mount in the case. 
+> If you start experiencing issues, you may need to repeat all steps again after re-downloading the image.
+{.is-warning}
+
 
 # Re-wiring your Kiosk (Outdoor Only)
 > Electrical work must be performed with extreme caution and precision. If you are unsure about any part of this process, or lack the proper tools or experience, stop immediately and consult a licensed electrician. Improper wiring can result in serious injury, death, fire, and/or damage to kiosk equipment.
