@@ -2,7 +2,7 @@
 title: Terminology Glossary
 description: 
 published: true
-date: 2024-11-10T18:47:06.079Z
+date: 2025-06-15T07:08:41.752Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T10:57:55.491Z
@@ -13,7 +13,7 @@ Vertical Merchandise Zone. On most units, the rotating carousel will have two po
 
 
 # HAL
-Hardware Abstraction Layer. In essence, a system used to interact with all of the physical hardware in the kiosk. Runs motors to turn carousel, run the picker up and down, and interfaces with all sensors inside each assembly. Also can control ventilation / air conditioning systems in some kiosks.
+Hardware Abstraction Layer. In essence, a system used to interact with all of the physical hardware in the kiosk. Runs motors to turn carousel, run the picker up and down, and interfaces with all sensors inside each assembly. Also can control the air exchanger systems in some kiosks.
 
 # KFC
 Kiosk Function Check, accessible via HAL Tester
