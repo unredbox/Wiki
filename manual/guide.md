@@ -2,11 +2,53 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-20T15:50:15.023Z
+date: 2025-06-20T16:17:03.175Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
 ---
+
+# Upgrading from 3rd/4th Generation to 5th Generation Cortex Barcode Scanner
+This is for upgrading from 3rd/4th Generation to 5th Generation. Typically this is beneficial as 4th Generation tends to have high amounts of issues during kiosk restarts, which tends to relieve long term issues.
+1. Disconnect the USB Cable and Cable `J7` on the `DVD-36-000-04` Gripper Board
+2. Loosen 2 Bolts Holding the old Camera Device
+3. Grab the `Cortex Barcode Scanner` and mount to the bracket.
+4. Install the Cortex Barcode Scannner using the same 2 bolts holding the old mount
+5. Install the 5th Generation Camera from the Redbox Technician Driver Kit. 
+> If you are using Windows 11, you will need to use the CR1100 drivers from CodeCorp's Website, which also support CR1000 devices.
+{.is-warning}
+6. Modify `hal.xml` and apply the following to the camera properties:
+```
+  <Camera>
+   <CameraPlugin>DirectShowFrame</CameraPlugin>
+   <SnapDecodePort>NONE</SnapDecodePort>
+   <WritePause>500</WritePause>
+   <RebootOnStart>true</RebootOnStart>
+   <EnableInfared>false</EnableInfared>
+   <CycleCameraOnUse>False</CycleCameraOnUse>
+   <UseInliteOnFail>True</UseInliteOnFail>
+   <ScannerService>Cortex</ScannerService>
+   <LogDetailedScan>False</LogDetailedScan>
+   <InsertReadStats>true</InsertReadStats>
+   <ExpectedCodes>4</ExpectedCodes>
+   <ScanTimeout>2000</ScanTimeout>
+   <ScannerWakeupPause>15000</ScannerWakeupPause>
+   <FilterExcessReadCodes>True</FilterExcessReadCodes>
+   <CortexPortOpenWait>50</CortexPortOpenWait>
+   <CortexSnapOnDecodeFailure>False</CortexSnapOnDecodeFailure>
+   <CortexPortBufferSize>8192</CortexPortBufferSize>
+   <UseRuntimePath>False</UseRuntimePath>
+   <UseCortexHDField>True</UseCortexHDField>
+   <IRHardwareInstallDate>NONE</IRHardwareInstallDate>
+   <UseInliteForFraudValidation>False</UseInliteForFraudValidation>
+   <CortexStartupAction>Decode</CortexStartupAction>
+ </Camera>
+```
+7. Save and close
+8. Open Command Prompt and execute ``reg.exe add "HKLM\SYSTEM\ControlSet001\Services\CCSERMU\Configuration\000000000000" /v PortName /t REG_SZ /d "COM6" /f``
+9. Restart the computer
+
+If done correctly, your Cortex Barcode Scanner Should work as expected. If you are getting a scanning error, Double check the steps above were followed correctly.
 
 # How to re-enable Task Manager
 All kiosks comes with Task Manager disabled, but with RBUser being an administrator account, this can be re-enabled.
