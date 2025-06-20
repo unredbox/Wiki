@@ -1,8 +1,8 @@
 ---
-title: Guides
+title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-20T15:49:54.913Z
+date: 2025-06-20T15:50:15.023Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
