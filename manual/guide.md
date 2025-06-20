@@ -2,7 +2,7 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-20T16:49:43.976Z
+date: 2025-06-20T16:56:35.079Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
@@ -60,7 +60,7 @@ All kiosks comes with Task Manager disabled, but with RBUser being an administra
 6. Press `Apply` and `OK`
 
 # From HardDrive to a Solid-State Drive
-For this, we will be using Macrium Reflect 8 (X works the same) though there are other tools to clone to a drive. You will need to prep the PC.
+For this, we will be using Macrium Reflect 8 (X works the same, but it is trialware and only restoring works after the trial period) though there are other tools to clone to a drive. You will need to prep the PC.
 
 ### Pre-existing OS Cloning/Restoring
 This is for cloning your previous OS from your physical drive.
