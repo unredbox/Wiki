@@ -2,11 +2,20 @@
 title: Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-15T22:58:45.021Z
+date: 2025-06-20T15:49:54.913Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
 ---
+
+# How to re-enable Task Manager
+All kiosks comes with Task Manager disabled, but with RBUser being an administrator account, this can be re-enabled.
+1. Access Redbox Control Panel
+2. Select DOS Prompt
+3. Run command `gpedit.msc` and press `ENTER` to open `Local Group Policy Editor`
+4. Navigate to `User Configuration > Administrative Templates > System > Ctrl+Alt+Del Options`
+5. Select `Remove Task Manager` and set to `Disabled` or `Not Configured`
+6. Press `Apply` and `OK`
 
 # From HardDrive to a Solid-State Drive
 For this, we will be using Macrium Reflect 8 (X works the same) though there are other tools to clone to a drive. You will need to prep the PC.
