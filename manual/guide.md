@@ -2,7 +2,7 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-20T16:17:03.175Z
+date: 2025-06-20T16:49:43.976Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
@@ -18,7 +18,7 @@ This is for upgrading from 3rd/4th Generation to 5th Generation. Typically this 
 > If you are using Windows 11, you will need to use the CR1100 drivers from CodeCorp's Website, which also support CR1000 devices.
 {.is-warning}
 6. Modify `hal.xml` and apply the following to the camera properties:
-```
+```xml
   <Camera>
    <CameraPlugin>DirectShowFrame</CameraPlugin>
    <SnapDecodePort>NONE</SnapDecodePort>
