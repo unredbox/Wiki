@@ -2,11 +2,27 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-20T16:56:35.079Z
+date: 2025-06-22T00:50:53.657Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
 ---
+
+# Upgrading to Windows 11 IoT Enterprise LTSC
+> If you are using Windows 7, you will need to clone the Windows 10 IoT Enterprise Image from our Discord Server as Windows 7 - Windows 11 will remove all files and apps. 
+{.is-danger}
+
+### Preparing
+When preparing, you will need to grab the `Windows 11 IoT Enterprise LTSC` ISO from [here](https://massgrave.dev/windows_ltsc_links) and download the Windows 11 IoT Enterprise LTSC link. We recommend the 2nd link as its already set to iso. You will need to install the ISO to your Kiosk PC or use a tool like Rufus to extract the ISO to your USB Flash Drive
+
+### Running an upgrade
+1. Open the ISO we downloaded to the Kiosk PC or plug in your USB Flash Drive
+2. In the initial setup, you will be asked about Updates. If your kiosk is offline, you will need to set it to Not right now. If your kiosk is connected to the internet, you can download updates, drivers, and optional features. <figure class="image image_resized" style="width:80%;"><img src="/guides/windows-11-upgrade/setuphost_siftxqo21r.png"></figure>
+3. When prompted for a product key, you should be able to skip this step. <figure class="image image_resized" style="width:80%;"><img src="/guides/windows-11-upgrade/setuphost_pqli1kz8iz.png"></figure>
+4. When asked to select an image, select Windows 11 IoT Enterprise LTSC. <figure class="image image_resized" style="width:80%;"><img src="/guides/windows-11-upgrade/setuphost_kgktb97ir4.png"></figure>
+5. If you successfully did everything correctly, you should be able to select `Keep personal files and apps` but sometimes this is automatically applied. Once you verified everything, proceed with installation.
+6. Once the kiosk boots into Windows 11, you should activate windows as after 30 days, the kiosk will turn off automatically after 2 hours. You will need an internet connection to complete this. We recommend [MAS](https://github.com/massgravel/Microsoft-Activation-Scripts) as obtaining an IoT Enterprise License isn't given out to just anyone. 
+
 
 # Upgrading from 3rd/4th Generation to 5th Generation Cortex Barcode Scanner
 This is for upgrading from 3rd/4th Generation to 5th Generation. Typically this is beneficial as 4th Generation tends to have high amounts of issues during kiosk restarts, which tends to relieve long term issues.
