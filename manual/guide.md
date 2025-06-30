@@ -2,11 +2,46 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-22T00:50:53.657Z
+date: 2025-06-30T08:25:50.927Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
 ---
+
+# Useful applications for your kiosk
+These applications are helpful to know the state of your kiosk.
+### [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)
+Program is used to determine the health of your HardDrive/Solid State Drive.
+
+Features Include:
+- S.M.A.R.T. Health Monitoring
+- Temperature Tracking
+- Power-On Hours & Usage Statistics
+- SSD Endurance & Wear Leveling (NAND Health)
+- Firmware & Interface Details
+- Alerting & Logging
+- Advanced APM/AAM Control (HardDrive Only)
+- NVME Support (In Windows 10 PC or any PC replacement)
+- Portable & Low Overhead
+
+### [HWMonitor](https://www.cpuid.com/softwares/hwmonitor.html)
+Program is used to monitor CPU, Memory (RAM), GPU (If installed), SSD/HDD, Battery, sensors, and more.
+
+Features Include:
+- Real-time sensor monitoring
+- CPU & GPU on-die sensor support
+- LPCIO chip monitoring
+- Memory-module thermal sensors
+- SSD/HDD S.M.A.R.T. temperature monitoring
+- Battery status tracking (Requires TrippLite to have a working battery)
+- Complete report export
+- Minimal overhead & portable mode
+- Multi-platform support (will work on Windows 7 Embedded version of the kiosk software)
+
+Features Requires a Pro License
+- Remote Monitoring
+- Graph Generator
+- Improved Interface
 
 # Upgrading to Windows 11 IoT Enterprise LTSC
 > If you are using Windows 7, you will need to clone the Windows 10 IoT Enterprise Image from our Discord Server as Windows 7 - Windows 11 will remove all files and apps. 
