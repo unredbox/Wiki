@@ -2,7 +2,7 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-30T08:25:50.927Z
+date: 2025-06-30T08:27:35.966Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
@@ -38,7 +38,7 @@ Features Include:
 - Minimal overhead & portable mode
 - Multi-platform support (will work on Windows 7 Embedded version of the kiosk software)
 
-Features Requires a Pro License
+Features Requires a Pro License:
 - Remote Monitoring
 - Graph Generator
 - Improved Interface
