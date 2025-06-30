@@ -2,14 +2,14 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-30T08:27:35.966Z
+date: 2025-06-30T08:28:11.906Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
 ---
 
 # Useful applications for your kiosk
-These applications are helpful to know the state of your kiosk.
+These applications are helpful to know the state of your kiosk's PC.
 ### [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/)
 Program is used to determine the health of your HardDrive/Solid State Drive.
 
