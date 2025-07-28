@@ -2,12 +2,15 @@
 title: Known Quirks / Bugs
 description: 
 published: true
-date: 2025-06-14T22:25:23.635Z
+date: 2025-07-28T21:01:08.390Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:42.966Z
 -->
 
+<h1>Should I connect Windows 7 Embedded kiosk to the internet?</h1>
+<p>Windows 7 Embedded Standard 32-bit went out of support in October 10th, 2023 as part of Security Updates Year 3, which means there is no more security updates. Any vulnerabilities that exist today will not be patched. You can see a list of reported vulnerabilities <a href="https://app.opencve.io/cve/?product=windows_7&amp;vendor=microsoft">here</a>.&nbsp;</p>
+<p>We recommend Windows 10 IoT Enterprise LTSC 2019, which ends support on January 9th, 2029, or upgrading the image to Windows 10 IoT Enterprise LTSC 2021, which ends support on January 13th, 2032.</p>
 <h1>Extremely Laggy UI</h1>
 <p>Some kiosks come configured with their GPU drivers disabled. This results in the user interface being exceptionally slow and choppy. Animations will stutter and tear, and overall it looks quite bad.</p>
 <p>You can attempt to fix this by simply turning on the GPU drivers in Device Manager, accessible via <a href="/kioskengine/redbox-desktop">Redbox Desktop</a>. Techs have noted that this may not work and the device will simply not boot until you enter safe mode, though this doesn't appear to strictly be the case, and is worth trying.</p>
