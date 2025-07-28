@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-04-20T01:41:17.649Z
+date: 2025-07-28T20:41:16.733Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -157,19 +157,21 @@ All Redbox Premios have a power button located above on the I/O panel, it's a bl
  # Components
  ## Touch Screen
  - Kristel Displays (from outdoor kiosk) 15"
-    - Product # 259420
-    - Model LCD15-042A
+    - Product #: 259420
+    - Model: LCD15-042A
     - LCD Panel Model: Sharp LQ150X1LG91
     - Max Resolution: 1024x768 @ 75Hz
     - OSD/Display controls can be accessed from four buttons on the back of the display 
  - Kristel Displays (from Walmart kiosk) 15" Outdoor TS
-    - Product # RDBX00923
-    - Model LCD15-027C
-    - LCD Panel Model: UNKNOWN
-    - Max Resolution: UNKNOWN
+    - Product #: RDBX00923
+    - Model: LCD15-027C
+    - LCD Panel Model: No LCD Panel
+    - Max Resolution: 1024x768 @ 75Hz
+    - OSD/Display controls can be accessed from four buttons on the back of the display
+    - These are known to be installed on re-located outdoor Canadian Kiosks outside of Walmart
  - Kristel Displays (from indoor kiosk) 15"
-    - Product # RDBX01570
-    - Model LCD15-026D
+    - Product #: RDBX01570
+    - Model: LCD15-026D
     - LCD Panel Model: UNKNOWN
     - Max Resolution: 1024x768 @ 75Hz
    
