@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2025-06-14T22:07:51.063Z
+date: 2025-07-28T20:49:00.020Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -69,10 +69,6 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode.* SOFTFILE_02 errors should be sent directly to Software support by Level 1</p>
 <p><code><strong>= SOFTFILE_03 =</strong></code></p>
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode. Send to level 2 for possible software support escalation.</p>
-<p><code><strong>= 0073CDRR =</strong></code></p>
-<p>- MS will always dispatch these due to an EMV error.</p>
-<p><code><strong>= 0099CDRR =</strong></code></p>
-<p>- Indication that the EMV has failed or been tampered with. Plan on bringing on with you. Alert Irruptions are not field repairable.</p>
 <p><code><strong>= CCF&nbsp;</strong></code></p>
 <p>- Camera Capture Failure.</p>
 <h1>Locked Out of Redbox Account</h1>
@@ -159,4 +155,4 @@ dateCreated: 2024-10-21T14:16:14.709Z
   <li><strong>Cortex</strong><br>This issue is infrequent; occasionally reinserting the disc will resolve it.&nbsp;<br><br>If the issue still occurs, you will need to add the following to the registry.<br>Open the Registry Editor and navigate to <code>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CCSERMU\Configuration\000000000000</code> and create a new <strong>String Value</strong> (REG_SZ) named <code>PortName</code> and assign it the data <code>COM6</code>. Afterwards, restart the PC and it should start scanning properly.</li>
 </ul>
 <h2>Unknown Title</h2>
-<p>When the scanning subsystem decodes a Data Matrix code but cannot resolve it to a title record, you will need to use a program to bind the scanned Data Matrix to the proper product entry. Before performing the association, eject the disc from the kiosk’s drive or restart the Kiosk Engine service to clear the “Unknown Title” state.</p>
+<p>When the scanning subsystem decodes a Data Matrix code but cannot resolve it to a title record, you will need to use a program to bind the scanned Data Matrix to the proper product entry. Before performing the association, vend the disc(s) from the kiosk and re-insert or restart the Kiosk Engine service to clear the “Unknown Title” state for a specified disc(s).</p>
