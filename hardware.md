@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: 
 published: true
-date: 2025-07-28T20:41:16.733Z
+date: 2025-08-01T05:19:32.832Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -34,7 +34,7 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
   - Part Number: Outdoor_Kiosk
   - Heating/Cooling unit
   	- IceQube IQ2200VS and control panel
-      - Known to cause fires, should be removed before use
+      - Known to cause fires in models before 2012, should be removed or unplugged before use. Replacing the fan motors will resolve said recalls
     - Stego CR027 Heater
       - Plenty reliable according to employees
 
@@ -46,7 +46,7 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
   - Part Number: Outdoor_Kiosk_HW
   - Heating/Cooling unit
   	- IceQube IQ2200VS and control panel
-      - Known to cause fires, should be removed before use
+      - Known to cause fires in models before 2012, should be removed or unplugged before use. Replacing the fan motors will resolve said recalls
     - Stego CR027 Heater
       - Plenty reliable according to employees
 
@@ -55,24 +55,21 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
   - Part Number: Outdoor_Kiosk17
   - Heating/Cooling unit
   	- IceQube IQ2200VS and control panel
-      - Known to cause fires, should be removed before use
+      - Known to cause fires in models before 2012, should be removed or unplugged before use. Replacing the fan motors will resolve said recalls
     - IceQube IQ990FFS and control panel (Showed up around 2012)
       - No fires reported or known. Best to use with caution
     - Stego CR027 Heater
 
-## Outdoor (17" Screen 2013+ CN Variant)
-> This variant's Documentation is incomplete and needs more documentation.
-{.is-warning}
-
+## Outdoor (17" Screen Canadian) May 2012 - March 2015
   - Model: DVD-OT
   - Part Number: Outdoor_Kiosk17CN
   - Heating/Cooling unit
   	- IceQube IQ2200VS and control panel
-      - Known to cause fires, should be removed before use
+      - Known to cause fires in models before 2012, should be removed or unplugged before use. Replacing the fan motors will resolve said recalls
     - IceQube IQ990FFS and control panel (Showed up around 2012)
       - No fires reported or known. Best to use with caution
     - Stego CR027 Heater
-  - CN units were designed for Canadian markets, then were moved to the United States after Redbox shut down their Canadian division.
+  - CN units were designed for Canadian market. The remaining estimate of 1,500 kiosks were moved to the United States in March of 2015 after Redbox shut down their Canadian division in Mid February of 2015 to be refurbished and placed at retailers in the United States.
     
 # Toppers
 A variety of toppers were used on indoor kiosks. [See the toppers page for details.](/hardware/Toppers)
