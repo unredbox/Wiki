@@ -2,7 +2,7 @@
 title: How-To Guides
 description: How to use your kiosk.
 published: true
-date: 2025-06-30T08:28:11.906Z
+date: 2025-08-27T01:17:44.899Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-15T04:36:53.530Z
@@ -142,7 +142,7 @@ Wanting to upgrade to the Windows 10 Image or having to get the Windows 7 Image 
 6. Press Finish and Macrium should start restoring.<figure class="image image_resized" style="width:60%;"><img src="/guides/r5phc7h3a9.png"></figure>
 7. Unplug the drive from your PC or Dock and Plug it back into your Kiosk PC.
 8. Boot up the PC and verify it boots properly before plugging all the cables back into your kiosk and screwing the Solid-State Drive to the mount in the case. 
-> If you start experiencing issues, you may need to repeat all steps again after re-downloading the image.
+> If you start experiencing issues, you may need to repeat all steps again after re-downloading the image. Also follow **Migrate from old kiosk to new kiosk** guide to get your kiosk running with settings from your old kiosk.
 {.is-warning}
 
 
@@ -259,3 +259,53 @@ Great for helping keep moisture and rain out of the box, especially if the kiosk
 3. If you get an error, double-check all wire connections, especially Live vs Neutral.
 4. Once everything tests correctly, plug in your kiosk equipment.
 <figure class="image image_resized" style="width:60%;"><img src="/guides/electrical-diagram.png"></figure>
+
+# Migrate from old kiosk to new kiosk
+> Make sure to backup everything before proceeding and note your registry settings.
+{.is-warning}
+
+### Backup Required Files (old kiosk)
+- Backup the following files:  
+  - `haldata.vdb3`  
+  - `hal.xml`  
+  - `inventory.data`  
+  - `profile.data`  
+  - `system.config`  
+  - `Redbox.Rental.Services.dll`  
+- Export registry key:  
+  - `HKLM\SOFTWARE\Redbox\REDS\Kiosk Engine\Store`  
+
+#### (Optional) Change Kiosk ID
+- Edit **KioskID** and **market** in the above registry key  
+- Reference KioskIDs and addresses from `profile.data > Store` table  
+- Update **system.config**, replacing all old Kiosk ID values with the new one  
+
+### Prepare New Kiosk
+- Install a fresh kiosk image on the new PC  
+- Replace the same files with the backed-up ones  
+
+### Configure COM Ports
+- Open **Device Manager**  
+- Assign COM ports to match the old setup:  
+  - USB → RS232 adapter → **COM1**  
+  - Protenus board → **COM3**  
+
+### Install in Kiosk
+- Shut down the PC  
+- Mount it into the kiosk hardware  
+- Power on system  
+- Confirm **KioskEngine** loads  
+
+### Camera Driver Setup
+- Open **Device Manager → Camera Devices**  
+- If Microsoft default driver is installed, replace it  
+- Install **AVEO x64 (4th Gen)** drivers (from Discord)  
+- Open **HAL Tester → Configure Devices → Survey Hardware**  
+- Verify camera detection (compare with screenshot from old kiosk)  
+
+### Camera Calibration
+- Open **HAL Tester**  
+- Insert a disc into the gripper (aligned with camera)  
+- Open **Camera Settings → Preview**  
+- Adjust settings until image is clear and readable  
+  - Example: lower **Gamma** for clarity
