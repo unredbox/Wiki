@@ -2,7 +2,7 @@
 title: Improving Kiosk Usability
 description: 
 published: true
-date: 2025-09-23T07:15:06.853Z
+date: 2025-09-23T07:19:43.406Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-09-23T07:11:09.356Z
@@ -27,3 +27,27 @@ dateCreated: 2025-09-23T07:11:09.356Z
 <p>You want to change the value of this key to <code>C:\Windows\explorer.exe</code></p>
 <p>After you change the value, reboot the machine and the normal Windows desktop environment will be displayed.</p>
 <p>To switch back to the default kiosk engine autoboot, change the value to <code>C:\Program Files\Redbox\KioskShell\KioskShell.exe</code></p>
+<h1>Upgrading to Windows 11 IoT Enterprise LTSC</h1>
+<blockquote>
+  <p>If you are using Windows 7, you will need to clone the Windows 10 IoT Enterprise Image from our Discord Server as Windows 7 - Windows 11 will remove all files and apps.</p>
+</blockquote>
+<h3>Preparing</h3>
+<p>When preparing, you will need to grab the <code>Windows 11 IoT Enterprise LTSC</code> ISO from <a href="https://massgrave.dev/windows_ltsc_links">here</a> and download the Windows 11 IoT Enterprise LTSC link. We recommend the 2nd link as its already set to iso. You will need to install the ISO to your Kiosk PC or use a tool like Rufus to extract the ISO to your USB Flash Drive</p>
+<h3>Running an upgrade</h3>
+<ol>
+  <li>Open the ISO we downloaded to the Kiosk PC or plug in your USB Flash Drive</li>
+  <li>In the initial setup, you will be asked about Updates. If your kiosk is offline, you will need to set it to Not right now. If your kiosk is connected to the internet, you can download updates, drivers, and optional features.</li>
+</ol>
+<figure class="image image_resized" style="width:80%;"><img src="/guides/windows-11-upgrade/setuphost_siftxqo21r.png"></figure>
+<ol>
+  <li>When prompted for a product key, you should be able to skip this step.</li>
+</ol>
+<figure class="image image_resized" style="width:80%;"><img src="/guides/windows-11-upgrade/setuphost_pqli1kz8iz.png"></figure>
+<ol>
+  <li>When asked to select an image, select Windows 11 IoT Enterprise LTSC.</li>
+</ol>
+<figure class="image image_resized" style="width:80%;"><img src="/guides/windows-11-upgrade/setuphost_kgktb97ir4.png"></figure>
+<ol>
+  <li>If you successfully did everything correctly, you should be able to select <code>Keep personal files and apps</code> but sometimes this is automatically applied. Once you verified everything, proceed with installation.</li>
+  <li>Once the kiosk boots into Windows 11, you should activate windows as after 30 days, the kiosk will turn off automatically after 2 hours. You will need an internet connection to complete this. We recommend <a href="https://github.com/massgravel/Microsoft-Activation-Scripts">MAS</a> as obtaining an IoT Enterprise License isn't given out to just anyone.</li>
+</ol>
