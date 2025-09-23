@@ -2,10 +2,14 @@
 title: HAL (Hardware Abstraction Layer)
 description: 
 published: true
-date: 2025-09-23T07:32:24.525Z
+date: 2025-09-23T07:42:06.890Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-09-23T07:32:24.525Z
 -->
 
-<p>stub</p>
+<p>The HAL on Redbox Kiosks is a suite of software that aid in communicating with the various hardware functions on the Kiosk. As many parts of the Kiosk communicate over COM serial ports, these applications act as an “Abstraction” on top of the complex serial communication between the various PCBs and devices on the kiosk.</p>
+<h1>HAL Service</h1>
+<p>The HAL Service, displayed as “halsvc” and running as “halsvc-win32.exe”, serves as the main means of interfacing with most Kiosk hardware.</p>
+<p>HAL communicates with both the auxboard, as well as the Proteus XES motor controller board.</p>
+<p>AUX Board is commonly on COM1<br>Proteus XES is commonly on COM3<br>Ingenico Card Reader is commonly on COM5</p>
