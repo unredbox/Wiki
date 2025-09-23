@@ -2,10 +2,28 @@
 title: Improving Kiosk Usability
 description: 
 published: true
-date: 2025-09-23T07:11:09.356Z
+date: 2025-09-23T07:15:06.853Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-09-23T07:11:09.356Z
 -->
 
-<p>f</p>
+<h1>How to re-enable Task Manager</h1>
+<p>All kiosks comes with Task Manager disabled, but with RBUser being an administrator account, this can be re-enabled.</p>
+<ol>
+  <li>Access Redbox Control Panel</li>
+  <li>Select DOS Prompt</li>
+  <li>Run command <code>gpedit.msc</code> and press <code>ENTER</code> to open <code>Local Group Policy Editor</code></li>
+  <li>Navigate to <code>User Configuration &gt; Administrative Templates &gt; System &gt; Ctrl+Alt+Del Options</code></li>
+  <li>Select <code>Remove Task Manager</code> and set to <code>Disabled</code> or <code>Not Configured</code></li>
+  <li>Press <code>Apply</code> and <code>OK</code></li>
+</ol>
+<h1>Getting a Temporary Normal Desktop Environment</h1>
+<p>This section only covers a temporary normal desktop environment that will not persist across reboots, if you would like it to persist until you manually change it, follow the instructions in <a href="#autobooting-to-the-normal-windows-desktop-environment">Autobooting to the Normal Windows Desktop Environment</a>.</p>
+<p>The following will NOT work on a Windows 7 machine, this will only work on Windows 10 or Windows 11!</p>
+<p>To get a normal desktop environment until you power off the PC, open command prompt from the Redbox Desktop and type <code>explorer</code>, the first time this is done will launch the normal desktop environment, any subsequent calls will open a new explorer window.</p>
+<h1>Autobooting to the Normal Windows Desktop Environment</h1>
+<p>If you want to prevent the autoboot of Kiosk Engine and would rather boot to a standard Windows desktop environment, you need to edit the <code>Shell</code>registry key located at <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon</code></p>
+<p>You want to change the value of this key to <code>C:\Windows\explorer.exe</code></p>
+<p>After you change the value, reboot the machine and the normal Windows desktop environment will be displayed.</p>
+<p>To switch back to the default kiosk engine autoboot, change the value to <code>C:\Program Files\Redbox\KioskShell\KioskShell.exe</code></p>
