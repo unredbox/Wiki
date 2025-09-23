@@ -1,0 +1,403 @@
+<!--
+title: How-To Guides
+description: How to use your kiosk.
+published: true
+date: 2025-09-23T07:04:16.250Z
+tags: 
+editor: ckeditor
+dateCreated: 2025-06-15T04:36:53.530Z
+-->
+
+<h1 class="toc-header" id="useful-applications-for-your-kiosk"> Useful applications for your kiosk</h1>
+<p>These applications are helpful to know the state of your kiosk's PC.</p>
+<h3 class="toc-header" id="crystaldiskinfo"> <a class="is-external-link" href="https://crystalmark.info/en/software/crystaldiskinfo/">CrystalDiskInfo</a></h3>
+<p>Program is used to determine the health of your HardDrive/Solid State Drive.</p>
+<p>Features Include:</p>
+<ul>
+<li>S.M.A.R.T. Health Monitoring</li>
+<li>Temperature Tracking</li>
+<li>Power-On Hours &amp; Usage Statistics</li>
+<li>SSD Endurance &amp; Wear Leveling (NAND Health)</li>
+<li>Firmware &amp; Interface Details</li>
+<li>Alerting &amp; Logging</li>
+<li>Advanced APM/AAM Control (HardDrive Only)</li>
+<li>NVME Support (In Windows 10 PC or any PC replacement)</li>
+<li>Portable &amp; Low Overhead</li>
+</ul>
+<h3 class="toc-header" id="hwmonitor"> <a class="is-external-link" href="https://www.cpuid.com/softwares/hwmonitor.html">HWMonitor</a></h3>
+<p>Program is used to monitor CPU, Memory (RAM), GPU (If installed), SSD/HDD, Battery, sensors, and more.</p>
+<p>Features Include:</p>
+<ul>
+<li>Real-time sensor monitoring</li>
+<li>CPU &amp; GPU on-die sensor support</li>
+<li>LPCIO chip monitoring</li>
+<li>Memory-module thermal sensors</li>
+<li>SSD/HDD S.M.A.R.T. temperature monitoring</li>
+<li>Battery status tracking (Requires TrippLite to have a working battery)</li>
+<li>Complete report export</li>
+<li>Minimal overhead &amp; portable mode</li>
+<li>Multi-platform support (will work on Windows 7 Embedded version of the kiosk software)</li>
+</ul>
+<p>Features Requires a Pro License:</p>
+<ul>
+<li>Remote Monitoring</li>
+<li>Graph Generator</li>
+<li>Improved Interface</li>
+</ul>
+<h1 class="toc-header" id="upgrading-to-windows-11-iot-enterprise-ltsc"> Upgrading to Windows 11 IoT Enterprise LTSC</h1>
+<blockquote class="is-danger">
+<p>If you are using Windows 7, you will need to clone the Windows 10 IoT Enterprise Image from our Discord Server as Windows 7 - Windows 11 will remove all files and apps.</p>
+</blockquote>
+<h3 class="toc-header" id="preparing"> Preparing</h3>
+<p>When preparing, you will need to grab the <code>Windows 11 IoT Enterprise LTSC</code> ISO from <a class="is-external-link" href="https://massgrave.dev/windows_ltsc_links">here</a> and download the Windows 11 IoT Enterprise LTSC link. We recommend the 2nd link as its already set to iso. You will need to install the ISO to your Kiosk PC or use a tool like Rufus to extract the ISO to your USB Flash Drive</p>
+<h3 class="toc-header" id="running-an-upgrade"> Running an upgrade</h3>
+<ol>
+<li>Open the ISO we downloaded to the Kiosk PC or plug in your USB Flash Drive</li>
+<li>In the initial setup, you will be asked about Updates. If your kiosk is offline, you will need to set it to Not right now. If your kiosk is connected to the internet, you can download updates, drivers, and optional features. <figure style="width:80%;" class="image image_resized"><img src="/guides/windows-11-upgrade/setuphost_siftxqo21r.png"></figure></li>
+<li>When prompted for a product key, you should be able to skip this step. <figure style="width:80%;" class="image image_resized"><img src="/guides/windows-11-upgrade/setuphost_pqli1kz8iz.png"></figure></li>
+<li>When asked to select an image, select Windows 11 IoT Enterprise LTSC. <figure style="width:80%;" class="image image_resized"><img src="/guides/windows-11-upgrade/setuphost_kgktb97ir4.png"></figure></li>
+<li>If you successfully did everything correctly, you should be able to select <code>Keep personal files and apps</code> but sometimes this is automatically applied. Once you verified everything, proceed with installation.</li>
+<li>Once the kiosk boots into Windows 11, you should activate windows as after 30 days, the kiosk will turn off automatically after 2 hours. You will need an internet connection to complete this. We recommend <a class="is-external-link" href="https://github.com/massgravel/Microsoft-Activation-Scripts">MAS</a> as obtaining an IoT Enterprise License isn't given out to just anyone.</li>
+</ol>
+<h1 class="toc-header" id="upgrading-from-3rd4th-generation-to-5th-generation-cortex-barcode-scanner"> Upgrading from 3rd/4th Generation to 5th Generation Cortex Barcode Scanner</h1>
+<p>This is for upgrading from 3rd/4th Generation to 5th Generation. Typically this is beneficial as 4th Generation tends to have high amounts of issues during kiosk restarts, which tends to relieve long term issues.</p>
+<ol>
+<li>Disconnect the USB Cable and Cable <code>J7</code> on the <code>DVD-36-000-04</code> Gripper Board</li>
+<li>Loosen 2 Bolts Holding the old Camera Device</li>
+<li>Grab the <code>Cortex Barcode Scanner</code> and mount to the bracket.</li>
+<li>Install the Cortex Barcode Scannner using the same 2 bolts holding the old mount</li>
+<li>Install the 5th Generation Camera from the Redbox Technician Driver Kit.</li>
+</ol>
+<blockquote class="is-warning">
+<p>If you are using Windows 11, you will need to use the CR1100 drivers from CodeCorp's Website, which also support CR1000 devices.</p>
+</blockquote>
+<ol start="6">
+<li>Modify <code>hal.xml</code> and apply the following to the camera properties:</li>
+</ol>
+<pre class="prismjs line-numbers" v-pre="true"><code class="language-xml">  &lt;Camera&gt;
+   &lt;CameraPlugin&gt;DirectShowFrame&lt;/CameraPlugin&gt;
+   &lt;SnapDecodePort&gt;NONE&lt;/SnapDecodePort&gt;
+   &lt;WritePause&gt;500&lt;/WritePause&gt;
+   &lt;RebootOnStart&gt;true&lt;/RebootOnStart&gt;
+   &lt;EnableInfared&gt;false&lt;/EnableInfared&gt;
+   &lt;CycleCameraOnUse&gt;False&lt;/CycleCameraOnUse&gt;
+   &lt;UseInliteOnFail&gt;True&lt;/UseInliteOnFail&gt;
+   &lt;ScannerService&gt;Cortex&lt;/ScannerService&gt;
+   &lt;LogDetailedScan&gt;False&lt;/LogDetailedScan&gt;
+   &lt;InsertReadStats&gt;true&lt;/InsertReadStats&gt;
+   &lt;ExpectedCodes&gt;4&lt;/ExpectedCodes&gt;
+   &lt;ScanTimeout&gt;2000&lt;/ScanTimeout&gt;
+   &lt;ScannerWakeupPause&gt;15000&lt;/ScannerWakeupPause&gt;
+   &lt;FilterExcessReadCodes&gt;True&lt;/FilterExcessReadCodes&gt;
+   &lt;CortexPortOpenWait&gt;50&lt;/CortexPortOpenWait&gt;
+   &lt;CortexSnapOnDecodeFailure&gt;False&lt;/CortexSnapOnDecodeFailure&gt;
+   &lt;CortexPortBufferSize&gt;8192&lt;/CortexPortBufferSize&gt;
+   &lt;UseRuntimePath&gt;False&lt;/UseRuntimePath&gt;
+   &lt;UseCortexHDField&gt;True&lt;/UseCortexHDField&gt;
+   &lt;IRHardwareInstallDate&gt;NONE&lt;/IRHardwareInstallDate&gt;
+   &lt;UseInliteForFraudValidation&gt;False&lt;/UseInliteForFraudValidation&gt;
+   &lt;CortexStartupAction&gt;Decode&lt;/CortexStartupAction&gt;
+ &lt;/Camera&gt;
+</code></pre>
+<ol start="7">
+<li>Save and close</li>
+<li>Open Command Prompt and execute <code>reg.exe add "HKLM\SYSTEM\ControlSet001\Services\CCSERMU\Configuration\000000000000" /v PortName /t REG_SZ /d "COM6" /f</code></li>
+<li>Restart the computer</li>
+</ol>
+<p>If done correctly, your Cortex Barcode Scanner Should work as expected. If you are getting a scanning error, Double check the steps above were followed correctly.</p>
+<h1 class="toc-header" id="how-to-re-enable-task-manager"> How to re-enable Task Manager</h1>
+<p>All kiosks comes with Task Manager disabled, but with RBUser being an administrator account, this can be re-enabled.</p>
+<ol>
+<li>Access Redbox Control Panel</li>
+<li>Select DOS Prompt</li>
+<li>Run command <code>gpedit.msc</code> and press <code>ENTER</code> to open <code>Local Group Policy Editor</code></li>
+<li>Navigate to <code>User Configuration &gt; Administrative Templates &gt; System &gt; Ctrl+Alt+Del Options</code></li>
+<li>Select <code>Remove Task Manager</code> and set to <code>Disabled</code> or <code>Not Configured</code></li>
+<li>Press <code>Apply</code> and <code>OK</code></li>
+</ol>
+<h1 class="toc-header" id="from-harddrive-to-a-solid-state-drive"> From HardDrive to a Solid-State Drive</h1>
+<p>For this, we will be using Macrium Reflect 8 (X works the same, but it is trialware and only restoring works after the trial period) though there are other tools to clone to a drive. You will need to prep the PC.</p>
+<h3 class="toc-header" id="pre-existing-os-cloningrestoring"> Pre-existing OS Cloning/Restoring</h3>
+<p>This is for cloning your previous OS from your physical drive.</p>
+<ol>
+<li>Disconnect the HardDrive from the Kiosk PC <figure style="width:40%;" class="image image_resized"><img src="/guides/drive_location.jpg"></figure></li>
+<li>Plug the Harddrive and Solid-State Drive into your PC (Recommended) or a SATA Drive Dock.</li>
+<li>Open Macrium Reflect.</li>
+<li>Locate <strong>Backup</strong> and select <strong>Image Selected Disks</strong>.<figure style="width:60%;" class="image image_resized"><img src="/guides/reflectbin_sjjl7sckt7.png"></figure></li>
+<li>Select the drive you wish to back up and restore on a Solid-State Drive.<figure style="width:60%;" class="image image_resized"><img src="/guides/reflectbin_nfxh8xa9j5.png"></figure></li>
+<li>You can skip the <strong>Edit the Plan for this Backup</strong> window as this is not required for our backup</li>
+<li>Check advanced options and make sure the <strong>Compression Level</strong> is set to <strong>Medium</strong> and use <strong>Intellegent sector copy</strong>.<figure style="width:60%;" class="image image_resized"><img src="/guides/reflectbin_1tdbkhxyrt.png"></figure></li>
+</ol>
+<blockquote class="is-danger">
+<p>If your backup fails upon restoring, you can set Compression Level to <strong>None</strong> which sometimes solves this issues.</p>
+</blockquote>
+<ol start="8">
+<li>Press <strong>Finish</strong> and your backup should start. We recommend using Macrium Reflect 8 at the Highest Priority to speed up the backup process.</li>
+<li>Once Finished, you will need to navigate to Restore and look for <strong>Browse for an image or backup to restore...</strong> and select the image we just backed up.<figure style="width:60%;" class="image image_resized"><img src="/guides/reflectbin_gnpcksufyy.png"></figure></li>
+<li>Press Restore once you verify the contents match what we backed up earlier.<figure style="width:60%;" class="image image_resized"><img src="/guides/reflectbin_hxe4dslkzx.png"></figure></li>
+<li>Make sure you select the correct target disk, then select <strong>Erase Disk</strong> and <strong>Copy Partitions</strong>.<figure style="width:60%;" class="image image_resized"><img src="/guides/olljysg2ii.png"></figure></li>
+<li>Press Finish and Macrium should start restoring.<figure style="width:60%;" class="image image_resized"><img src="/guides/r5phc7h3a9.png"></figure></li>
+<li>Unplug the Solid-State Drive from your PC or Dock and Plug it back into your Kiosk PC.</li>
+<li>Boot up the PC and verify it boots properly before plugging all the cables back into your kiosk and screwing the Solid-State Drive to the mount in the case.</li>
+</ol>
+<h3 class="toc-header" id="restoring-from-images"> Restoring from Images</h3>
+<p>Wanting to upgrade to the Windows 10 Image or having to get the Windows 7 Image because the drive was dead on arrival or missing? This section should help with restoring. You will need to get the images from the discord server.</p>
+<ol>
+<li>Plug the Harddrive (7200 RPM Recommended. 5400 RPM will have a hard time querying the VistaDB database and may crash the kiosk software) or Solid-State Drive (Recommended) into your PC (Recommended) or a SATA Drive Dock.</li>
+<li>Open Macrium Reflect.</li>
+<li>Navigate to Restore and look for <strong>Browse for an image or backup to restore...</strong> and select the image we downloaded from the discord server.<figure style="width:60%;" class="image image_resized"><img src="/guides/reflectbin_gnpcksufyy.png"></figure></li>
+<li>Press Restore.<figure style="width:60%;" class="image image_resized"><img src="/guides/reflectbin_hxe4dslkzx.png"></figure></li>
+<li>Make sure you select the correct target disk, then select <strong>Erase Disk</strong> and <strong>Copy Partitions</strong>.<figure style="width:60%;" class="image image_resized"><img src="/guides/olljysg2ii.png"></figure></li>
+<li>Press Finish and Macrium should start restoring.<figure style="width:60%;" class="image image_resized"><img src="/guides/r5phc7h3a9.png"></figure></li>
+<li>Unplug the drive from your PC or Dock and Plug it back into your Kiosk PC.</li>
+<li>Boot up the PC and verify it boots properly before plugging all the cables back into your kiosk and screwing the Solid-State Drive to the mount in the case.</li>
+</ol>
+<blockquote class="is-warning">
+<p>If you start experiencing issues, you may need to repeat all steps again after re-downloading the image. Also follow <strong>Migrate from old kiosk to new kiosk</strong> guide to get your kiosk running with settings from your old kiosk.</p>
+</blockquote>
+<h1 class="toc-header" id="re-wiring-your-kiosk-outdoor-only"> Re-wiring your Kiosk (Outdoor Only)</h1>
+<blockquote class="is-warning">
+<p>Electrical work must be performed with extreme caution and precision. If you are unsure about any part of this process, or lack the proper tools or experience, stop immediately and consult a licensed electrician. Improper wiring can result in serious injury, death, fire, and/or damage to kiosk equipment.</p>
+</blockquote>
+<p>This guide is for individuals who plan to reuse the existing outlets within the kiosk. If you're not confident in completing this process, consider using an extension cord as an alternative. Make sure the cord supports at least 125V. Keep in mind that, depending on the type of cord used, it may obstruct the removal and reinstallation of the drop bin.</p>
+<h3 class="toc-header" id="required-tools-materials"> Required Tools &amp; Materials</h3>
+<ul>
+<li><strong>1x 12-AWG/2 or 12AWG/3 Power Cord (25ft)</strong><br>
+A thick, durable cable suitable for 20-amp circuits. The 25ft length should give you plenty of wire to work with inside the kiosk. You technically shouldn’t need more than 15 feet, but this allows you to have the proper lengths for daisy chaining from Outlet 1 to Outlet 2</li>
+<li><strong>1x GFCI Outlet Tester</strong><br>
+Use this to verify that the outlet is properly wired and the GFCI protection works as intended.</li>
+<li><strong>1x 3/8" Clamp-on Service Entrance Connector</strong><br>
+Prevents stress or accidental tugging from damaging the internal wiring. Required for secure and safe cable entry into the box.</li>
+<li><strong>5x 12-10 Yellow Ring Terminals</strong><br>
+These will be crimped onto the ground wires to ensure a tight, secure, and corrosion-resistant connection to the outlets and chassis.</li>
+<li><strong>1x Wire Stripper/Cutter/Crimper Tool</strong><br>
+A basic model will do fine. Used to cut wire to length, strip the outer jacket, and crimp terminals to the exposed copper.</li>
+<li><strong>1x GFCI Outlet or 1x 20 Amp Circuit Breaker</strong><br>
+Even though you're using 12 AWG wiring rated for 20 amps, GFCI outlets usually max out at 15 amps. Do not exceed the rated amperage.</li>
+</ul>
+<blockquote class="is-info">
+<p>For permanent or outdoor setups, you may want to install a dedicated 20-amp breaker. If you’re not experienced with electrical panels, hire a licensed electrician to handle this part.</p>
+</blockquote>
+<ul>
+<li><strong>1x 1/2" Plastic Screw-in Connector Conduit Fitting</strong><br>
+Optional, but great for helping keep moisture and rain out of the box, especially if the kiosk is outdoors.</li>
+</ul>
+<h3 class="toc-header" id="optional-parts"> Optional Parts</h3>
+<ul>
+<li><strong>2x 20-Amp 125V Outlets (or better)</strong><br>
+Used if you're replacing both receptacles inside the kiosk.</li>
+<li><strong>1x 1/2" Plastic Screw-in Connector Conduit Fitting</strong>&nbsp;<br>
+Great for helping keep moisture and rain out of the box, especially if the kiosk is outdoors. Most of the time, it is ok to re-use the old one, but is a good idea to use a new one to keep water from entering the kiosk.</li>
+</ul>
+<h3 class="toc-header" id="replacement-steps"> Replacement Steps</h3>
+<ol>
+<li>
+<p><strong>Disassemble the Electrical Box</strong></p>
+<ul>
+<li>Unscrew and remove the two bolts holding the electrical box in place inside the kiosk.</li>
+<li>Pull the box outward carefully to access the internal wiring.</li>
+</ul>
+</li>
+<li>
+<p><strong>Remove the Old Wiring</strong></p>
+<ul>
+<li>Disconnect and discard all old wiring inside the box.</li>
+<li>You may need to cut the old green ground wire connected to the kiosk body. Don’t worry—you’ll replace it with fresh wire.</li>
+</ul>
+</li>
+<li>
+<p><strong>Inspect the Kiosk Entry Point</strong></p>
+<ul>
+<li>Check the condition of the plastic screw-in fitting where the cable enters the kiosk.</li>
+<li>If damaged or missing, replace it to ensure weather resistance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Feed in the New Power Cord</strong></p>
+<ul>
+<li>Insert your 12 AWG power cord through the back of the kiosk and into the box area.</li>
+<li>Pull enough slack through to work comfortably and reach all terminals.</li>
+</ul>
+</li>
+<li>
+<p><strong>Strip the Outer Jacket</strong></p>
+<ul>
+<li>Use a wire stripper to remove the outer black insulation from the cord—be careful not to nick the internal wires.</li>
+<li>You should see three wires inside:
+<ul>
+<li><strong>Black or Red</strong> = Hot/Live</li>
+<li><strong>White</strong> = Neutral</li>
+<li><strong>Green</strong> = Ground</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Replace the Clamp Connector</strong></p>
+<ul>
+<li>Remove the existing 3/8″ clamp connector from the electrical box.</li>
+<li>Install the new clamp connector and feed the stripped cable through it.</li>
+<li>Tighten the clamp securely to prevent movement.</li>
+</ul>
+</li>
+<li>
+<p><strong>Prepare the Jumper Wire</strong></p>
+<ul>
+<li>Cut a short length of cable to connect the first outlet to the second outlet inside the box.</li>
+<li>Leave extra length in case you ever need to remove or reposition the outlets.</li>
+</ul>
+</li>
+<li>
+<p><strong>Strip and Prep Wires</strong></p>
+<ul>
+<li>Strip both ends of the jumper wire: remove the jacket and expose the individual conductors.</li>
+<li>Crimp a yellow ring terminal onto the ground wire at both ends.</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Cable and Connector</strong></p>
+<ul>
+<li>Insert the power cord and jumper wire into the electrical box.</li>
+<li>Tighten the clamp-on connector to hold everything in place.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tie the Underwriter’s Knot</strong></p>
+<ul>
+<li>Before connecting to the GFCI or breaker:
+<ul>
+<li>Create a loop in the hot and neutral wires.</li>
+<li>Intertwine them so they form a knot (prevents tension on the terminals).</li>
+<li>Pull the knot tight and push it back into the box.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Connect to Outlet 1</strong></p>
+<ul>
+<li>Using the labeling on the outlet, connect:
+<ul>
+<li><strong>Black/Red (Live)</strong> to the brass screw</li>
+<li><strong>White (Neutral)</strong> to the silver screw</li>
+<li><strong>Green (Ground)</strong> (ring terminal) to the green screw</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Connect the Jumper to Outlet 2</strong></p>
+<ul>
+<li>Repeat the connections using the jumper wire on Outlet 2:
+<ul>
+<li>Live to brass screw</li>
+<li>Neutral to silver screw</li>
+<li>Ground (ring terminal) to green screw</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Install and Mount the Outlets</strong></p>
+<ul>
+<li>Secure Outlet 1 (the back outlet) to the electrical box.</li>
+<li>Tighten the mounting screws and install the cover plate.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ground to Kiosk Frame</strong></p>
+<ul>
+<li>Cut another length of ground wire to run from Outlet 2 to the metal frame of the kiosk.</li>
+<li>Crimp ring terminals on both ends.</li>
+<li>Secure one end to the green screw on Outlet 2 and the other to the chassis ground point on the kiosk.</li>
+</ul>
+</li>
+<li>
+<p><strong>Final Assembly</strong></p>
+<ul>
+<li>Neatly tuck the wires inside the box.</li>
+<li>Reattach the electrical box to the kiosk with the original bolts.</li>
+<li>Ensure everything is tight and sealed.</li>
+</ul>
+</li>
+</ol>
+<h3 class="toc-header" id="testing-and-verification"> Testing and Verification</h3>
+<blockquote class="is-warning">
+<p>Ensure all outlet connections are secure and tight before performing any tests. Loose wiring may cause an electrical fire or destroy kiosk equipment.</p>
+</blockquote>
+<ol>
+<li>Plug in your GFCI Outlet Tester.</li>
+<li>Make sure each outlet shows correct wiring and that GFCI protection functions.</li>
+<li>If you get an error, double-check all wire connections, especially Live vs Neutral.</li>
+<li>Once everything tests correctly, plug in your kiosk equipment.</li>
+</ol>
+<figure style="width:60%;" class="image image_resized"><img src="/guides/electrical-diagram.png"></figure>
+<h1 class="toc-header" id="migrate-from-old-kiosk-to-new-kiosk"> Migrate from old kiosk to new kiosk</h1>
+<blockquote class="is-warning">
+<p>Make sure to backup everything before proceeding and note your registry settings.</p>
+</blockquote>
+<h3 class="toc-header" id="backup-required-files-old-kiosk"> Backup Required Files (old kiosk)</h3>
+<ul>
+<li>Backup the following files:
+<ul>
+<li><code>haldata.vdb3</code></li>
+<li><code>hal.xml</code></li>
+<li><code>inventory.data</code></li>
+<li><code>profile.data</code></li>
+<li><code>system.config</code></li>
+<li><code>Redbox.Rental.Services.dll</code></li>
+</ul>
+</li>
+<li>Export registry key:
+<ul>
+<li><code>HKLM\SOFTWARE\Redbox\REDS\Kiosk Engine\Store</code></li>
+</ul>
+</li>
+</ul>
+<h4 class="toc-header" id="optional-change-kiosk-id"> (Optional) Change Kiosk ID</h4>
+<ul>
+<li>Edit <strong>KioskID</strong> and <strong>market</strong> in the above registry key</li>
+<li>Reference KioskIDs and addresses from <code>profile.data &gt; Store</code> table</li>
+<li>Update <strong>system.config</strong>, replacing all old Kiosk ID values with the new one</li>
+</ul>
+<h3 class="toc-header" id="prepare-new-kiosk"> Prepare New Kiosk</h3>
+<ul>
+<li>Install a fresh kiosk image on the new PC</li>
+<li>Replace the same files with the backed-up ones</li>
+</ul>
+<h3 class="toc-header" id="configure-com-ports"> Configure COM Ports</h3>
+<ul>
+<li>Open <strong>Device Manager</strong></li>
+<li>Assign COM ports to match the old setup:
+<ul>
+<li>USB → RS232 adapter → <strong>COM1</strong></li>
+<li>Protenus board → <strong>COM3</strong></li>
+</ul>
+</li>
+</ul>
+<h3 class="toc-header" id="install-in-kiosk"> Install in Kiosk</h3>
+<ul>
+<li>Shut down the PC</li>
+<li>Mount it into the kiosk hardware</li>
+<li>Power on system</li>
+<li>Confirm <strong>KioskEngine</strong> loads</li>
+</ul>
+<h3 class="toc-header" id="camera-driver-setup"> Camera Driver Setup</h3>
+<ul>
+<li>Open <strong>Device Manager → Camera Devices</strong></li>
+<li>If Microsoft default driver is installed, replace it</li>
+<li>Install <strong>AVEO x64 (4th Gen)</strong> drivers (from Discord)</li>
+<li>Open <strong>HAL Tester → Configure Devices → Survey Hardware</strong></li>
+<li>Verify camera detection (compare with screenshot from old kiosk)</li>
+</ul>
+<h3 class="toc-header" id="camera-calibration"> Camera Calibration</h3>
+<ul>
+<li>Open <strong>HAL Tester</strong></li>
+<li>Insert a disc into the gripper (aligned with camera)</li>
+<li>Open <strong>Camera Settings → Preview</strong></li>
+<li>Adjust settings until image is clear and readable
+<ul>
+<li>Example: lower <strong>Gamma</strong> for clarity</li>
+</ul>
+</li>
+</ul>
