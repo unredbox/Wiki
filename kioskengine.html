@@ -2,7 +2,7 @@
 title: Kiosk Engine
 description: 
 published: true
-date: 2025-03-01T03:31:18.491Z
+date: 2025-09-23T07:03:32.682Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T11:42:08.286Z
@@ -31,15 +31,3 @@ dateCreated: 2024-10-21T11:42:08.286Z
 <h2>“Select Resource Bundle” Menu via Keyboard</h2>
 <p>There is a way to open a menu that allows selecting “Resource Bundles” without the use of a discrete chain of keyboard combinations or UI interactions. You can access this menu by pressing the <code>`</code> key on a keyboard.</p>
 <figure class="image image_resized" style="width:48.03%;"><img src="/kioskengine/select-resource-bundle.png"></figure>
-<h1>Getting a Temporary Normal Desktop Environment</h1>
-<p>This section only covers a temporary normal desktop environment that will not persist across reboots, if you would like it to persist until you manually change it, follow the instructions in <a href="#autobooting-to-the-normal-windows-desktop-environment">Autobooting to the Normal Windows Desktop Environment</a>.</p>
-<p>&nbsp;</p>
-<p>The following will NOT work on a Windows 7 machine, this will only work on Windows 10 or Windows 11!</p>
-<p>&nbsp;</p>
-<p>To get a normal desktop environment until you power off the PC, open command prompt from the Redbox Desktop and type <code>explorer</code>, the first time this is done will launch the normal desktop environment, any subsequent calls will open a new explorer window.</p>
-<p>&nbsp;</p>
-<h1>Autobooting to the Normal Windows Desktop Environment</h1>
-<p>If you want to prevent the autoboot of Kiosk Engine and would rather boot to a standard Windows desktop environment, you need to edit the <code>Shell</code>registry key located at <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon</code></p>
-<p>You want to change the value of this key to <code>C:\Windows\explorer.exe</code></p>
-<p>After you change the value, reboot the machine and the normal Windows desktop environment will be displayed.</p>
-<p>To switch back to the default kiosk engine autoboot, change the value to <code>C:\Program Files\Redbox\KioskShell\KioskShell.exe</code></p>
