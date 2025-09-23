@@ -1,0 +1,84 @@
+<!--
+title: Kiosk Migration Guide
+description: 
+published: true
+date: 2025-09-23T07:28:29.177Z
+tags: 
+editor: ckeditor
+dateCreated: 2025-09-23T07:28:29.177Z
+-->
+
+<h1>Migrating installs between kiosks/PCs</h1>
+<blockquote>
+  <p>Make sure to backup everything before proceeding and note your registry settings.</p>
+</blockquote>
+<p>Note that some options may not be required if you're simply doing a fresh Windows install while retaining kiosk data.&nbsp;</p>
+<h3>Backup Required Files (Original PC/Kiosk)</h3>
+<ul>
+  <li>Backup the following files:<ul>
+      <li><code>haldata.vdb3</code></li>
+      <li><code>hal.xml</code></li>
+      <li><code>inventory.data</code></li>
+      <li><code>profile.data</code></li>
+      <li><code>system.config</code></li>
+      <li><code>Redbox.Rental.Services.dll</code></li>
+    </ul>
+  </li>
+  <li>Export registry key:<ul>
+      <li><code>HKLM\SOFTWARE\Redbox\REDS\Kiosk Engine\Store</code></li>
+    </ul>
+  </li>
+</ul>
+<h4>(Optional) Change Kiosk ID</h4>
+<ul>
+  <li>Edit <strong>KioskID</strong> and <strong>market</strong> in the above registry key</li>
+  <li>Reference KioskIDs and addresses from <code>profile.data &gt; Store</code> table</li>
+  <li>Update <strong>system.config</strong>, replacing all old Kiosk ID values with the new one</li>
+</ul>
+<h3>Prepare New Kiosk</h3>
+<ul>
+  <li>Install a fresh kiosk image on the new PC<ul>
+      <li>Alternatively, you can do a fresh Windows install and perform a Store install. Use the appropriate installer for your OS, as well as a recent data.zip.</li>
+    </ul>
+  </li>
+  <li>Replace the same files with the backed-up ones</li>
+  <li>Install the registry key<ul>
+      <li>If you're migrating from 32-bit to 64-bit, you may need to edit the .reg file to have a different path. Check regedit before installing the key to see if Redbox's registry keys are installed in a <strong>WOW6432Node</strong> folder. If so, you'll need to adjust the paths within the registry key to reflect this.</li>
+    </ul>
+  </li>
+</ul>
+<h3>Configure COM Ports</h3>
+<ul>
+  <li>Open <strong>Device Manager</strong></li>
+  <li>Assign COM ports to match the old setup:<ul>
+      <li>RS232 Port (Serial) → <strong>COM1</strong></li>
+      <li>Protenus board → <strong>COM3</strong></li>
+      <li>Ingenico Card Reader → <strong>COM5</strong></li>
+    </ul>
+  </li>
+</ul>
+<h3>Install in Kiosk</h3>
+<ul>
+  <li>Shut down the PC</li>
+  <li>Mount it into the kiosk hardware</li>
+  <li>Power on system</li>
+  <li>Confirm <strong>KioskEngine</strong> loads</li>
+</ul>
+<h3>Camera Driver Setup (if not same kiosk)</h3>
+<ul>
+  <li>Open <strong>Device Manager → Camera Devices</strong></li>
+  <li>If Microsoft default driver is installed, replace it</li>
+  <li>Install <strong>AVEO x64 (4th Gen)</strong> drivers (from Discord)</li>
+  <li>Open <strong>HAL Tester → Configure Devices → Survey Hardware</strong></li>
+  <li>Verify camera detection (compare with screenshot from old kiosk)</li>
+</ul>
+<h3>Camera Calibration (if not same kiosk)</h3>
+<ul>
+  <li>Open <strong>HAL Tester</strong></li>
+  <li>Insert a disc into the gripper (aligned with camera)</li>
+  <li>Open <strong>Camera Settings → Preview</strong></li>
+  <li>Adjust settings until image is clear and readable<ul>
+      <li>Example: lower <strong>Gamma</strong> for clarity</li>
+    </ul>
+  </li>
+</ul>
