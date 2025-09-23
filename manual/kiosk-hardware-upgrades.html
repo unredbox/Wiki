@@ -2,48 +2,12 @@
 title: Kiosk Hardware Upgrades
 description: How to use your kiosk.
 published: true
-date: 2025-09-23T07:12:00.134Z
+date: 2025-09-23T07:19:26.296Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-06-15T04:36:53.530Z
 -->
 
-<h1>Useful applications for your kiosk</h1>
-<p>These applications are helpful to know the state of your kiosk's PC.</p>
-<h3><a href="https://crystalmark.info/en/software/crystaldiskinfo/">CrystalDiskInfo</a></h3>
-<p>Program is used to determine the health of your HardDrive/Solid State Drive.</p>
-<p>Features Include:</p>
-<ul>
-  <li>S.M.A.R.T. Health Monitoring</li>
-  <li>Temperature Tracking</li>
-  <li>Power-On Hours &amp; Usage Statistics</li>
-  <li>SSD Endurance &amp; Wear Leveling (NAND Health)</li>
-  <li>Firmware &amp; Interface Details</li>
-  <li>Alerting &amp; Logging</li>
-  <li>Advanced APM/AAM Control (HardDrive Only)</li>
-  <li>NVME Support (In Windows 10 PC or any PC replacement)</li>
-  <li>Portable &amp; Low Overhead</li>
-</ul>
-<h3><a href="https://www.cpuid.com/softwares/hwmonitor.html">HWMonitor</a></h3>
-<p>Program is used to monitor CPU, Memory (RAM), GPU (If installed), SSD/HDD, Battery, sensors, and more.</p>
-<p>Features Include:</p>
-<ul>
-  <li>Real-time sensor monitoring</li>
-  <li>CPU &amp; GPU on-die sensor support</li>
-  <li>LPCIO chip monitoring</li>
-  <li>Memory-module thermal sensors</li>
-  <li>SSD/HDD S.M.A.R.T. temperature monitoring</li>
-  <li>Battery status tracking (Requires TrippLite to have a working battery)</li>
-  <li>Complete report export</li>
-  <li>Minimal overhead &amp; portable mode</li>
-  <li>Multi-platform support (will work on Windows 7 Embedded version of the kiosk software)</li>
-</ul>
-<p>Features Requires a Pro License:</p>
-<ul>
-  <li>Remote Monitoring</li>
-  <li>Graph Generator</li>
-  <li>Improved Interface</li>
-</ul>
 <h1>Upgrading to Windows 11 IoT Enterprise LTSC</h1>
 <blockquote>
   <p>If you are using Windows 7, you will need to clone the Windows 10 IoT Enterprise Image from our Discord Server as Windows 7 - Windows 11 will remove all files and apps.</p>
@@ -114,16 +78,6 @@ dateCreated: 2025-06-15T04:36:53.530Z
   <li>Restart the computer</li>
 </ol>
 <p>If done correctly, your Cortex Barcode Scanner Should work as expected. If you are getting a scanning error, Double check the steps above were followed correctly.</p>
-<h1>How to re-enable Task Manager</h1>
-<p>All kiosks comes with Task Manager disabled, but with RBUser being an administrator account, this can be re-enabled.</p>
-<ol>
-  <li>Access Redbox Control Panel</li>
-  <li>Select DOS Prompt</li>
-  <li>Run command <code>gpedit.msc</code> and press <code>ENTER</code> to open <code>Local Group Policy Editor</code></li>
-  <li>Navigate to <code>User Configuration &gt; Administrative Templates &gt; System &gt; Ctrl+Alt+Del Options</code></li>
-  <li>Select <code>Remove Task Manager</code> and set to <code>Disabled</code> or <code>Not Configured</code></li>
-  <li>Press <code>Apply</code> and <code>OK</code></li>
-</ol>
 <h1>From HardDrive to a Solid-State Drive</h1>
 <p>For this, we will be using Macrium Reflect 8 (X works the same, but it is trialware and only restoring works after the trial period) though there are other tools to clone to a drive. You will need to prep the PC.</p>
 <h3>Pre-existing OS Cloning/Restoring</h3>
@@ -395,15 +349,3 @@ dateCreated: 2025-06-15T04:36:53.530Z
     </ul>
   </li>
 </ul>
-<h1>Getting a Temporary Normal Desktop Environment</h1>
-<p>This section only covers a temporary normal desktop environment that will not persist across reboots, if you would like it to persist until you manually change it, follow the instructions in <a href="#autobooting-to-the-normal-windows-desktop-environment">Autobooting to the Normal Windows Desktop Environment</a>.</p>
-<p>&nbsp;</p>
-<p>The following will NOT work on a Windows 7 machine, this will only work on Windows 10 or Windows 11!</p>
-<p>&nbsp;</p>
-<p>To get a normal desktop environment until you power off the PC, open command prompt from the Redbox Desktop and type <code>explorer</code>, the first time this is done will launch the normal desktop environment, any subsequent calls will open a new explorer window.</p>
-<p>&nbsp;</p>
-<h1>Autobooting to the Normal Windows Desktop Environment</h1>
-<p>If you want to prevent the autoboot of Kiosk Engine and would rather boot to a standard Windows desktop environment, you need to edit the <code>Shell</code>registry key located at <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon</code></p>
-<p>You want to change the value of this key to <code>C:\Windows\explorer.exe</code></p>
-<p>After you change the value, reboot the machine and the normal Windows desktop environment will be displayed.</p>
-<p>To switch back to the default kiosk engine autoboot, change the value to <code>C:\Program Files\Redbox\KioskShell\KioskShell.exe</code></p>
