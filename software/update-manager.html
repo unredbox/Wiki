@@ -2,10 +2,17 @@
 title: Update Manager
 description: 
 published: true
-date: 2025-09-23T07:32:01.401Z
+date: 2025-09-23T07:49:36.043Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-09-23T07:32:01.401Z
 -->
 
-<p>stub</p>
+<p>The Update Manager was a service that Redbox used to serve updates to Kiosks automatically. This service pulled down updates periodically, executing them nightly as part of the nightly reboot routine.</p>
+<h1>Functionality Overlap</h1>
+<p>The Store Installers utilize the Update Manager applications to perform the install, extracting the patch into into something functional per command line operations. This is undocumented, though these scripts could be used to reverse engineer a way to manually work with patches via the updatemgrd or installer-front-end command line options.</p>
+<h1>Patches</h1>
+<p>The Update Manager uses a Patch system, a custom file format made by Redbox for updating parts of the Kiosk software while using minimal network bandwidth. Patches can be tagged as “Composite” and/or “Seed” patches. Composite patches are incomplete without their accompanying composite pieces. Seed patches are used as a point of reference by the update system, effectively a “revision 0” to apply patches to.</p>
+<p>The latest patches were downloaded by kiosks around the early morning of 7/23/2024. After this point, Redbox's internal services went down, rendering the Update Manager unusable.</p>
+<h1>Service Codebase</h1>
+<p>The Update Manager's executables include various bits of code likely used by the server side of the Update Manager, such as code for working with patches in ways unused by any of the update suite or store installer. It's possible that a new backend could be made for Update Manager to sync existing Kiosks to the latest version of profile.data, as well as allow users to contribute new movies to the inventory/profile/etc systems for appearance within the Store UI.</p>
