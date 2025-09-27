@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2025-09-27T21:14:20.969Z
+date: 2025-09-27T21:14:52.203Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -52,7 +52,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p><strong>Solution:&nbsp;</strong><br>Most cases its dirty sensors. Clean all sensors on the gripper and make sure the gripper basket is not loose on the left side. If its leaning and not straight, you will need to tighten the bottom screws before continuing. Use <code><strong>HAL Tester</strong></code> to verify no sensors are lit up.</p>
 <p><code><strong>= 003CCFA =</strong></code></p>
 <p>- CameraCaptureFailure returned by HAL during vend or return</p>
-<p><strong>Solution:</strong><br>1) Check Camera devices to make sure they are connected properly. If the USB cable is damaged, you will need to replace it. If the camera is connected, but the driver shows errors, you will need to reinstall the camera drivers. For 5th Generation Barcode Scanner, you will need to make sure in <code><strong>hal.xml</strong></code> and make sure <code><strong>SnapDecodePort</strong></code> is set to the correct COM Port. For the 3rd/4th Generation Cameras, you will need to make sure the camera can see and read the barcode. You can configure this in <code><strong>HAL Tester</strong></code> until the code is readable. Avoid plugging in additional cameras as Redbox software will prioritize those first.</p>
+<p><strong>Solution:</strong><br>Check Camera devices to make sure they are connected properly. If the USB cable is damaged, you will need to replace it. If the camera is connected, but the driver shows errors, you will need to reinstall the camera drivers. For 5th Generation Barcode Scanner, you will need to make sure in <code><strong>hal.xml</strong></code> and make sure <code><strong>SnapDecodePort</strong></code> is set to the correct COM Port. For the 3rd/4th Generation Cameras, you will need to make sure the camera can see and read the barcode. You can configure this in <code><strong>HAL Tester</strong></code> until the code is readable. Avoid plugging in additional cameras as Redbox software will prioritize those first.</p>
 <p><code><strong>= 004MACH =</strong></code></p>
 <p>- MachineError returned by HAL during vend</p>
 <p><strong>Solution:</strong><br>Check to make sure the gripper is not obstructed. If so, follow solutions for error codes <code><strong>001ISTG</strong></code>, <code><strong>0020BDT</strong></code>, and <code><strong>006MVFA</strong></code>.</p>
