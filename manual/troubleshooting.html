@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2025-09-27T21:14:52.203Z
+date: 2025-09-27T21:24:57.080Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -23,58 +23,58 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <figure class="image image_resized" style="width:22.69%;"><img src="/green-error.jpg"></figure>
 <h1>Kiosk Error Codes</h1>
 <p>These error codes show on screen in maintenance mode. Credits to @mordanthanus in the Discord for posting this info.</p>
-<p><code><strong>= 0073CDRR =</strong></code></p>
+<h2><strong>0073CDRR</strong></h2>
 <p>- MS will always dispatch these due to an EMV error.</p>
 <p><strong>Solution:</strong><br>Check EMV USB Connection/Device. If the cable or device is damaged, a replacement is required.</p>
-<p><code><strong>= 0099CDRR =</strong></code></p>
+<h2><strong>0099CDRR</strong></h2>
 <p>- Indication that the EMV has failed or been tampered with. Plan on bringing one with you. Alert Irruptions are not field repairable.</p>
-<p><strong>Solution:</strong><br>You will need to remove the EMV reader and cover the port and setup EMV Emulation or source another Card Reader from another Redbox.</p>
-<p><code><strong>= 0072CDRR =</strong></code></p>
+<p><strong>Solution:</strong><br>You will need to remove the EMV reader and cover the port and setup EMV Emulation (requires patched dll and registry edit) or source another Card Reader from another Redbox.</p>
+<h2><strong>0072CDRR</strong></h2>
 <p>- EMV disconnected. If a remote reboot doesn’t fix it, a visit is needed.</p>
 <p><strong>Solution:&nbsp;</strong><br>Check the USB cable for wear. If the USB cable is damaged, you will need to replace the USB cable. Also check your PC to see if the driver is working correctly. If it has failed, you will need to reinstall the drivers.</p>
-<p><code><strong>= 0096KRNL =</strong></code></p>
+<h2><strong>0096KRNL</strong></h2>
 <p>- Kiosk Engine has put up the maintenance view directly</p>
 <p><strong>Solution:</strong><br>You will need to get into Field Maintenance or System Registry to disable this (requires patching the dll to get around login issue)</p>
-<p><code><strong>= 005PMXA =</strong></code></p>
+<h2><strong>005PMXA</strong></h2>
 <p>- Put away max attempts exceeded</p>
 <p><strong>Solution:</strong><br>Perform Inventory Sync/Re-initialize the kiosk.</p>
-<p><code><strong>= 0128VNDR =</strong></code></p>
+<h2><strong>0128VNDR</strong></h2>
 <p>- Vend door error</p>
 <p><strong>Solution:</strong><br>Check vend door board. If there is no power going to the board and the board is not damaged, you will need to replace the ribbon cable or cut a new length.</p>
-<p><code><strong>= INITSYNC =</strong></code></p>
+<h2><strong>INITSYNC</strong></h2>
 <p>- Initial Sync is currently running</p>
 <p><strong>Solution:</strong><br>Should go away automatically once Init Sync is completed.</p>
-<p><code><strong>= 001ISTG =</strong></code></p>
+<h2><strong>001ISTG</strong></h2>
 <p>- ItemStuckInGripper returned by HAL during vend or return</p>
 <p><strong>Solution:</strong><br>Check Track bands. If they are dried out/brittle, you will need to replace them with new track bands.</p>
-<p><code><strong>= 002OBDT =</strong></code></p>
+<h2><strong>002OBDT</strong></h2>
 <p>- ObstructionDetected returned by HAL during vend or return</p>
 <p><strong>Solution:&nbsp;</strong><br>Most cases its dirty sensors. Clean all sensors on the gripper and make sure the gripper basket is not loose on the left side. If its leaning and not straight, you will need to tighten the bottom screws before continuing. Use <code><strong>HAL Tester</strong></code> to verify no sensors are lit up.</p>
-<p><code><strong>= 003CCFA =</strong></code></p>
+<h2><strong>003CCFA</strong></h2>
 <p>- CameraCaptureFailure returned by HAL during vend or return</p>
 <p><strong>Solution:</strong><br>Check Camera devices to make sure they are connected properly. If the USB cable is damaged, you will need to replace it. If the camera is connected, but the driver shows errors, you will need to reinstall the camera drivers. For 5th Generation Barcode Scanner, you will need to make sure in <code><strong>hal.xml</strong></code> and make sure <code><strong>SnapDecodePort</strong></code> is set to the correct COM Port. For the 3rd/4th Generation Cameras, you will need to make sure the camera can see and read the barcode. You can configure this in <code><strong>HAL Tester</strong></code> until the code is readable. Avoid plugging in additional cameras as Redbox software will prioritize those first.</p>
-<p><code><strong>= 004MACH =</strong></code></p>
+<h2><strong>004MACH</strong></h2>
 <p>- MachineError returned by HAL during vend</p>
 <p><strong>Solution:</strong><br>Check to make sure the gripper is not obstructed. If so, follow solutions for error codes <code><strong>001ISTG</strong></code>, <code><strong>0020BDT</strong></code>, and <code><strong>006MVFA</strong></code>.</p>
-<p><code><strong>= 006MVFA =</strong></code></p>
+<h2><strong>006MVFA</strong></h2>
 <p>- MoveFailure returned by HAL during vend</p>
-<p><strong>Solution:</strong><br>Check motors. If the motors fail to move or has play when powered on, motor replacement is required. Some solutions for the Carousel would be the Kiosks being uneven on one side and correcting the positions has solved this issue.</p>
-<p><code><strong>= 0032RSVB =</strong></code></p>
+<p><strong>Solution:</strong><br>Check motors. If the motors has play when powered on, motor replacement is required. If the motors are not moving when powered on, you will need to make sure the kiosk is not tilting on one side. If the motors are stiff while disconnected from power, replacements are required.</p>
+<h2><strong>0032RSVB</strong></h2>
 <p>- Reservation pickup could not find the reserved barcodes in stock</p>
-<p><strong>Solution:&nbsp;</strong><br>Required contacting Redbox Customer Support when in business. They would direct you to another kiosk in the area that has the movie in stock. If you are at a retailer with more than one kiosk at the location, you would need to check the other kiosk(s) at the location.</p>
-<p><code><strong>= RPCSSM =</strong></code></p>
+<p><strong>Solution:&nbsp;</strong><br>Required contacting Redbox Customer Support when they are in operation. <code><strong>1-866-REDBOX3</strong></code> as of December of 2024 is no longer in service. They would direct you to another kiosk in the area that has the exact title in stock. If you are at a retailer with more than one kiosk at the location, you would need to check the other kiosk(s) at the location.</p>
+<h2><strong>RPCSSM</strong></h2>
 <p>- Session closed to show maintenance during a return</p>
 <p><strong>Solution:</strong><br>Follow error code <code><strong>0096KRNL</strong></code>.</p>
-<p><code><strong>= 0048PPBE =</strong></code></p>
+<h2><strong>0048PPBE</strong></h2>
 <p>- Preposition Picker Basket Empty during checkout</p>
 <p><strong>Solution:</strong><br>Follow error code <code><strong>001ISTG</strong></code>. If same error occurs, check error code <code><strong>005PMXA</strong></code>.</p>
-<p><code><strong>= 0064SCBE =</strong></code></p>
+<h2><strong>0064SCBE</strong></h2>
 <p>- Shopping Cart Basket Empty during vend</p>
 <p><strong>Solution:</strong><br>Follow error code <code><strong>0048PPBE</strong></code>.</p>
-<p><code><strong>= HALSVCNR =</strong></code></p>
+<h2><strong>HALSVCNR</strong></h2>
 <p>- HAL Services are not running.</p>
 <p><strong>Solution:&nbsp;</strong><br>Start service in <code><strong>Redbox Control Panel</strong></code> or in the <code><strong>Services</strong></code> application. If an error occurs while starting HAL Service, check that there is no errors in <code><strong>hal.xml</strong></code>.</p>
-<p><code><strong>= HALSTS-043 =</strong></code></p>
+<h2><strong>HALSTS-043</strong></h2>
 <p>- One of the following conditions are met:&nbsp;</p>
 <p>1) The Door is open and the two door sensors (switches) are not pressed in. &nbsp;</p>
 <p>2) Gripper Obstructed (Fingers not retracted, Track not Closed, Sensors 1 or 6 on)&nbsp;</p>
@@ -84,16 +84,16 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>2) Read solution in error code <code><strong>001ISTG</strong></code></p>
 <p>3) Check the USB cable between the PC and Arcus/Protheus Boards. If there is no power, check all cables to make sure they are not loose. If the issue still occurs, a replacement is needed. If the cables are damaged, only solution is to source from another kiosk. You can test is the boards are responsive in <code><strong>HAL Tester</strong></code>.</p>
 <p>4) Close the door or pull the switch pins on both sides if you are diagnosing an issue with the kiosk.</p>
-<p><code><strong>= SOFTFILE_01 =</strong></code></p>
+<h2><strong>SOFTFILE_01</strong></h2>
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode. *If the error persists, send it to Level 2 for possible software support escalation.</p>
 <p><strong>Solution:</strong><br>Try restarting the kiosk engine. If that doesn't work, you will need to source the <strong>HALCounters.vdb3</strong>, <strong>HALData.vdb3</strong>, <strong>cache.data</strong>, <strong>profile.data</strong>, <strong>local.data</strong>, and <strong>inventory.data</strong> from another working kiosk.</p>
-<p><code><strong>= SOFTFILE_02 =</strong></code></p>
+<h2><strong>SOFTFILE_02</strong></h2>
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode. *SOFTFILE_02 errors should be sent directly to Software support by Level 1</p>
 <p><strong>Solution:</strong><br>Read solution in error code&nbsp;<code><strong>SOFTFILE_01</strong></code></p>
-<p><code><strong>= SOFTFILE_03 =</strong></code></p>
+<h2>SOFTFILE_03</h2>
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode. Send to level 2 for possible software support escalation.</p>
 <p><strong>Solution:</strong><br>Read solution in error code&nbsp;<code><strong>SOFTFILE_01</strong></code></p>
-<p><code><strong>= CCF&nbsp;</strong></code></p>
+<h2><strong>CCF</strong></h2>
 <p>- Camera Capture Failure.</p>
 <p><strong>Solution:</strong><br>Read solution in error code <code><strong>003CCFA</strong></code></p>
 <h1>Locked Out of Redbox Account</h1>
