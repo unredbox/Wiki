@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: 
 published: true
-date: 2025-08-16T01:00:09.744Z
+date: 2025-09-27T20:22:40.310Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -87,6 +87,9 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>Note: Once the autoboot on power setting is re-enabled in the BIOS, the computer should resume automatic boot-up on power connection, as originally configured.</p>
 <h1>Kiosk Not Showing Titles</h1>
 <p>If the Start screen is blank (no carousel with titles), and no titles are shown on the Rental screen, you may have accidentally “closed” your kiosk. This setting is found in the Redbox Desktop and clears the inventory in the kiosk, resulting in no products being in stock. To resolve this, login to Field Maintenance and look for the Inventory Sync option. This will allow you to schedule a sync of your inventory, which usually takes about 3-4 hours to complete. After the sync is complete, you should be able to view your available titles.</p>
+<h1>Unable to rent a Movie/Game Title unless its removed from cart</h1>
+<p>This occurs when a title hasn’t been released to Redbox, coming soon titles, like <code>Twister</code>, or is marked Do Not Rent (DNR). If you take the kiosk with you, you’d need to update the database by setting the release date to <code>0</code> and the DNR date to <code>null</code> for the specific title (the field accepts null and typically stores when a title becomes unrentable; these values are usually governed by Redbox’s studio contracts).</p>
+<p>If you restore game functionality with patches, most titles will also require their DNR dates to be cleared to allow game rentals.</p>
 <h1>Kiosk Not Showing Titles Despite Having Inventory</h1>
 <p>If the Start screen is blank (no carousel with titles), and the Rental screen is not showing any titles (except for replacement cases) despite having inventory data, this is likely because of an incorrect date and time on your kiosk's computer. This often happens after resetting your CMOS, likely because the system date is cleared. If you've disconnected your kiosk from the internet, your computer won't be able to get the correct date and time for your time zone, hence why it's set to an old date (like 2009). Luckily, the fix is easy: just enter your Date and Time settings and manually update the information. Then, restart your kiosk, and you should be good to go!</p>
 <h1>“CAMERA CAPTURE error. I'm sorry!”</h1>
