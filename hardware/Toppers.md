@@ -1,8 +1,8 @@
 ---
 title: Toppers
-description: 
+description: Information pertaining to toppers that were placed above indoor units.
 published: true
-date: 2025-04-30T00:38:27.824Z
+date: 2025-09-29T07:31:51.013Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
