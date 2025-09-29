@@ -1,8 +1,8 @@
 ---
 title: Terminology Glossary
-description: 
+description: Definitions to Redbox specific terminology
 published: true
-date: 2025-06-15T07:08:41.752Z
+date: 2025-09-29T07:45:17.576Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T10:57:55.491Z
