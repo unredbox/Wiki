@@ -2,7 +2,7 @@
 title: Known Quirks / Bugs
 description: 
 published: true
-date: 2025-07-28T21:01:08.390Z
+date: 2025-09-29T07:07:14.683Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:42.966Z
@@ -12,6 +12,9 @@ dateCreated: 2024-10-21T14:16:42.966Z
 <p>Windows 7 Embedded Standard 32-bit went out of support in October 10th, 2023 as part of Security Updates Year 3, which means there is no more security updates. Any vulnerabilities that exist today will not be patched. You can see a list of reported vulnerabilities <a href="https://app.opencve.io/cve/?product=windows_7&amp;vendor=microsoft">here</a>.&nbsp;</p>
 <p>We recommend Windows 10 IoT Enterprise LTSC 2019, which ends support on January 9th, 2029, or upgrading the image to Windows 10 IoT Enterprise LTSC 2021, which ends support on January 13th, 2032.</p>
 <h1>Extremely Laggy UI</h1>
+<blockquote>
+  <p>Some tinkerers have noted installing an older style GPU with no power connectors has resolved this issue and has improved CPU usage on Windows 10/11 IoT Enterprise LTSC. You can pick up a cheap one on eBay or Amazon as long as it supports 1GB or better. Make sure it includes a VGA cable and editing the Display Resolution is required after installing the appropriate drivers from the manufacturers.</p>
+</blockquote>
 <p>Some kiosks come configured with their GPU drivers disabled. This results in the user interface being exceptionally slow and choppy. Animations will stutter and tear, and overall it looks quite bad.</p>
 <p>You can attempt to fix this by simply turning on the GPU drivers in Device Manager, accessible via <a href="/kioskengine/redbox-desktop">Redbox Desktop</a>. Techs have noted that this may not work and the device will simply not boot until you enter safe mode, though this doesn't appear to strictly be the case, and is worth trying.</p>
 <p>One potential route is using a DisplayPort to DVI cable or adapter and re-running the cable through the harness to the door if your VGA cable doesn't work. <strong>Note that Windows will take forever to boot the first time you do this</strong>, so give it 10-20 minutes before you give up and reset everything. It will seem like it's frozen, but it's not. If your disk activity light is out and the keyboard isn't responding, something may have went wrong.</p>
