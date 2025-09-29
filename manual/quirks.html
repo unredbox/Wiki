@@ -2,7 +2,7 @@
 title: Known Quirks / Bugs
 description: 
 published: true
-date: 2025-09-29T07:26:31.811Z
+date: 2025-09-29T07:27:08.594Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:42.966Z
@@ -11,7 +11,7 @@ dateCreated: 2024-10-21T14:16:42.966Z
 <h1>Should I connect Windows 7 Embedded kiosk to the internet?</h1>
 <p>Windows 7 Embedded Standard 32-bit went out of support in October 10th, 2023 as part of Security Updates Year 3, which means there is no more security updates. Any vulnerabilities that exist today will not be patched. You can see a list of reported vulnerabilities <a href="https://app.opencve.io/cve/?product=windows_7&amp;vendor=microsoft">here</a>.&nbsp;</p>
 <p>We recommend Windows 10 IoT Enterprise LTSC 2019, which ends support on January 9th, 2029, or upgrading the image to Windows 10 IoT Enterprise LTSC 2021, which ends support on January 13th, 2032.</p>
-<p>For extended support, you can upgrade to Windows 11 IoT Enterprise LTSC 2024, which ends support on October 10th, 2034, but requires activation through <a href="https://massgrave.dev/">Microsoft Activation Scripts (MAS)</a> or else after evaluation expires after 90 days, the kiosk will shut down after 2 hours.</p>
+<p>For extended support, you can upgrade to Windows 11 IoT Enterprise LTSC 2024, which ends support on October 10th, 2034, but requires activation through <a href="https://massgrave.dev/">Microsoft Activation Scripts (MAS)</a> or else after evaluation expires (90 days), the kiosk will shut down after 2 hours.</p>
 <h1>Extremely Laggy UI</h1>
 <blockquote>
   <p>Some tinkerers have noted installing an older style GPU with no power connectors has resolved this issue and has improved CPU usage on Windows 10/11 IoT Enterprise LTSC. You can pick up a cheap one on eBay or Amazon as long as it supports 1GB or better. Make sure it includes a VGA cable and editing the Display Resolution is required after installing the appropriate drivers from the manufacturers.</p>
