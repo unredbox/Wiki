@@ -1,8 +1,8 @@
 ---
 title: Hardware Overview
-description: 
+description: Information about kiosk hardware
 published: true
-date: 2025-08-01T05:19:32.832Z
+date: 2025-09-29T07:29:48.173Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
