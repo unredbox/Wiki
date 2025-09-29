@@ -2,7 +2,7 @@
 title: Known Quirks / Bugs
 description: 
 published: true
-date: 2025-09-29T07:07:14.683Z
+date: 2025-09-29T07:26:14.310Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:42.966Z
@@ -10,7 +10,7 @@ dateCreated: 2024-10-21T14:16:42.966Z
 
 <h1>Should I connect Windows 7 Embedded kiosk to the internet?</h1>
 <p>Windows 7 Embedded Standard 32-bit went out of support in October 10th, 2023 as part of Security Updates Year 3, which means there is no more security updates. Any vulnerabilities that exist today will not be patched. You can see a list of reported vulnerabilities <a href="https://app.opencve.io/cve/?product=windows_7&amp;vendor=microsoft">here</a>.&nbsp;</p>
-<p>We recommend Windows 10 IoT Enterprise LTSC 2019, which ends support on January 9th, 2029, or upgrading the image to Windows 10 IoT Enterprise LTSC 2021, which ends support on January 13th, 2032.</p>
+<p>We recommend Windows 10 IoT Enterprise LTSC 2019, which ends support on January 9th, 2029, or upgrading the image to Windows 10 IoT Enterprise LTSC 2021, which ends support on January 13th, 2032. For extended support, you can upgrade to Windows 11 IoT Enterprise LTSC 2024, which ends support on October 10th, 2034, but requires activation through <a href="https://massgrave.dev/">Microsoft Activation Scripts (MAS)</a> or else after evaluation expires after 90 days, the kiosk will shut down after 2 hours.</p>
 <h1>Extremely Laggy UI</h1>
 <blockquote>
   <p>Some tinkerers have noted installing an older style GPU with no power connectors has resolved this issue and has improved CPU usage on Windows 10/11 IoT Enterprise LTSC. You can pick up a cheap one on eBay or Amazon as long as it supports 1GB or better. Make sure it includes a VGA cable and editing the Display Resolution is required after installing the appropriate drivers from the manufacturers.</p>
@@ -18,14 +18,12 @@ dateCreated: 2024-10-21T14:16:42.966Z
 <p>Some kiosks come configured with their GPU drivers disabled. This results in the user interface being exceptionally slow and choppy. Animations will stutter and tear, and overall it looks quite bad.</p>
 <p>You can attempt to fix this by simply turning on the GPU drivers in Device Manager, accessible via <a href="/kioskengine/redbox-desktop">Redbox Desktop</a>. Techs have noted that this may not work and the device will simply not boot until you enter safe mode, though this doesn't appear to strictly be the case, and is worth trying.</p>
 <p>One potential route is using a DisplayPort to DVI cable or adapter and re-running the cable through the harness to the door if your VGA cable doesn't work. <strong>Note that Windows will take forever to boot the first time you do this</strong>, so give it 10-20 minutes before you give up and reset everything. It will seem like it's frozen, but it's not. If your disk activity light is out and the keyboard isn't responding, something may have went wrong.</p>
-<p>&nbsp;</p>
 <h1>Titles Missing In Redbox Engine</h1>
-<p>Kiosks have been reported to have issues where the titles in the engine disappear. The cause for this is still TBD. However, following the steps below should fix the unit to working order.</p>
+<p>Kiosks have been reported to have issues where the titles in the engine disappear. The cause for this is due to a dead CMOS battery on reboot. Without an active internet connection, the time and dates will not update and will require replacing the CMOS battery and setting the date and time manually in BIOS Setup (follow your PC's guide to get to the correct settings). If this is still occurring, following the steps below, which should fix the issue also.</p>
 <ol>
   <li>Locate the profile.data files modified date. This file will be located in <code><strong>C:\Program Files\REDS\KioskEngine\Data\profile.data</strong></code></li>
   <li>Set the time and date of the machine to a date shortly after the modified date on the profile.data (Ex if the modified data is 7/23/24 set the date to mid-September 09/25/24)</li>
 </ol>
-<p>&nbsp;</p>
 <h1>No Internet on Cellular Modem SIM</h1>
 <p>Most cellular modems come with Verizon 4G LTE plans, a limited amount instead have T-Mobile plans. Over time, these SIM cards may become inactive or have already stopped working, rendering the cellular modem unusable. To restore functionality, you will need to replace the inactive SIM card with either an active one or a SIM card compatible with Verizon.</p>
 <p>You have the following options:</p>
@@ -35,10 +33,8 @@ dateCreated: 2024-10-21T14:16:42.966Z
   <li>Replace the old SIM card with another Verizon SIM card, or use a prepaid plan compatible with Verizon. (If choosing a prepaid plan, you will need the IMEI information from the cellular modem and a SIM kit.)</li>
 </ol>
 <p>However, you may not want to expose your computer to the internet as it may cause complications in the future when software is no longer supported (or in case of being required to upgrade Windows 7). But, if you're planning on enabling SMB or installing your own VNC Server to access your kiosk over the internet, you'll have to connect it. To prevent any complications, you can setup Firewall Rules to expose certain ports for the computer, and restrict other hostnames (or, you can reject requests made from LAN -&gt; WAN to keep it available local-only).</p>
-<p>&nbsp;</p>
 <h1>Gripper Calibrates, but Carousel Fails to Calibrate</h1>
 <p>Ensure that the kiosk is positioned upright and completely level. Use a spirit level or similar tool to confirm it is not tilted in any direction. If the kiosk is leaning or uneven, adjust the leveling feet at the bottom to achieve proper alignment. Rotate the feet as needed to stabilize the kiosk and ensure it stands precisely at a 90-degree angle relative to the floor or base surface. Double-check the alignment and stability after adjustments to confirm it is secure and correctly positioned.</p>
-<p>&nbsp;</p>
 <h1>No bootable device found</h1>
 <ul>
   <li><strong>Check Boot Order</strong>: Ensure the correct drive is set as the first boot device in BIOS/UEFI.</li>
@@ -52,7 +48,6 @@ dateCreated: 2024-10-21T14:16:42.966Z
   <li><strong>Test the Drive</strong>: Use diagnostic tools to check for drive health issues.</li>
 </ul>
 <p>If none of the above steps resolve your issue, you may need to replace the storage drive. Replacing the old drive with a HDD (not recommended) or SSD (recommended) is advised. This is common with older kiosks, as many of the hard drives are either nearing failure or have already failed.</p>
-<p>&nbsp;</p>
 <h1>Windows 10/11 Booting into Shell Instead of OS When BIOS is Set to UEFI Mode</h1>
 <p>This issue is common in the Premio M2H6V1 computer when upgrading from <code>Windows 7 Embedded 32bit</code>. Here is how to solve that issue:</p>
 <ul>
@@ -64,7 +59,6 @@ dateCreated: 2024-10-21T14:16:42.966Z
   <li><strong>Save and Exit</strong>: Press <code>F10</code> to save changes and restart the PC.</li>
   <li><strong>Verify Changes</strong>: If you are still booting into <code>Shell</code>, then you will need to verify the drive partitions are correct and not corrupted.</li>
 </ul>
-<p>&nbsp;</p>
 <h1>Vend Door Motor Spinning during initialization and doesn't stop</h1>
 <p>Following could cause this issue:</p>
 <ul>
@@ -72,6 +66,5 @@ dateCreated: 2024-10-21T14:16:42.966Z
   <li>Frayed wires on the ribbon cable from DVD-25-000-04 Slot J5 to DVD35-000-04 Slot J6. A replacement is required to solve this. You will need a 12 pin ribbon cable able to extend 15 feet from DVD-25-000-04 to DVD35-000-04.</li>
   <li>Other issues (You will need to inspect both DVD-25-000-04 and DVD35-000-04 boards. If one if them looks damaged, a replacement is required. At this moment in time there is no way to replace these boards and will need to be sourced from other kiosks.)</li>
 </ul>
-<p>&nbsp;</p>
 <h1>Disc shows under Unknown Title</h1>
-<p>Disc likely has been thinned out by Redbox or someone purchased the disc and was returned. Any discs in the carousel will end up in the drop bin during Inventory Sort Mondays. Only way for the barcode to be linked to a title is adding the barcode back to the database linked to the specific title. You can use the Title Manager program by Viper in the official discord to link to link a barcode to a specific title.</p>
+<p>The disc was likely “thinned” by Redbox or purchased and later returned. Any discs left in the carousel are moved to the drop bin during Inventory Sort Mondays. The only way to relink a barcode to a title is to add that barcode back into the database for that specific title. You can use Viper’s <strong>Title Manager</strong> (available in the official Discord) to link a barcode to a title. When discs are thinned or sold, their barcodes are reported to Redbox’s servers and pushed to all kiosks in <a href="https://redbox.wiki/en/software/update-manager"><strong>Update Manager</strong></a> patches, which removes those barcodes from the database.</p>
