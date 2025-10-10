@@ -2,7 +2,7 @@
 title: Air Conditioner / Exchanger
 description: Guide and troubleshooting steps for IceQube models
 published: true
-date: 2025-10-02T22:18:56.633Z
+date: 2025-10-10T13:51:30.288Z
 tags: 
 editor: ckeditor
 dateCreated: 2025-09-29T04:11:39.284Z
@@ -68,6 +68,38 @@ dateCreated: 2025-09-29T04:11:39.284Z
 <h3>IQ900FFS Programming</h3>
 <p>You can turn these units on and off through Field Maintenance or HAL Tester. If its not configured, you will need to configure this in HAL Tester in order for the Air Exchanger button to appear in Field Maintenance.</p>
 <p>At this moment in time, there is no documented way to adjust the temperature besides disabling the alarm inside of the kiosk.</p>
+<h3>IQ900FFS Troubleshooting</h3>
+<p>Errors will be displayed on the IQFC-2 Controller when the red lights are displayed.</p>
+<h6>Controller Failure</h6>
+<p>Indicates an issue with the IQFC-2 Controller</p>
+<p>Solution:<br>Controller will need repairs. Removal from the unit is required to diagnose and repair said controller. If the controller is damaged beyond repair, a replacement is required.</p>
+<h6>Temp Sensor Failure</h6>
+<p>Indicates the Temp Sensor has failed</p>
+<p>Solution:<br>Temperature Sensor will need replacement. (At this time, there is no replacement parts for this. You will need to make your own sensor and is possible to get this working again.)</p>
+<h6>Exhaust Fan Failure</h6>
+<p>Indicates the rear fan motor has failed or open circuit.&nbsp;</p>
+<p>Solution:<br>Replacement rear fan motor needed to get these back in order or inspect the wiring from the EXHAUST FAN OUTPUT to the rear fan. Repair wiring if necessary.</p>
+<h6>Filter Switch Open</h6>
+<p>Indicates the rear filter has been removed or the switch wiring has failed</p>
+<p>Solution:<br>Make sure the filter is installed.&nbsp;<br>If the filter is installed, inspect the wiring from the switch to the Filter Switch connector on the IQFC-2.&nbsp;</p>
+<ul>
+  <li>Repair any exposed wires.</li>
+  <li>If sensor is damaged, replacement is needed</li>
+</ul>
+<h6>No Power</h6>
+<p>Means the power supply has failed, which means the AC POWER IN light will not turn on.</p>
+<p>Solution:<br>Replacement of the IQFC-2 is required.</p>
+<h6>HAL Tester and Field Maintenance can't communicate with the Air Exchanger</h6>
+<p>Check the ALARM RELAY OUTPUT and REMOTE ALARM RESET wiring.</p>
+<ul>
+  <li>ALARM RELAY OUTPUT goes from <code>IQFC-2</code> to <code>J3</code> on the <code>DVD-25-000-05</code> PCB Board</li>
+  <li>REMOTE ALARM RESET goes from <code>IQFC-2</code> to <code>J8</code> on the <code>DVD-25-000-05</code> PCB Board&nbsp;</li>
+</ul>
+<p>Solution:</p>
+<ul>
+  <li>If wiring is damaged, repairs required</li>
+  <li>Make sure the Air Exchanger is configured. You will need to go to <code>HAL Tester &gt; Configure Devices</code> to configure the Air Exchanger. By default, it is not configured and should work with a push of a button.</li>
+</ul>
 <h3>IQ900FFS Additional Information</h3>
 <p>At this time, there is no manuals or parts list as its proprietary to Redbox. Likely over time when parts start failing or error codes appear in HAL Tester, there will be more information added on.</p>
 <p>Note that the filters will need to be remained clean or else the dust can start flowing around the kiosk and can damage kiosk equipment and discs. If the filter gets dusty, with the stock filter, you will need to spray it out with a hose (do not power wash as they will become damaged). If you need to replace these, you can purchase standard Aluminum Mesh Filters (which can be washed and reused)</p>
