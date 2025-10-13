@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: Information about kiosk hardware
 published: true
-date: 2025-09-29T07:29:48.173Z
+date: 2025-10-13T22:50:26.730Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -354,6 +354,9 @@ Several different decals were used to populate the area above the touchscreen. S
   
 - NEW RELEASE movies & games
 ![newrelease.png](/newrelease.png)
+  
+- NEW RELEASE movies & games (Blue variant)
+![newreleaseblue.png](/newreleaseblue.png)
   
 - New Relase MOVIES & GAMES (New Background)
 ![newrelease2.png](/newrelease2.png)
