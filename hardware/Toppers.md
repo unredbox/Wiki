@@ -2,7 +2,7 @@
 title: Toppers
 description: Information pertaining to toppers that were placed above indoor units.
 published: true
-date: 2025-10-13T22:39:59.290Z
+date: 2025-10-13T23:01:25.043Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -90,6 +90,7 @@ Prototype topper which utilizes a digital display to play unknown content, likel
 These items were used to further accentuate toppers but were only sparingly used.
 
 ## Small Topper Backer
+<figure class="image image_resized" style="width:40%"><img src="/smalltopperbacker.png"></figure>
 <figure class="image image_resized" style="width:40%;"><img src="/topper_backer.jpg"></figure>
 
 Mounted directly onto topper and extended the fascia of the topper.
