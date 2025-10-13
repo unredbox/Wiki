@@ -2,7 +2,7 @@
 title: Toppers
 description: Information pertaining to toppers that were placed above indoor units.
 published: true
-date: 2025-09-29T07:31:51.013Z
+date: 2025-10-13T22:39:59.290Z
 tags: 
 editor: markdown
 dateCreated: 2025-03-08T00:54:38.585Z
@@ -41,8 +41,8 @@ Red face topper that holds 12 title cards with lighting inside unit, lighting is
 ## 6-Title Topper (White Face)
 <figure class="image image_resized" style="width:40%;"><img src="/6-title_topper_(white).jpg"></figure>
 
-White face topper that holds 6 title cards with lighting inside unit, lighting is either tube or LED depending on manufacture date.
-  - Dimensions: UNKNOWN
+White face topper that holds 6 title cards with lighting inside unit, lighting is either tube or LED depending on manufacture date. It is similar to the Red 6-Title Topper, however it has a white matte flexible PVC sheet held on with double-sided tape.
+  - Dimensions: 32"×5 ⅞"×14 ⁵⁄₁₆"
   - Title Cards Held: 6
   
 ## 12-Title Topper (White Face)
