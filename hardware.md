@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: Information about kiosk hardware
 published: true
-date: 2025-10-13T22:50:26.730Z
+date: 2025-10-14T07:57:12.422Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -75,6 +75,9 @@ This page is extremely WIP. If you have a kiosk or know of additional hardware v
 A variety of toppers were used on indoor kiosks. [See the toppers page for details.](/hardware/Toppers)
     
 # Paint
+> If the rust is flaking or chipping away, the affected metal sections will need to be replaced before painting the kiosk.
+{.is-warning}
+
 The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acrylic Gloss Color Safety Red" which can generally be found most places that stock paint. It's recommended to remove any rust via sanding and paint over it with "B66A50 DTM Bonding Primer" before using the red paint.
 
 # Computers
