@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: Information on how to diagnose your kiosk when an issue occurs
 published: true
-date: 2025-10-25T01:40:33.086Z
+date: 2025-10-25T21:33:47.076Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -84,15 +84,18 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <p>2) Read solution in error code <code><strong>001ISTG</strong></code></p>
 <p>3) Check the USB cable between the PC and Arcus/Protheus Boards. If there is no power, check all cables to make sure they are not loose. If the issue still occurs, a replacement is needed. If the cables are damaged, only solution is to source from another kiosk. You can test is the boards are responsive in <code><strong>HAL Tester</strong></code>.</p>
 <p>4) Close the door or pull the switch pins on both sides if you are diagnosing an issue with the kiosk.</p>
-<h2><strong>SOFTFILE_01</strong></h2>
+<h2><strong>SOFT-FILE01</strong></h2>
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode. *If the error persists, send it to Level 2 for possible software support escalation.</p>
 <p><strong>Solution:</strong><br>Try restarting the kiosk engine. If that doesn't work, you will need to source the <strong>HALCounters.vdb3</strong>, <strong>HALData.vdb3</strong>, <strong>cache.data</strong>, <strong>profile.data</strong>, <strong>local.data</strong>, and <strong>inventory.data</strong> from another working kiosk.</p>
-<h2><strong>SOFTFILE_02</strong></h2>
+<h2><strong>SOFT-FILE02</strong></h2>
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode. *SOFTFILE_02 errors should be sent directly to Software support by Level 1</p>
-<p><strong>Solution:</strong><br>Read solution in error code&nbsp;<code><strong>SOFTFILE_01</strong></code></p>
-<h2>SOFTFILE_03</h2>
+<p><strong>Solution:</strong><br>Read solution in error code&nbsp;<code><strong>SOFT-FILE01</strong></code></p>
+<h2>SOFT-FILE03</h2>
 <p>- The kiosk engine reports a database access error and places the kiosk into maintenance mode. Send to level 2 for possible software support escalation.</p>
-<p><strong>Solution:</strong><br>Read solution in error code&nbsp;<code><strong>SOFTFILE_01</strong></code></p>
+<p><strong>Solution:</strong><br>Read solution in error code&nbsp;<code><strong>SOFT-FILE01</strong></code></p>
+<h2>0016SYNC</h2>
+<p>- Occurs when Maintenance Inventory Sync is performed</p>
+<p><strong>Solution:</strong><br>Wait until Maintenance Inventory Sync is completed. Screen will go away once it's completed.</p>
 <h2><strong>CCF</strong></h2>
 <p>- Camera Capture Failure.</p>
 <p><strong>Solution:</strong><br>Read solution in error code <code><strong>003CCFA</strong></code></p>
