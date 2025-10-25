@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: Information on how to diagnose your kiosk when an issue occurs
 published: true
-date: 2025-09-29T07:43:25.742Z
+date: 2025-10-25T01:40:33.086Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -120,7 +120,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <h1>“CAMERA CAPTURE error. I'm sorry!”</h1>
 <p>You may encounter issues with the camera, despite it being connected, recognized by windows and having drivers installed.&nbsp;</p>
 <p>You may also see the error “CAMERA CAPTURE error. I'm sorry!” in HAL Tester console, and the camera preview is blank. This is usually an issue with incorrect camera settings for the kiosk software.<br>To fix this, open <code>C:\Program Files\Redbox\halservice\bin\hal.xml</code> in a text editor, find the line starting with <code>&lt;ScannerService&gt;</code>, and change it to one of the following:</p>
-<p>For Gen 3 and Gen 4 Cameras (You can switch between both Generations as they are plug and play):&nbsp;</p>
+<h4><br>Gen 3 and Gen 4 Camera</h4>
 <pre><code class="language-xml">  &lt;Camera&gt;
    &lt;CameraPlugin&gt;DirectShowFrame&lt;/CameraPlugin&gt;
    &lt;SnapDecodePort&gt;NONE&lt;/SnapDecodePort&gt;
@@ -144,7 +144,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
    &lt;IRHardwareInstallDate&gt;NONE&lt;/IRHardwareInstallDate&gt;
    &lt;UseInliteForFraudValidation&gt;False&lt;/UseInliteForFraudValidation&gt;
  &lt;/Camera&gt;</code></pre>
-<p>For Gen 5 Barcode Scanner:&nbsp;</p>
+<h4><br>Gen 5 Barcode Scanner</h4>
 <pre><code class="language-xml">  &lt;Camera&gt;
    &lt;CameraPlugin&gt;DirectShowFrame&lt;/CameraPlugin&gt;
    &lt;SnapDecodePort&gt;COM6&lt;/SnapDecodePort&gt;  &lt;!-- This is typically the COM port "USB to Virtual COM" port in Device Manager. If different, you must change it --&gt;
