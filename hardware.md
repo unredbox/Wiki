@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: Information about kiosk hardware
 published: true
-date: 2025-11-05T17:15:07.991Z
+date: 2025-11-05T17:21:26.894Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -99,11 +99,11 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 
 ## Lenovo
 - ThinkCentre M91p USFF (2011)
-  - Intel Pentium G630
+  - Intel Pentium G630 @ 2.7GHz
   - 2GB DDR3
   - 250GB HDD Western Digital Blue Model: WD2500AAKX
 - ThinkCentre M58p USFF (2010)
-  - Intel Pentium E5400
+  - Intel Pentium E5400 @ 2.7GHz
   - 2GB DDR3
   - 250GB HDD Western Digital Blue Model: WD2500AAKX
 
