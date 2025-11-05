@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: Information about kiosk hardware
 published: true
-date: 2025-10-14T07:57:12.422Z
+date: 2025-11-05T17:15:07.991Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -101,11 +101,11 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 - ThinkCentre M91p USFF (2011)
   - Intel Pentium G630
   - 2GB DDR3
-  - 250GB HDD
+  - 250GB HDD Western Digital Blue Model: WD2500AAKX
 - ThinkCentre M58p USFF (2010)
   - Intel Pentium E5400
   - 2GB DDR3
-  - 250GB HDD
+  - 250GB HDD Western Digital Blue Model: WD2500AAKX
 
 ## Premio
 
@@ -114,7 +114,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 
    - PN: RDBX01186-01 Rev B
    - MoBo: MSI H61M-P32/W8
-   - 500GB HDD WD5000BPKX
+   - 500GB HDD Western Digital Black Model: WD5000BPKX
    - 4GB DDR3 RAM 
    - Intel i3 3220 @ 3.30GHz
    - Windows 7 Embedded SP1
@@ -126,7 +126,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 - M2H110V1
    - PN: 259474-03 Rev C
    - MoBo: MSI H110M-PRO-VHL
-   - 500GB WD500LPLX
+   - 500GB HDD Western Digital Black Model: WD500LPLX
    - 4GB RAM (AD4U2400W4G17-B)
    - Intel i3 6100 @ 3.70GHz
    - unknown BIOS
@@ -136,7 +136,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 - M2H110V1
    - PN: 259474-02 Rev A
    - MoBo: MSI CSM-H110M PRO-VHL
-   - 500GB WD500LPLX
+   - 500GB HDD Western Digital Black Model: WD500LPLX
    - 4GB RAM (KVR21N15S8/4)
    - Intel i3 6100 @ 3.70GHz
    - BIOS Version: American Megatrends Inc. 2.P5
@@ -146,7 +146,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
 - M2H310V1
    - PN: RDBX01679-01 Rev. A
    - Mobo: MSI H310M PRO-VLH PLUS
-   - 500GB WD5000LPSX
+   - 500GB HDD Western Digital Black Model: WD5000LPSX
    - 4GB DDR4 2400Mhz RAM
    - Intel i3 9100 @ 3.60 GHz
    - Windows 10 Enterprise LTSC x64
