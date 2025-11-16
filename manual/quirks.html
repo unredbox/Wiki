@@ -2,7 +2,7 @@
 title: Known Quirks / Bugs
 description: Known bugs and quirks and how to resolve said issues with your kiosk
 published: true
-date: 2025-09-29T07:43:56.066Z
+date: 2025-11-16T23:05:07.726Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:42.966Z
@@ -69,3 +69,6 @@ dateCreated: 2024-10-21T14:16:42.966Z
 </ul>
 <h1>Disc shows under Unknown Title</h1>
 <p>The disc was likely “thinned” by Redbox or purchased and later returned. Any discs left in the carousel are moved to the drop bin during Inventory Sort Mondays. The only way to relink a barcode to a title is to add that barcode back into the database for that specific title. You can use Viper’s <strong>Title Manager</strong> (available in the official Discord) to link a barcode to a title. When discs are thinned or sold, their barcodes are reported to Redbox’s servers and pushed to all kiosks in <a href="https://redbox.wiki/en/software/update-manager"><strong>Update Manager</strong></a> patches, which removes those barcodes from the database.</p>
+<h1>PC and Card Reader are missing</h1>
+<p>This is likely as the Kiosk was decommissioned and was set for removal. Kiosks decommissioned around June of 2023 were still left at the store due to delinquent payments to vendors, like Brendamour Logistics, which caused these kiosks to remain at the retailers even up to the bankruptcy in 2024. <strong>You can commonly find these at current/former 7-11 and current/former Winn Dixie kiosks.</strong></p>
+<p>You can use about any PC in the kiosk as long as it has a Serial Port. You could source a USB/PCIE adapter, but we recommend on board to prevent sudden disconnection as if the Y motor goes down or up could cause spikes and could damage the gripper components. Consumer motherboards/computers have not had this port included since 2004, but business motherboards/computers still include these ports.</p>
