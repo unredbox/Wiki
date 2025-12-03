@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: Information about kiosk hardware
 published: true
-date: 2025-11-05T17:21:26.894Z
+date: 2025-12-03T10:09:27.669Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -93,9 +93,11 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
   - 1x 2GB Nanya DDR3-1333
   - Unknown CPU (2nd gen Intel)
 - Optiplex XE2 (2013)
-  - 500GB Seagate HDD
+  <figure class="image image_resized" style="width:40%;"><img src="/dell_xe2.png"></figure>
+
+  - 500GB Seagate or Toshiba HDD
   - 4GB DDR3
-  - i3-4330
+  - Intel Core i3-4330 @ 3.50GHz
 
 ## Lenovo
 - ThinkCentre M91p USFF (2011)
@@ -128,7 +130,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - MoBo: MSI H110M-PRO-VHL
    - 500GB HDD Western Digital Black Model: WD500LPLX
    - 4GB RAM (AD4U2400W4G17-B)
-   - Intel i3 6100 @ 3.70GHz
+   - Intel Core i3-6100 @ 3.70GHz
    - unknown BIOS
    - 1x HDMI & 2x USB 3 ports
    - IO expansion board 3RAM63014000 REV:1.0
@@ -138,7 +140,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - MoBo: MSI CSM-H110M PRO-VHL
    - 500GB HDD Western Digital Black Model: WD500LPLX
    - 4GB RAM (KVR21N15S8/4)
-   - Intel i3 6100 @ 3.70GHz
+   - Intel Core i3-6100 @ 3.70GHz
    - BIOS Version: American Megatrends Inc. 2.P5
    - 1x HDMI, 2x USB 3.0
    - IO expansion board 3RAM63014000 REV:1.0
@@ -148,7 +150,7 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
    - Mobo: MSI H310M PRO-VLH PLUS
    - 500GB HDD Western Digital Black Model: WD5000LPSX
    - 4GB DDR4 2400Mhz RAM
-   - Intel i3 9100 @ 3.60 GHz
+   - Intel Core i3-9100 @ 3.60 GHz
    - Windows 10 Enterprise LTSC x64
    - AMI 1.Q3, 1/22/2020
    - 1x HDMI, 2x USB 3.0
