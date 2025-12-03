@@ -2,7 +2,7 @@
 title: Hardware Overview
 description: Information about kiosk hardware
 published: true
-date: 2025-12-03T11:38:04.912Z
+date: 2025-12-03T11:39:11.692Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-21T03:34:51.578Z
@@ -99,10 +99,10 @@ The paint officially used by Redbox to refurbish kiosks is "B66R11038 DTM Acryli
   - 4GB DDR3
   - Intel Core i3-4330 @ 3.50GHz
   - Dell ECS U3N2-D 2-Port USB 3.0 Expansion Card
-    <figure class="image image_resized" style="width:40%;"><img src="/dell_ecs_u3n2-d_2-port_usb_3.0_expansion_card.jpg"></figure>
+    <figure class="image image_resized" style="width:20%;"><img src="/dell_ecs_u3n2-d_2-port_usb_3.0_expansion_card.jpg"></figure>
   
   - Sunix SER6427A RS-232 PCI Express Board
-    <figure class="image image_resized" style="width:40%;"><img src="/sunix_ser6427a_1-port_rs-232_pci_express_board.jpg"></figure>
+    <figure class="image image_resized" style="width:20%;"><img src="/sunix_ser6427a_1-port_rs-232_pci_express_board.jpg"></figure>
 
 ## Lenovo
 - ThinkCentre M91p USFF (2011)
