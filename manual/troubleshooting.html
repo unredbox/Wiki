@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: Information on how to diagnose your kiosk when an issue occurs
 published: true
-date: 2025-10-25T21:33:47.076Z
+date: 2025-12-06T18:39:17.289Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -121,7 +121,10 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <h1>Kiosk Not Showing Titles Despite Having Inventory</h1>
 <p>If the Start screen is blank (no carousel with titles), and the Rental screen is not showing any titles (except for replacement cases) despite having inventory data, this is likely because of an incorrect date and time on your kiosk's computer. This often happens after resetting your CMOS, likely because the system date is cleared. If you've disconnected your kiosk from the internet, your computer won't be able to get the correct date and time for your time zone, hence why it's set to an old date (like 2009). Luckily, the fix is easy: just enter your Date and Time settings and manually update the information. Then, restart your kiosk, and you should be good to go!</p>
 <h1>“CAMERA CAPTURE error. I'm sorry!”</h1>
-<p>You may encounter issues with the camera, despite it being connected, recognized by windows and having drivers installed.&nbsp;</p>
+<blockquote>
+  <p>Make sure you have the correct drivers installed. If they are missing, you will need to install the correct Camera Software from the Windows 7 or Windows 10 Redbox Technician Driver Kit, which can be sourced <a href="https://files.unredbox.com/Official%20Redbox%20Files/Technician%20Driver%20Packages/">here</a>.</p>
+</blockquote>
+<p>You may encounter issues with the camera, despite it being connected, recognized by windows and having drivers installed.</p>
 <p>You may also see the error “CAMERA CAPTURE error. I'm sorry!” in HAL Tester console, and the camera preview is blank. This is usually an issue with incorrect camera settings for the kiosk software.<br>To fix this, open <code>C:\Program Files\Redbox\halservice\bin\hal.xml</code> in a text editor, find the line starting with <code>&lt;ScannerService&gt;</code>, and change it to one of the following:</p>
 <h4><br>Gen 3 and Gen 4 Camera</h4>
 <pre><code class="language-xml">  &lt;Camera&gt;
