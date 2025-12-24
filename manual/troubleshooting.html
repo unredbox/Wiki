@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: Information on how to diagnose your kiosk when an issue occurs
 published: true
-date: 2025-12-23T16:22:57.305Z
+date: 2025-12-24T17:45:20.999Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -179,7 +179,9 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <h1>Upon returning disc, it holds the disc hostage in the gripper</h1>
 <p>This issue occurs mostly in Windows10/11 64-bit as the AVEO drivers in the Technician Driver Kit are 32-bit and are not supported on 64-bit hardware.<br><br>To solve this, you will need to get the AVEO Drivers archived <a href="https://files.unredbox.com/Driver%20Archive/AVEO%20USB%202.0%20PC%20Camera%202.7%20x64.zip">here</a>, go to <code>Device Manager</code>, Select the Camera Device, press <code>Update Driver</code>, and select the folder that has the driver you just downloaded. Upon successful import, you will need to restart the PC for the device to be recognized properly by the Rental Application.</p>
 <h1>Protheus COM device shows driver missing or error</h1>
-<p>You will need to move the Protheus COM to 10 or greater, than install the driver from Windows 7 or 10 Technician Driver Kit, then run COM Shuffle script provided.</p>
+<p>You will need to move the Protheus COM Port to 10 or greater (Usually these are unused), than install the Arcus Driver from Windows 7 or 10 Technician Driver Kit. Once the driver shows in COM Ports that Protheus doesn't show errors and successfully installed, then run COM Shuffle script provided in the Technician Driver Kit and restart the kiosk PC for the correct COM Port to be provided (Usually COM3 or COM1)</p>
+<h1>Gripper slams down when renting or returning</h1>
+<p>This likely means the external COM Port is failing. Switch to the on board COM Port (if provided) and go into HAL.xml to switch to the correct COM Port and restart HAL Service. If it is still slamming, check the motor or belt for wear and tear. If the belt is missing teeth or motor slams instead of slowly dropping when powered down, a replacement will be needed.</p>
 <h1>Unknown vs. Unknown Title</h1>
 <p>These definitions gets mixed up. Both are not the same or have the same meaning.</p>
 <h2>Unknown</h2>
