@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: Information on how to diagnose your kiosk when an issue occurs
 published: true
-date: 2025-12-24T17:45:20.999Z
+date: 2026-08-29T05:00:46.346Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -192,3 +192,10 @@ dateCreated: 2024-10-21T14:16:14.709Z
 </ul>
 <h2>Unknown Title</h2>
 <p>When the scanning subsystem decodes a Data Matrix code but cannot resolve it to a title record, you will need to use a program to bind the scanned Data Matrix to the proper product entry. Before performing the association, vend the disc(s) from the kiosk and re-insert or restart the Kiosk Engine service to clear the “Unknown Title” state for a specified disc(s).</p>
+<h2>Carousel and/or gripper doesn't move when starting the Kiosk PC</h2>
+<p>When the carousel and/or gripper doesn't move when the PC starts up, you have the following issues:</p>
+<ul>
+  <li>Motors lacking power or seized.<br>Replacements needed for the motors and/or 5 phase drivers.<br>&nbsp;</li>
+  <li>Kiosk is off balance.<br>This can be fixed by balancing the kiosk correctly. The feet should be adjustable and if the feet don't move, WD-40 or penetration grease should loosen them for outdoor units as they have likely rusted from the elements over the years.<br>&nbsp;</li>
+  <li>Misconfigured Motion Controller Port Name<br>Common ports for the kiosks should <code>COM1</code> and <code>COM3</code>. You will need to modify <code>MotionControllerPortName</code> in <code>hal.xml</code> and restart the <code>Redbox Hal Service</code> in <code>services.msc</code> or restart the Kiosk PC. Custom PCs may have different COM ports and will need to check DeviceManager to assign the correct port.</li>
+</ul>
