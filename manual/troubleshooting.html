@@ -2,7 +2,7 @@
 title: Troubleshooting / Error Codes
 description: Information on how to diagnose your kiosk when an issue occurs
 published: true
-date: 2026-08-29T05:00:46.346Z
+date: 2026-08-29T05:03:08.585Z
 tags: 
 editor: ckeditor
 dateCreated: 2024-10-21T14:16:14.709Z
@@ -195,7 +195,7 @@ dateCreated: 2024-10-21T14:16:14.709Z
 <h2>Carousel and/or gripper doesn't move when starting the Kiosk PC</h2>
 <p>When the carousel and/or gripper doesn't move when the PC starts up, you have the following issues:</p>
 <ul>
-  <li>Motors lacking power or seized.<br>Replacements needed for the motors and/or 5 phase drivers.<br>&nbsp;</li>
+  <li>Motors lacking power or seized.<br>Replacements needed for the motors and/or 5 phase drivers. If you take a kiosk with you and leave it outdoors, do not place in the grass as this will block the drain holes on the bottom and cause the kiosk to build up moisture and damage electronics and components.<br>&nbsp;</li>
   <li>Kiosk is off balance.<br>This can be fixed by balancing the kiosk correctly. The feet should be adjustable and if the feet don't move, WD-40 or penetration grease should loosen them for outdoor units as they have likely rusted from the elements over the years.<br>&nbsp;</li>
   <li>Misconfigured Motion Controller Port Name<br>Common ports for the kiosks should <code>COM1</code> and <code>COM3</code>. You will need to modify <code>MotionControllerPortName</code> in <code>hal.xml</code> and restart the <code>Redbox Hal Service</code> in <code>services.msc</code> or restart the Kiosk PC. Custom PCs may have different COM ports and will need to check DeviceManager to assign the correct port.</li>
 </ul>
